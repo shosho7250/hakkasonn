@@ -22,14 +22,16 @@ ul {
 /* headerセクション */
 header {
     height: 100%;
-    background: linear-gradient(to right, #6296D0, #D9D9D9);
-    background: -webkit-linear-gradient(right,  #6296D0, #D9D9D9);
-    background: -moz-linear-gradient(right,  #6296D0, #D9D9D9);
-    padding-block: 5px;
+    /* background: linear-gradient(to top, #D9D9D9, #8CACCD, #D9D9D9);
+    background: -webkit-linear-gradient(top, #D9D9D9, #8CACCD, #D9D9D9);
+    background: -moz-linear-gradient(top, #D9D9D9, #8CACCD, #D9D9D9);
+     */
 }
 
 header .header-wrapper {
     padding-inline: 4%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 header .header-box {
@@ -54,6 +56,12 @@ header .header-box .header-nav li {
     margin-inline: 5px;
 }
 
+header .header-box .header-nav li a {
+    color: #497DA1;
+    font-weight: bold;
+
+}
+
 header .header-box .header-right .header-btn {
     margin-left: 5px;
 }
@@ -74,4 +82,164 @@ header .header-box .header-right {
 
 /* FAQpage　市川担当 */
 
+main .faq-background {
+    height: 100dvh;
+    background: linear-gradient(to left, #6296D0, #D9D9D9);
+    background: -webkit-linear-gradient(left,  #6296D0, #D9D9D9);
+    background: -moz-linear-gradient(left,  #6296D0, #D9D9D9);
+  
+}
+
+main .faq-background .faq-wrapper {
+    padding-inline: 5%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+main .faq-background .faq-wrapper .faq-mainvisual {
+    height: 100dvh;
+    position: relative;
+    margin-top:50px;
+}
+
+main .faq-background .faq-wrapper .faq-mainvisual h2 {
+    color: #FFFFFF;
+    font-size: 80px;
+    background-image: url(img/文字背景グラデーション.png);
+    /* background: linear-gradient(to right,#c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073); */
+    display: inline;
+    padding: 5px;
+    margin-top: 50px;
+
+}
+
+main .faq-background .faq-wrapper .faq-mainvisual h3 {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+main .faq-background .faq-wrapper .faq-mainvisual h4 {
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 96px;
+    font-weight: 900; 
+    text-align: center;
+    margin-top: 100px;
+}
+main .faq-background .faq-wrapper .faq-mainvisual .faq-image {
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.faq-section {
+    background-color:#CADFF7 ;
+    padding-top: 50px;
+    padding-inline: 50px;
+    border-radius: 25px;
+
+}
+
+.faq-section h5 {
+    color:#6296D0;
+    position: relative;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    z-index: 2;
+}
+
+.faq-section h5::before {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 56px;
+    text-transform: uppercase;
+    content: 'QUESTION';
+    z-index: -1;
+}
+
+.faq-accordion {
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.faq-accordion-header {
+    position: relative;
+    background-color: #6296D0;
+    color: white;
+    /* padding-block: 8px; */
+    /* padding-left: 24px; */
+    padding: 12px 25px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.faq-accordion-header::before,
+.faq-accordion-header::after{
+  position:absolute;
+  content:'';
+  top:1px;
+  right:20px;
+  bottom:0;
+  width:12px;
+  height:2px;
+  margin:auto;
+  background:#FFFFFF;
+}
+
+.faq-accordion-header::after{
+  transform:rotate(-90deg);
+  transition:transform 0.3s;
+}
+
+.faq-accordion-header.active::after{
+    transform:rotate(0deg);
+}
+
+.faq-accordion-content {
+  background-color: #FFF;
+  padding: 12px 25px 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.faq-accordion-header span,
+.faq-accordion-content span{
+  /* padding-left: 25px; */
+  position: relative;
+}
+
+.faq-accordion-header span::before{
+  position: absolute;
+  content:"Q.";
+  /* top: 2px; */
+  left: -20px;
+  color: #FFFFFF;
+  font-size: 17px;
+}
+
+.faq-accordion-content span::before{
+    position: absolute;
+  content:"A.";
+  /* top: 3px; */
+  left: -20px;
+  color: #202128;
+  font-size: 17px;
+}
+
+.faq-accordion-content {
+    display: none;
+}
+
+.faq-accordion-content span {
+    color: #202128;
+}
 
