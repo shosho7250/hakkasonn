@@ -1,6 +1,6 @@
 /* 共通CSS */
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html {
@@ -21,11 +21,9 @@ ul {
 
 /* headerセクション */
 header {
-    height: 100%;
-    /* background: linear-gradient(to top, #D9D9D9, #8CACCD, #D9D9D9);
-    background: -webkit-linear-gradient(top, #D9D9D9, #8CACCD, #D9D9D9);
-    background: -moz-linear-gradient(top, #D9D9D9, #8CACCD, #D9D9D9);
-     */
+    width: 100%;
+    background-color: white;
+    position: fixed;
 }
 
 header .header-wrapper {
@@ -50,6 +48,8 @@ header .header-box h1 a {
 
 header .header-box .header-nav {
     display: flex;
+    align-items: center;
+
 }
 
 header .header-box .header-nav li {
@@ -62,12 +62,70 @@ header .header-box .header-nav li a {
 
 }
 
-header .header-box .header-right .header-btn {
+header .header-box .header-right .counseiling-btn {
     margin-left: 5px;
 }
 
 header .header-box .header-right {
     display: flex;
+}
+
+/* 無料カウンセリングボタン */
+.free-counseling {
+    position: relative;
+}
+
+.header-counseling-btn {
+    font-size: 12px;
+    background-color: #F8BD28;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 12px 48px 12px 24px;
+    position: relative;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+    margin-left: 16px;
+}
+
+.counseling-btn {
+    background-color: #F8BD28;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 12px 48px 12px 24px;
+    position: relative;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.counseling a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.counseling a::after {
+    content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 23px;
+  width: 11px;
+  height: 11px;
+  margin: auto;
+  border-top: 2px solid #F8BD28;
+  border-right: 2px solid #F8BD28;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+}
+
+.counseling-background {
+    width: 100%;
+    margin-top: -150px;
 }
 
 /* TOPページ */
@@ -83,28 +141,36 @@ header .header-box .header-right {
 /* FAQpage　市川担当 */
 
 main .faq-background {
-    height: 100dvh;
-    background: linear-gradient(to left, #6296D0, #D9D9D9);
-    background: -webkit-linear-gradient(left,  #6296D0, #D9D9D9);
-    background: -moz-linear-gradient(left,  #6296D0, #D9D9D9);
-  
+    /* height: 100dvh; */
+    
 }
 
-main .faq-background .faq-wrapper {
+main .faq-wrapper {
     padding-inline: 5%;
     height: 100%;
     max-width: 1100px;
     margin: 0 auto;
 }
-main .faq-background .faq-wrapper .faq-mainvisual {
-    height: 100dvh;
-    position: relative;
-    margin-top:50px;
+main .faq-mainvisual {
+    height: 60dvh;
+    background: linear-gradient(to left, #6296D0, #D9D9D9);
+    background: -webkit-linear-gradient(left,  #6296D0, #D9D9D9);
+    background: -moz-linear-gradient(left,  #6296D0, #D9D9D9);
+    padding-top: 67px;
 }
 
-main .faq-background .faq-wrapper .faq-mainvisual h2 {
+.faq-mainvisual-wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-inline: 5%;
+    margin-top: 110px;
+    
+}
+
+main .faq-mainvisual h2 {
     color: #FFFFFF;
-    font-size: 80px;
+    font-size: 120px;
     background-image: url(img/文字背景グラデーション.png);
     /* background: linear-gradient(to right,#c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073); */
     display: inline;
@@ -113,20 +179,20 @@ main .faq-background .faq-wrapper .faq-mainvisual h2 {
 
 }
 
-main .faq-background .faq-wrapper .faq-mainvisual h3 {
+main .faq-mainvisual h3 {
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 40px;
 }
 
-main .faq-background .faq-wrapper .faq-mainvisual h4 {
+main .faq-mainvisual h4 {
     color: #FFFFFF;
     opacity: 0.7;
-    font-size: 96px;
+    font-size: 156px;
     font-weight: 900; 
     text-align: center;
     margin-top: 100px;
 }
-main .faq-background .faq-wrapper .faq-mainvisual .faq-image {
+main .faq-mainvisual .faq-image {
     height: 200px;
     position: absolute;
     top: 0;
@@ -135,14 +201,14 @@ main .faq-background .faq-wrapper .faq-mainvisual .faq-image {
 
 .faq-section {
     background-color:#CADFF7 ;
-    padding-top: 50px;
-    padding-inline: 50px;
+    padding: 50px 56px 24px 56px;
     border-radius: 25px;
+    margin-block: 100px;
 
 }
 
 .faq-section h5 {
-    color:#6296D0;
+    color:#366383;
     position: relative;
     margin-bottom: 0.2rem;
     font-weight: bold;
@@ -159,7 +225,6 @@ main .faq-background .faq-wrapper .faq-mainvisual .faq-image {
     color: #FFFFFF;
     opacity: 0.7;
     font-size: 56px;
-    text-transform: uppercase;
     content: 'QUESTION';
     z-index: -1;
 }
@@ -171,11 +236,9 @@ main .faq-background .faq-wrapper .faq-mainvisual .faq-image {
 
 .faq-accordion-header {
     position: relative;
-    background-color: #6296D0;
+    background-color: #76A6C7;
     color: white;
-    /* padding-block: 8px; */
-    /* padding-left: 24px; */
-    padding: 12px 25px 10px;
+    padding: 12px 45px 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -206,7 +269,7 @@ main .faq-background .faq-wrapper .faq-mainvisual .faq-image {
 
 .faq-accordion-content {
   background-color: #FFF;
-  padding: 12px 25px 10px;
+  padding: 12px 45px 10px;
   margin-bottom: 8px;
   border-radius: 5px;
 }
@@ -227,9 +290,8 @@ main .faq-background .faq-wrapper .faq-mainvisual .faq-image {
 }
 
 .faq-accordion-content span::before{
-    position: absolute;
+  position: absolute;
   content:"A.";
-  /* top: 3px; */
   left: -20px;
   color: #202128;
   font-size: 17px;
@@ -243,3 +305,106 @@ main .faq-background .faq-wrapper .faq-mainvisual .faq-image {
     color: #202128;
 }
 
+.free-counseling .free-counseling-wrapper {
+    padding-inline: 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.free-counseling-wrapper p {
+    color: #F87C00;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.free-counseling-wrapper h4{
+    z-index: 2;
+    color: #497DA1;
+    font-size: 28px;
+    margin-bottom: 16px;
+
+}
+
+.free-counseling-wrapper h4::before {
+    position: absolute;
+    top: -70px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    color: #497DA1;
+    opacity: 0.15;
+    font-size: 200px;
+    left: 80px;
+    content: 'Pro Navi';
+    z-index: -1;
+}
+
+
+/* FAQfooter */
+.faq-footer {
+    background-color: #497DA1;
+    padding-block: 100px;
+
+}
+
+.footer-wrapper {
+    padding-inline: 5%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-contents {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.footer-contents h2 {
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    z-index: 2;
+}
+
+.footer-left h2::before {
+    position: absolute;
+    top: -40px;
+    right: -60px;
+    /* transform: translateX(-50%); */
+    color: #FFFFFF;
+    opacity: 0.2;
+    font-size: 96px;
+    content: 'Pro Navi';
+    z-index: -1;
+}
+
+.footer-right .footer-right-text {
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.footer-border {
+    border-bottom: 2px solid white;
+    height: 1px;
+}
+
+.footer-bottom {
+    color: white;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+}
+
+.back-btn a {
+    color: white;;
+}
