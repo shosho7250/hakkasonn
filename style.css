@@ -1,6 +1,6 @@
 /* 共通CSS */
 * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 html {
@@ -132,7 +132,153 @@ header .header-box .header-right {
 
 
 /* 受講の流れ */
+.curriculum-background {
+    background: linear-gradient(to left, #6296D0, #D9D9D9);
+    background: -webkit-linear-gradient(left,  #6296D0, #D9D9D9);
+    background: -moz-linear-gradient(left,  #6296D0, #D9D9D9);
+}
 
+.curriculum-mainvisual {
+    height: 60dvh;
+    padding-top: 67px;
+}
+
+.curriculum-mainvisual-wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-inline: 5%;
+    margin-top: 110px;
+}
+
+.curriculum-mainvisual-wrapper h2 {
+    color: #FFFFFF;
+    font-size: 120px;
+    background-image: url(img/受講の流れ_img/ワイヤ用イラスト_32\ \(2\).png);
+}
+
+.curriculum-mainvisual-wrapper h3 {
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.curriculum-mainvisual-wrapper h4 {
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 132px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 100px;
+}
+.curriculum-mainvisual-wrapper .curriculum-image {
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.curriculum-section-wrapper {
+    padding-inline: 5%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.curriculum-section {
+    background-color: #CADFF7;
+    padding: 50px 56px 24px 56px;
+    border-radius: 25px;
+    margin-block: 100px;
+}
+
+.curriculum-section h5 {
+    color: #366383;
+    position: relative;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    z-index: 2;
+
+}
+
+.curriculum-section h5::before {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 56px;
+    content: 'CURRICULUM';
+    z-index: -1;
+}
+
+.curriculum-content {
+    text-align: center;
+}
+
+.start {
+    width: 250px;
+    position: relative;
+}
+
+.course1 {
+    position: absolute;
+    left: 180px;
+    top: 1000px;
+    width: 500px;
+    z-index: 0;
+}
+
+.curriculum-step01-container {
+    display: flex;
+    margin-top: 250px;
+    z-index: 30;
+}
+
+.curriculum-step01 {
+    position: relative;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #3E67B0;
+    color: white;
+    padding: 24px 40px; 
+    text-align: left;
+}
+
+.step01-img {
+    width: 40%;
+}
+
+.step01-img img {
+    width: 200px;
+}
+
+.step-title {
+    margin-bottom: 32px;
+}
+
+.curriculum-step01 h2 {
+    font-size: 32px;
+}
+
+.curriculum-step01 h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+    padding-left: 56px;
+    position: relative;
+}
+
+.curriculum-step01 h3::before {
+    position: absolute;
+    content: "01";
+    top: -14px;
+    left: 0px;
+    color: #FFFFFF;
+    font-size: 32px;
+}
 
 /* 実績で見るプロナビ 翔太さん担当*/
 
