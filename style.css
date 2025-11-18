@@ -24,10 +24,11 @@ header {
     width: 100%;
     background-color: white;
     position: fixed;
+    z-index: 30;
 }
 
 header .header-wrapper {
-    padding-inline: 4%;
+    padding-inline: 32px;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -147,7 +148,7 @@ header .header-box .header-right {
     position: relative;
     margin: 0 auto;
     max-width: 1100px;
-    padding-inline: 5%;
+    padding-inline: 32px;
     margin-top: 110px;
 }
 
@@ -177,7 +178,7 @@ header .header-box .header-right {
     right: 0;
 }
 .curriculum-section-wrapper {
-    padding-inline: 5%;
+    padding-inline: 32px;
     height: 100%;
     max-width: 1100px;
     margin: 0 auto;
@@ -185,7 +186,7 @@ header .header-box .header-right {
 
 .curriculum-section {
     background-color: #CADFF7;
-    padding: 50px 56px 24px 56px;
+    padding: 50px 56px 600px 56px;
     border-radius: 25px;
     margin-block: 100px;
 }
@@ -216,25 +217,38 @@ header .header-box .header-right {
 
 .curriculum-content {
     text-align: center;
+    background-image :url(img/受講の流れ_img/受講の流れイラスト_background\ 1.png); 
+    background-size: 930px;
+    position: relative;
 }
 
 .start {
     width: 250px;
-    position: relative;
-}
-
-.course1 {
     position: absolute;
-    left: 180px;
-    top: 1000px;
-    width: 500px;
-    z-index: 0;
+    left: 30%;
+    transform: translate(-60%, -15%);
 }
 
 .curriculum-step01-container {
     display: flex;
     margin-top: 250px;
     z-index: 30;
+}
+
+.curriculum-step01-container:nth-of-type(2) {
+    margin-top: 250px;
+}
+
+.curriculum-step01-container:nth-of-type(3) {
+    margin-top: 100px;
+}
+
+.curriculum-step01-container:nth-of-type(4) {
+    margin-top: 100px;
+}
+
+.curriculum-step01-container:nth-of-type(5) {
+    margin-top: 200px;
 }
 
 .curriculum-step01 {
@@ -245,6 +259,7 @@ header .header-box .header-right {
     color: white;
     padding: 24px 40px; 
     text-align: left;
+    z-index: 1;
 }
 
 .step01-img {
@@ -278,6 +293,17 @@ header .header-box .header-right {
     left: 0px;
     color: #FFFFFF;
     font-size: 32px;
+}
+
+.goal {
+    width: 250px;
+    margin-top: 600px;
+}
+
+.goal-people {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
 }
 
 /* 実績で見るプロナビ 翔太さん担当*/
