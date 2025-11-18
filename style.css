@@ -1,7 +1,7 @@
 /* 共通CSS */
-* {
-    /* border: 1px solid red; */
-}
+/* * { */
+/* border: 1px solid red; */
+/* } */
 
 html {
     font-size: 100%;
@@ -110,17 +110,17 @@ header .header-box .header-right {
 
 .counseling a::after {
     content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 23px;
-  width: 11px;
-  height: 11px;
-  margin: auto;
-  border-top: 2px solid #F8BD28;
-  border-right: 2px solid #F8BD28;
-  transform: rotate(45deg);
-  box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 23px;
+    width: 11px;
+    height: 11px;
+    margin: auto;
+    border-top: 2px solid #F8BD28;
+    border-right: 2px solid #F8BD28;
+    transform: rotate(45deg);
+    box-sizing: border-box;
 }
 
 .counseling-background {
@@ -129,6 +129,102 @@ header .header-box .header-right {
 }
 
 /* TOPページ */
+/* mainvisual 翔太：担当 */
+.mainvisual {
+    width: 100%;
+    min-height: calc(110vh - 70px);
+    background-image: url(/img/トップベージ/main.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+}
+
+.mainvisual-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-inline: 4%;
+}
+
+.mainvisual .mainvisual-wrapper .title h2 {
+    color: #FFF;
+    background-image: url(/img/文字背景グラデーション.png);
+    font-size: 56px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+.mainvisual .mainvisual-wrapper .title h3 {
+    color: #FFF;
+    background-image: url(/img/文字背景グラデーション.png);
+    font-size: 40px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.mainvisual .mainvisual-wrapper .title h4 {
+    margin-bottom: 30px;
+}
+
+.mainvisual .mainvisual-wrapper .text-wrapper {
+    display: inline-block;
+    text-align: center;
+}
+
+.mainvisual .mainvisual-wrapper .text-wrapper p.border {
+    margin-bottom: 20px;
+}
+
+.mainvisual .mainvisual-wrapper .text-wrapper a {
+    font-weight: bold;
+    width: 400px;
+    padding: 10px;
+    background-color: #F8BD28;
+    color: #FFF;
+    border-radius: 40px;
+}
+
+/* お悩み 翔太：担当*/
+.problem {
+    background-color: #3da2b8;
+}
+.problem .problem-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.problem .problem-wrapper .problem-back-text {
+    font-size: 128px;
+    color: #FFFFFF40;
+}
+
+.problem .problem-wrapper .problem-front-text p {
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.problem .problem-wrapper .problem-front-text h2 {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.problem .problem-wrapper .problem-front-text h2 span {
+    color: #fccc42;
+    font-size: 32px;
+}
+
+/* CHANGE 　翔太：担当*/
+.change-back-text {
+    text-align: center;
+    font-size: 128px;
+    color: #497DA1 40;
+}
 
 
 /* 受講の流れ */
@@ -140,10 +236,10 @@ header .header-box .header-right {
 
 /* FAQpage　市川担当 */
 
-main .faq-background {
-    /* height: 100dvh; */
-    
-}
+/* main .faq-background { */
+/* height: 100dvh; */
+
+/* } */
 
 main .faq-wrapper {
     padding-inline: 5%;
@@ -151,11 +247,12 @@ main .faq-wrapper {
     max-width: 1100px;
     margin: 0 auto;
 }
+
 main .faq-mainvisual {
     height: 60dvh;
     background: linear-gradient(to left, #6296D0, #D9D9D9);
-    background: -webkit-linear-gradient(left,  #6296D0, #D9D9D9);
-    background: -moz-linear-gradient(left,  #6296D0, #D9D9D9);
+    background: -webkit-linear-gradient(left, #6296D0, #D9D9D9);
+    background: -moz-linear-gradient(left, #6296D0, #D9D9D9);
     padding-top: 67px;
 }
 
@@ -165,7 +262,7 @@ main .faq-mainvisual {
     max-width: 1100px;
     padding-inline: 5%;
     margin-top: 110px;
-    
+
 }
 
 main .faq-mainvisual h2 {
@@ -188,10 +285,11 @@ main .faq-mainvisual h4 {
     color: #FFFFFF;
     opacity: 0.7;
     font-size: 156px;
-    font-weight: 900; 
+    font-weight: 900;
     text-align: center;
     margin-top: 100px;
 }
+
 main .faq-mainvisual .faq-image {
     height: 200px;
     position: absolute;
@@ -200,7 +298,7 @@ main .faq-mainvisual .faq-image {
 }
 
 .faq-section {
-    background-color:#CADFF7 ;
+    background-color: #CADFF7;
     padding: 50px 56px 24px 56px;
     border-radius: 25px;
     margin-block: 100px;
@@ -208,7 +306,7 @@ main .faq-mainvisual .faq-image {
 }
 
 .faq-section h5 {
-    color:#366383;
+    color: #366383;
     position: relative;
     margin-bottom: 0.2rem;
     font-weight: bold;
@@ -246,55 +344,55 @@ main .faq-mainvisual .faq-image {
 }
 
 .faq-accordion-header::before,
-.faq-accordion-header::after{
-  position:absolute;
-  content:'';
-  top:1px;
-  right:20px;
-  bottom:0;
-  width:12px;
-  height:2px;
-  margin:auto;
-  background:#FFFFFF;
+.faq-accordion-header::after {
+    position: absolute;
+    content: '';
+    top: 1px;
+    right: 20px;
+    bottom: 0;
+    width: 12px;
+    height: 2px;
+    margin: auto;
+    background: #FFFFFF;
 }
 
-.faq-accordion-header::after{
-  transform:rotate(-90deg);
-  transition:transform 0.3s;
+.faq-accordion-header::after {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
 }
 
-.faq-accordion-header.active::after{
-    transform:rotate(0deg);
+.faq-accordion-header.active::after {
+    transform: rotate(0deg);
 }
 
 .faq-accordion-content {
-  background-color: #FFF;
-  padding: 12px 45px 10px;
-  margin-bottom: 8px;
-  border-radius: 5px;
+    background-color: #FFF;
+    padding: 12px 45px 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
 }
 
 .faq-accordion-header span,
-.faq-accordion-content span{
-  /* padding-left: 25px; */
-  position: relative;
+.faq-accordion-content span {
+    /* padding-left: 25px; */
+    position: relative;
 }
 
-.faq-accordion-header span::before{
-  position: absolute;
-  content:"Q.";
-  /* top: 2px; */
-  left: -20px;
-  color: #FFFFFF;
-  font-size: 17px;
+.faq-accordion-header span::before {
+    position: absolute;
+    content: "Q.";
+    /* top: 2px; */
+    left: -20px;
+    color: #FFFFFF;
+    font-size: 17px;
 }
 
-.faq-accordion-content span::before{
-  position: absolute;
-  content:"A.";
-  left: -20px;
-  color: #202128;
-  font-size: 17px;
+.faq-accordion-content span::before {
+    position: absolute;
+    content: "A.";
+    left: -20px;
+    color: #202128;
+    font-size: 17px;
 }
 
 .faq-accordion-content {
@@ -319,7 +417,7 @@ main .faq-mainvisual .faq-image {
     margin-bottom: 8px;
 }
 
-.free-counseling-wrapper h4{
+.free-counseling-wrapper h4 {
     z-index: 2;
     color: #497DA1;
     font-size: 28px;
@@ -406,5 +504,6 @@ main .faq-mainvisual .faq-image {
 }
 
 .back-btn a {
-    color: white;;
+    color: white;
+    ;
 }
