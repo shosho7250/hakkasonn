@@ -1,7 +1,13 @@
 /* 共通CSS */
+
+/* * { */
+/* border: 1px solid red; */
+/* } */
+
 * {
     border: 1px solid red;
 }
+
 
 html {
     font-size: 100%;
@@ -193,7 +199,6 @@ header .header-box .header-right {
 .problem {
     background-color: #3da2b8;
 }
-
 .problem .problem-wrapper {
     max-width: 1100px;
     margin: 0 auto;
@@ -227,8 +232,6 @@ header .header-box .header-right {
     font-size: 128px;
     color: #497DA1 40;
 }
-
-
 
 /* 受講の流れ */
 .curriculum-background {
@@ -519,10 +522,15 @@ header .header-box .header-right {
 
 /* FAQpage　市川担当 */
 
+
+/* main .faq-background { */
+/* height: 100dvh; */
+/* } */
+
 main .faq-background {
     /* height: 100dvh; */
-
 }
+
 
 main .faq-wrapper {
     padding-inline: 5%;
