@@ -1,7 +1,13 @@
 /* 共通CSS */
+
 /* * { */
 /* border: 1px solid red; */
 /* } */
+
+* {
+    border: 1px solid red;
+}
+
 
 html {
     font-size: 100%;
@@ -24,10 +30,11 @@ header {
     width: 100%;
     background-color: white;
     position: fixed;
+    z-index: 30;
 }
 
 header .header-wrapper {
-    padding-inline: 4%;
+    padding-inline: 32px;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -62,7 +69,7 @@ header .header-box .header-nav li a {
 
 }
 
-header .header-box .header-right .counseiling-btn {
+header .header-box .header-right .counseling-btn {
     margin-left: 5px;
 }
 
@@ -226,8 +233,287 @@ header .header-box .header-right {
     color: #497DA1 40;
 }
 
-
 /* 受講の流れ */
+.curriculum-background {
+    background: linear-gradient(to left, #6296D0, #D9D9D9);
+    background: -webkit-linear-gradient(left, #6296D0, #D9D9D9);
+    background: -moz-linear-gradient(left, #6296D0, #D9D9D9);
+    position: relative;
+}
+
+.curriculum-mainvisual {
+    height: 60dvh;
+    padding-top: 67px;
+}
+
+.curriculum-mainvisual-wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-inline: 32px;
+    margin-top: 110px;
+}
+
+.curriculum-mainvisual-wrapper h2 {
+    color: #FFFFFF;
+    font-size: 120px;
+    background-image: url(img/受講の流れ_img/ワイヤ用イラスト_32\ \(2\).png);
+}
+
+.curriculum-mainvisual-wrapper h3 {
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.curriculum-mainvisual-wrapper h4 {
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 132px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.curriculum-mainvisual-wrapper .curriculum-image {
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.curriculum-section-wrapper {
+    padding-inline: 32px;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.curriculum-section {
+    background-color: #CADFF7;
+    padding: 50px 56px 550px 56px;
+    border-radius: 25px;
+    margin-block: 100px;
+}
+
+.curriculum-section h5 {
+    color: #366383;
+    position: relative;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 100px;
+    z-index: 2;
+
+}
+
+.curriculum-section h5::before {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 56px;
+    content: 'CURRICULUM';
+    z-index: -1;
+}
+
+.curriculum-content {
+    text-align: center;
+    background-image :url(img/受講の流れ_img/受講の流れイラスト_background\ 1.png); 
+    background-size: 930px;
+    position: relative;
+}
+
+.start {
+    width: 250px;
+    position: absolute;
+    left: 30%;
+    transform: translate(-60%, -15%);
+}
+
+.curriculum-step-container {
+    display: flex;
+    margin-top: 250px;
+    z-index: 30;
+}
+
+.curriculum-step-container:nth-of-type(2) {
+    margin-top: 250px;
+}
+
+.curriculum-step-container:nth-of-type(3) {
+    margin-top: 100px;
+}
+
+.curriculum-step-container:nth-of-type(4) {
+    margin-top: 100px;
+}
+
+.curriculum-step-container:nth-of-type(5) {
+    margin-top: 200px;
+}
+
+.curriculum-step01 {
+    position: relative;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #3E67B0;
+    color: white;
+    padding: 24px 40px;
+    text-align: left;
+    z-index: 1;
+}
+
+.curriculum-step02 {
+    position: relative;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #4A71B7;
+    color: white;
+    padding: 24px 40px;
+    text-align: left;
+    z-index: 1;
+}
+
+.curriculum-step03 {
+    position: relative;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #577CBD;
+    color: white;
+    padding: 24px 40px;
+    text-align: left;
+    z-index: 1;
+}
+
+.curriculum-step04 {
+    position: relative;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #7394C9;
+    color: white;
+    padding: 24px 40px;
+    text-align: left;
+    z-index: 1;
+}
+
+.curriculum-step05 {
+    position: relative;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #B7C4DA;
+    color: white;
+    padding: 24px 40px;
+    text-align: left;
+    z-index: 1;
+}
+
+.step-img {
+    width: 40%;
+}
+
+.step-img img {
+    width: 200px;
+}
+
+.step-title {
+    margin-bottom: 32px;
+}
+
+.curriculum-step h2 {
+    font-size: 32px;
+}
+
+.curriculum-step h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+    padding-left: 56px;
+    position: relative;
+}
+
+.curriculum-step h3::before {
+    position: absolute;
+    content: "01";
+    top: -14px;
+    left: 0px;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.curriculum-step .step02::before {
+    content: "02";
+}
+
+.curriculum-step .step03::before {
+    content: "03";
+}
+
+.curriculum-step .step04::before {
+    content: "04";
+}
+
+.curriculum-step .step05::before {
+    content: "05";
+}
+
+.goal {
+    width: 250px;
+    margin-top: 800px;
+}
+
+.goal-people {
+    display: block;
+    margin: 10px auto 0;
+    width: 500px;
+}
+
+.curriculum-free-counseling {
+    position: absolute;
+    bottom: 250px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    max-width: 900px;
+}
+
+.curriculum-free-counseling .curriculum-free-counseling-wrapper {
+    text-align: center;
+}
+
+.curriculum-free-counseling-wrapper p {
+    color: #F87C00;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.curriculum-free-counseling-wrapper h4 {
+    z-index: 2;
+    color: #497DA1;
+    font-size: 28px;
+    margin-bottom: 16px;
+
+}
+
+.curriculum-free-counseling-wrapper h4::before {
+    position: absolute;
+    top: -55px;
+    color: #497DA1;
+    opacity: 0.15;
+    font-size: 156px;
+    left: 80px;
+    content: 'Pro Navi';
+    z-index: -1;
+}
+
+.curriculum-counseling-background {
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+}
+
 
 
 /* 実績で見るプロナビ 翔太さん担当*/
@@ -236,10 +522,15 @@ header .header-box .header-right {
 
 /* FAQpage　市川担当 */
 
+
 /* main .faq-background { */
 /* height: 100dvh; */
-
 /* } */
+
+main .faq-background {
+    /* height: 100dvh; */
+}
+
 
 main .faq-wrapper {
     padding-inline: 5%;
@@ -440,7 +731,7 @@ main .faq-mainvisual .faq-image {
 
 
 /* FAQfooter */
-.faq-footer {
+footer {
     background-color: #497DA1;
     padding-block: 100px;
 
