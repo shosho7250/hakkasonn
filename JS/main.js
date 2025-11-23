@@ -11,20 +11,27 @@ $(function () {
     });
 });
 
-// CDNでGSAPとScrollTriggerを読み込んだ前提
-gsap.registerPlugin(ScrollTrigger);
+// // CDNでGSAPとScrollTriggerを読み込んだ前提
+// gsap.registerPlugin(ScrollTrigger);
 
-const sections = document.querySelectorAll(".top-page-curriculum");
+// const sections = document.querySelectorAll(".top-page-curriculum");
 
-sections.forEach((section) => {
-  const pin = section.querySelector(".top-page-curriculum_pin");
+// sections.forEach((section) => {
+//   const pin = section.querySelector(".top-page-curriculum_pin");
 
-  ScrollTrigger.create({
-    trigger: section,
-    start: "top top",        // セクションが画面上端に来たら
-    end: "+=100%",            // 1画面分スクロールで終了
-    pin: pin,                 // pinに固定
-    pinSpacing: false,        // 次の要素の位置をずらさず重ねる
-    markers: true
-  });
+//   ScrollTrigger.create({
+//     trigger: section,
+//     start: "top top",        // セクションが画面上端に来たら
+//     end: "+=100%",            // 1画面分スクロールで終了
+//     pin: pin,                 // pinに固定
+//     pinSpacing: false,        // 次の要素の位置をずらさず重ねる
+//     markers: true
+//   });
+// });
+
+
+$(function () {
+  $('.js-btn').on('click', function () { // js-btnクラスをクリックすると、
+    $('.menu , .btn , .btn-line').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
+  })
 });
