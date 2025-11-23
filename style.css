@@ -133,9 +133,9 @@ header .header-box .header-right {
 .mainvisual {
     width: 100%;
     min-height: calc(110vh - 70px);
-    background-image: url(/img/トップベージ/main.png);
-    background-size: contain;
-    background-position: center;
+    background-image: url(/img/トップベージ/mainvisual01.png);
+    background-size: 60%;
+    background-position: 370px  170px;
     background-repeat: no-repeat;
     padding-top: 70px;
 }
@@ -339,6 +339,7 @@ header .header-box .header-right {
 
 /* メッセージ */
 .massage {
+    background-image: url(/img/トップベージ/帯用矢印\ 1.png);
     background: linear-gradient(90deg, #72A4AF 0%, #E6F3FF 100%);
     width: 100%;
     padding: 80px 20px;
@@ -352,11 +353,10 @@ header .header-box .header-right {
     font-size: 48px;
 }
 
-
 /*プロナビの強み */
 .strength .strength-wrapper {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
     padding-inline: 4%;
     position: relative;
 }
@@ -365,10 +365,6 @@ header .header-box .header-right {
     text-align: center;
     font-size: 128px;
     color: #497DA140;
-}
-
-.strength .strength-wrapper .strength-front-text {
-    width: 100%;
 }
 
 .strength .strength-wrapper .strength-front-text h3 {
@@ -382,50 +378,100 @@ header .header-box .header-right {
 .strength .strength-wrapper .strength-front-text h4 {
     font-size: 40px;
     color: #80A3BC;
-    /* position: absolute;
-    top: 20%; */
 }
 
-.strength .strength-wrapper .point-card {
+.strength input {
+    display: none;
+}
+
+.strength .card-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.strength .point-card {
+    width: 160px;
+    height: 480px;
+    margin-right: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
     background: linear-gradient(90deg,
             #497DA1 0%,
             #528CB4 25%,
             #6CA5CB 70%,
-            /* #C3DEFF 75%, */
             #E7F5FF 100%);
-    color: #FFFFFF;
-    border-radius: 20px;
-    padding: 4%;
-    padding: 4% 10% 4% 3%;
-    margin-block: 10%;
-    margin-right: 25%;
+    color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.2);
+    transition: width .6s cubic-bezier(.28, -0.03, 0, .99);
 }
 
-.strength .strength-wrapper .point-card .card-title {
-    font-size: 88px;
+.strength .point-card .card-title {
+    font-size: 64px;
     font-weight: bold;
     writing-mode: vertical-rl;
     text-orientation: sideways;
-    padding: 10px;
+    padding-bottom: 20px;
 }
 
-.strength .strength-wrapper .point-card .card-item h4 {
+.strength .point-card .card-item {
+    width: 400px;
+    height: 480px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .4s ease, transform .4s ease;
+}
+
+.point-card.opened .card-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+.strength input:checked+label.point-card.opened .card-item {
+    opacity: 1 !important;
+}
+
+.strength .point-card .card-item h4 {
+    font-size: 32px;
+    margin-block: 20px;
+}
+
+.strength .point-card .card-item h3 {
     font-size: 40px;
-}
-
-.strength .strength-wrapper .point-card .card-item h3 {
-    font-size: 48px;
-    background-image: url(/img/文字背景グラデーション.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 4px solid #FFFFFF;
 }
 
-.strength .strength-wrapper .point-card .card-item p {
-    font-size: 20px;
+.strength .point-card .card-item h3 .sub {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.strength .point-card .card-item h3 span {
+    background-image: url(/img/文字背景グラデーション.png);
+    background-size: cover;
+}
+
+.strength input:checked+label.point-card {
+    width: 650px;
+}
+
+.strength input:not(:checked)+label.point-card {
+    width: 120px;
+}
+
+
+.strength .point-card .card-item p {
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
@@ -612,7 +658,6 @@ main .faq-mainvisual {
     max-width: 1100px;
     padding-inline: 5%;
     margin-top: 110px;
-
 }
 
 main .faq-mainvisual h2 {
@@ -623,7 +668,6 @@ main .faq-mainvisual h2 {
     display: inline;
     padding: 5px;
     margin-top: 50px;
-
 }
 
 main .faq-mainvisual h3 {
@@ -857,3 +901,5 @@ main .faq-mainvisual .faq-image {
     color: white;
     ;
 }
+
+/* レスポンシブ */
