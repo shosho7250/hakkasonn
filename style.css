@@ -497,7 +497,184 @@ header .header-box .header-right {
     width: 120px;
 }
 
-/* TOPページ後半 */
+/* TOPページ後半 市川担当 */
+
+/* TOPページの受講の流れセクション */
+.oursuport {
+    margin-block: 200px;
+}
+.oursuport-container {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-inline: 32px;
+}
+
+.oursuport-container-title {
+    position: relative;
+}
+
+.oursuport-container-title h2 {
+    font-size: 120px;
+    color: #FFFFFF;
+    opacity: 0.2;
+    line-height: 1.2;
+}
+
+.oursuport-container-title h3 {
+    font-size: 64px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+
+.oursuport-container-box {
+    display: flex;
+    background-color: #497DA1;
+    border-radius: 40px;
+    padding: 32px 48px;
+}
+
+.oursuport-container-box:nth-of-type(2) {
+    background-color: #6092B4;
+}
+
+.oursuport-container-box:nth-of-type(3) {
+    background-color: #76A6C7;
+}
+
+.oursuport-container-box:nth-of-type(4) {
+    background-color: #8EBBD9;
+}
+
+.oursuport-container-box:nth-of-type(5) {
+    background-color: #BED8EA;
+}
+
+.oursuport-container-box-left {
+    width: 40%;
+}
+
+.oursuport-container-box-right {
+    width: 60%;
+    padding-left: 40px;
+}
+
+.oursuport-left-top,.oursuport-left-bottom,.oursuport-right-top,.oursuport-right-bottom {
+    height: 50%;
+    color: #FFFFFF;
+}
+
+.oursuport-left-top h2 {
+    font-size: 48px;
+}
+
+.oursuport-left-top h3 {
+    font-size: 32px;
+    padding-top: 8px;
+}
+
+.oursuport-left-bottom img {
+    height: 100%;
+}
+
+.under-arrow {
+    position: relative;
+    height: 50px;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.under-arrow::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-top: 3px solid #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    bottom: -17px;
+}
+
+
+.oursuport-right-bottom {
+    color: #282D33;
+    background-color : #FFFFFF;
+    padding: 16px 32px;
+}
+
+.oursuport-right-bottom h4 {
+    font-size: 24px;
+    border-bottom: 2px solid #282D33;
+}
+
+.oursuport-right-bottom span {
+    font-size: 33px;
+    margin-right: 8px;
+    letter-spacing: 0.05em;
+    
+}
+
+.oursuport-right-bottom p {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .student-voice-contents {
+        flex-direction: column;
+        max-width: 600px;
+        align-items: center;
+    }
+
+    .student-voice-item,.teacher-voice-item {
+        width: 60%;
+    }
+
+    .teacher-voice-contents {
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    
+}
+
+
+/* スクロールの動き確認用 */
+.top-page-curriculum {
+  position: relative;      
+  height: 100vh;
+  padding-inline: 32px;
+  margin: 0 auto;
+}
+
+.top-page-curriculum_pin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;            /* セクションいっぱいに表示 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  background: #ccc;
+}
+
+
+.step01 .top-page-curriculum_pin { background: #f8b400; }
+.step02 .top-page-curriculum_pin { background: #6ab04c; }
+.step03 .top-page-curriculum_pin { background: #eb4d4b; }
+.step04 .top-page-curriculum_pin { background: #2980b9; }
+.step05 .top-page-curriculum_pin { background: #8e44ad; }
+/* スクロールの動き確認用 */
+
+
+
+
+
 .student-voice {
     background-color: #497DA1;
     padding-top: 70px;
@@ -1009,7 +1186,20 @@ header .header-box .header-right {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 5px solid #FFFFFF;
+}
 
+.results-title::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-top: 5px solid #FFFFFF;
+    border-right: 5px solid #FFFFFF;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    bottom: -13px;
 }
 
 .results-title h2 {
@@ -1045,8 +1235,22 @@ header .header-box .header-right {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    border-bottom: 5px solid #FFFFFF;
 }
+
+.faq-page-title::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-top: 5px solid #FFFFFF;
+    border-right: 5px solid #FFFFFF;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    bottom: -13px;
+}
+
 
 .faq-page-title h2 {
     font-size: 176px;
