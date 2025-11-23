@@ -4,11 +4,6 @@
 border: 1px solid red;
 }
 
-* {
-    border: 1px solid red;
-}
-
-
 html {
     font-size: 100%;
     color: #333333;
@@ -24,22 +19,28 @@ a {
 ul {
     list-style: none;
 }
-
 /* headerセクション */
 header {
     width: 100%;
+    height: 96px;
     margin: 0 auto;
     background-color: white;
     position: fixed;
     z-index: 30;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    padding: 5px 0;
 }
 
 header .header-wrapper {
-    padding-inline: 32px;
-    max-width: 1100px;
+    padding-inline: 5%;
+    max-width: 1100px !important;
     margin: 0 auto;
+}
+
+.header-box #hamburger{
+    display: none;
 }
 
 header .header-box {
@@ -59,7 +60,6 @@ header .header-box h1 a {
 header .header-box .header-nav {
     display: flex;
     align-items: center;
-
 }
 
 header .header-box .header-nav li {
@@ -79,6 +79,7 @@ header .header-box .header-right .counseling-btn {
 header .header-box .header-right {
     display: flex;
 }
+
 
 /* 無料カウンセリングボタン */
 .free-counseling {
@@ -1510,7 +1511,7 @@ header .header-box .header-right {
     position: absolute;
     bottom: 250px;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 90%;
     max-width: 900px;
 }
@@ -1551,22 +1552,130 @@ header .header-box .header-right {
 }
 
 
+/* 実績で見るプロナビ ジェイドさん担当*/
+.results-box {
+    display: flex;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #497DA1;
+    border-radius: 20px;
+}
 
-/* 実績で見るプロナビ 翔太さん担当*/
+.results-box-left {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.results-no {
+    font-size: 2rem;
+    color: white;
+    margin: 20px 0 0 20px;
+}
+
+.results-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0 50px 20px;
+
+}
+
+.results-title span {
+    padding: 5px 20px;
+    background: linear-gradient(to right, #362ae0 0%, #3b79cc 50%, #42d3ed 100%);
+}
+
+.results-box img {
+    margin: 20px;
+}
+
+.results-arrows a {
+    font-size: 1rem;
+    font-weight: 900;
+    color: white;
+    margin: 25px;
+}
+
+/* コンテナ（中央寄せや余白調整用） */
+.btn-container {
+    text-align: right;
+}
+
+/* 下線矢印リンク */
+.arrow-link-underline {
+    --arrow-color: #ffffff;
+    /* 矢印の色 */
+    position: relative;
+    /* 疑似要素の位置基準 */
+    display: inline-block;
+    padding: 0 2.5em .5em .5em;
+    /* 右に矢印用の余白 */
+    color: var(--arrow-color);
+    /* テキスト色 */
+    text-decoration: none;
+    /* 下線を消す */
+}
+
+/* ホバー時も文字色を変えない */
+.arrow-link-underline:hover {
+    color: var(--arrow-color);
+}
+
+/* 下線矢印 */
+.arrow-link-underline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    border-bottom: 5px solid var(--arrow-color);
+    border-right: 6px solid var(--arrow-color);
+    transform: skewX(55deg);
+    /* 矢印の形状 */
+    transition: left 0.3s ease;
+}
+
+/* 下線矢印のアニメーション */
+.arrow-link-underline:hover::before {
+    left: 10%;
+    /* ホバーで矢印が右にずれる */
+}
 
 
+.results-box-right {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
 
-/* FAQpage　市川担当 */
+.results-text {
+    margin: 50px 10px 20px 10px;
+    color: white;
+}
 
+.results-text-title {
+    font-size: 1.875rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    text-align: justify;
+}
 
-/* main .faq-background { */
-/* height: 100dvh; */
-/* } */
+/* li .results-box .results-text-title h4:nth-of-type(3){
+    font-size: 1.275rem;
+}
 
+.results-text-03{
+    font-size: 1.275rem !important;
+} */
 
-/* main .faq-background { */
-/* height: 100dvh; */
-/* } */
+.results-text p {
+    padding-top: 15px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
 
 main .faq-background {
     /* height: 100dvh; */
@@ -1593,27 +1702,28 @@ main .faq-mainvisual {
     margin: 0 auto;
     max-width: 1100px;
     padding-inline: 5%;
-    margin-top: 110px;
+    margin-top: 60px;
 }
 
 .faq-mainvisual-top {
     display: flex;
+    justify-content: space-between;
 }
 
 main .faq-mainvisual h2 {
     color: #FFFFFF;
-    font-size: 120px;
+    font-size: 4rem;
     background-image: url(img/文字背景グラデーション.png);
     /* background: linear-gradient(to right,#c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073); */
     display: inline;
     padding: 5px;
     margin-top: 50px;
-
 }
+
 
 main .faq-mainvisual h3 {
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 2rem;
 }
 
 main .faq-mainvisual h4 {
@@ -1626,10 +1736,7 @@ main .faq-mainvisual h4 {
 }
 
 main .faq-mainvisual .faq-image {
-    height: 200px;
-    /* position: absolute;
-    top: 0;
-    right: 0; */
+    height: 250px;
 }
 
 .faq-section {
@@ -1650,7 +1757,8 @@ main .faq-mainvisual .faq-image {
     z-index: 2;
 }
 
-.faq-section h5::before {
+.faq-section h5::before,
+.results-section h5::before {
     position: absolute;
     top: -20px;
     left: 50%;
@@ -1835,315 +1943,391 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
+}
 
+.footer-right img {
+    display: none;
 }
 
 .back-btn a {
     color: white;
-    ;
 }
 
 
-/* SPpage */
+
+/*************************** SPpage ***************************/
 
 /* PC用のスタイル（より広範な画面幅） */
 @media screen and (min-width: 960px) {
     header nav {
-      display: none; /* PCでは非表示にする */
+        display: none;
+        /* PCでは非表示にする */
     }
-  }
+}
 
 @media screen and (max-width: 960px) {
 
-/*ヘッダー*/
-header {
-    justify-content: space-between;
-}
+    /******** ヘッダー ジェイド担当 ********/
+    header {
+        justify-content: space-between;
+    }
 
 
-header .header-wrapper {
-    width: 100%;
-    /* max-width:390px; */
-    height: 80px;
-display: flex;
-justify-content: space-between;
-}
+    header .header-wrapper {
+        width: 100%;
+        /* max-width:390px; */
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-#header-right-PC {
-    display: none;
-}
+    #header-right-PC {
+        display: none;
+    }
 
-.header-box {
-justify-content: space-between;
-}
+    .header-box {
+        justify-content: space-between;
+    }
+    .header-box #hamburger{
+        display: block;
+    }
 
+    /* リセットCSS */
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-/* リセットCSS */
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-         appearance: none;
-    vertical-align: middle;
-    border: 0;
-    background: transparent;
-    outline: 0;
-    border-radius: 0;
-    text-align: inherit;
-  }
-  
-  button:hover {
-    cursor: pointer;
-  }
-  
-  /**************** 以下、ハンバーガーボタンのスタイリング ****************/
-  .btn {
-    /* ボタンの配置位置  */
-    /* position: fixed;
-    top: 16px;
-    right: 16px; */
-    /* ボタンの大きさ  */
-    width: 58px;
-    height: 48px;
-    /* バーガーの線をボタン範囲の中心に配置 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* 最前面に */
-    z-index: 10;
-  }
-  
-  /***** 真ん中のバーガー線 *****/
-  .btn-line {
-    /* 線の長さと高さ */
-    width: 100%;
-    height: 4px;
-    /* バーガー線の色 */
-    background-color: #333;
-    /* バーガー線の位置基準として設定 */
-    position: relative;
-    transition: .2s;
-  }
-  
-  /***** 上下のバーガー線 *****/
-  .btn-line::before,
-  .btn-line::after {
-    content: "";
-    /* 基準線と同じ大きさと色 */
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    transition: .2s;
-  }
-  
-  
-  .btn-line::before {
-    /* 上の線の位置 */
-    transform: translateY(-16px);
-  }
-  
-  
-  .btn-line::after {
-    /* 下の線の位置 */
-    transform: translateY(16px);
-  }
-  
-  /***** メニューオープン時 *****/
-  .btn-line.open {
-    /* 真ん中の線を透明に */
-    background-color: transparent;
-  }
-  
-  .btn-line.open::before,
-  .btn-line.open::after {
-    content: "";
-    transition: .2s;
-  }
-  
-  .btn-line.open::before {
-    /* 上の線を傾ける */
-    transform: rotate(45deg);
-  }
-  
-  .btn-line.open::after {
-    /* 上の線を傾ける */
-    transform: rotate(-45deg);
-  }
-  
-  /**************** ここまで、ハンバーガーボタンのスタイリング ****************/
-  
-  /**************** 以下、メニューのスタイリング ****************/
-  .menu {
-    position: fixed;
-    /* メニューの位置マイナス指定で画面外に */
-    transform : translateY(-130%);
-    width: 70%;
-    height: 100vh;
-    /* メニューを縦に */
-    display: flex;
-    flex-direction: column;
-    color: #efefef;
-    background-color: rgba(167, 148, 58, 0.7);
-    transition: transform .3s;
-  }
-  
-  .menu-list {
-    width: 100%;
-    height: 100%;
-    /* メニューテキスト位置をリスト内中心に */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .menu-list:hover {
-    color: #333;
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: .3s;
-    cursor: pointer;
-  }
-  
-  /***** メニューオープン時位置0にして画面内に *****/
-  .menu.open {
-    transform: translateY(0);
-  }
-  
-  /* 600px以上はハンバーガーボタン非表示、ヘッダー固定 */
-  @media screen and (min-width: 960px) {
+    button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        vertical-align: middle;
+        border: 0;
+        background: transparent;
+        outline: 0;
+        border-radius: 0;
+        text-align: inherit;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    /**************** 以下、ハンバーガーボタンのスタイリング ****************/
     .btn {
-      display: none;
-    }
-  
-    .menu {
-      position: fixed;
-      transform : translateY(0);
-      width: 100%;
-      height: 100px;
-      /* メニューを横に */
-      display: flex;
-      flex-direction: row;
-    }
-  }
-  /**************** ここまで、メニューのスタイリング ****************/
-
-
-
-
-/* FAQ　SPpage　JADE担当 */
-.faq-mainvisual-top{
-    flex-direction: column;
-}
-
-.faq-mainvisual-wrapper{
-    margin-top: 30px;
-}
-
-faq-mainvisual-title{
-    text-align:center;
-}
-
-main .faq-mainvisual h2{
-font-size: 3rem;
-margin-top: 20px;
-display: flex;
-justify-content: center;
-}
-
-main .faq-mainvisual h3{
-    font-size: 1rem;
-    text-align:center;
-}
-
-main .faq-mainvisual .faq-image{
-    width: 45%;
-    height: auto;
-    margin: 20px auto;
-}
-
-main .faq-mainvisual h4{
-    font-size: 3.5rem;
-    margin-top: 0;
-}
-
-.faq-section{
-    margin-block: 20px;
-    padding: 10% 4% 15% 4%;
-}
-
-
-.faq-section h5{
-    font-size: 1rem;
-}
-
-.faq-section h5::before{
-    font-size: 2.5rem;
-}
-
-.faq-accordion-header{
-    padding: 10px 45px 10px;
-}
-
-.faq-accordion-header span::before{
-    top: -10px;
-    left: -35px;
-    font-size: 1.5rem;
-}
-
-
-.free-counseling-wrapper p{
-    font-size: 1rem;
-}
-
-.free-counseling-wrapper h4{
-    font-size: 1.5rem;
-    padding: 0 40px;
-}
-
-.free-counseling-wrapper h4::before{
-    font-size: 3.5rem;
-    top: 30px;
-    left: 60px;
-}
-
-/*footer SP JADE*/
-footer{
-    padding: 30px 6%;
-}
-
-.footer-contents{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.footer-contents h2{
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.footer-left h2::before{
-    font-size: 2rem;
+        /* ボタンの配置位置  */
+        position: fixed;
     top: 10px;
-    right: 120px;
+    right: 50px;
+        /* ボタンの大きさ  */
+        width: 80px;
+        height: 80px;
+        /* バーガーの線をボタン範囲の中心に配置 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* 最前面に */
+        z-index: 10;
+        background-color: #497DA1;
+    }
+
+
+    /***** 真ん中のバーガー線 *****/
+    .btn-line {
+        /* 線の長さと高さ */
+        width: 88%;
+        height: 6px;
+        border-radius: 3px;
+        /* バーガー線の色 */
+        background-color: white;
+        /* バーガー線の位置基準として設定 */
+        position: relative;
+        transition: .2s;
+    }
+
+    /***** 上下のバーガー線 *****/
+    .btn-line::before,
+    .btn-line::after {
+        content: "";
+        /* 基準線と同じ大きさと色 */
+        position: absolute;
+        left: 1px;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        background-color: white;
+        transition: .2s;
+    }
+
+
+    .btn-line::before {
+        /* 上の線の位置 */
+        transform: translateY(-16px);
+    }
+
+
+    .btn-line::after {
+        /* 下の線の位置 */
+        transform: translateY(16px);
+    }
+
+    /***** メニューオープン時 *****/
+    .btn-line.open {
+        /* 真ん中の線を透明に */
+        background-color: transparent;
+    }
+
+    .btn-line.open::before,
+    .btn-line.open::after {
+        content: "";
+        transition: .2s;
+    }
+
+    .btn-line.open::before {
+        /* 上の線を傾ける */
+        transform: rotate(45deg);
+    }
+
+    .btn-line.open::after {
+        /* 上の線を傾ける */
+        transform: rotate(-45deg);
+    }
+
+    /**************** ここまで、ハンバーガーボタンのスタイリング ****************/
+
+    /**************** 以下、メニューのスタイリング ****************/
+    .menu {
+        position: fixed;
+        /* メニューの位置マイナス指定で画面外に */
+        transform: translate(-94.5%, -130%);
+        width: 101%;
+        height: 93vh;
+        /* メニューを縦に */
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+        background-color: rgba(32, 32, 32, 0.7);
+        transition: transform .3s;
+        text-align: center;
+    }
+
+
+    .menu-list {
+        width: 100%;
+        height: 100%;
+        background-color: whitesmoke;
+        /* メニューテキスト位置をリスト内中心に */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.menu-list a{
+    color: #497DA1;
+    font-size: 2rem;
 }
 
-.footer-left p{
-    text-align:center;
+.menu-list .counseling a{
+    color: white;
 }
 
-.footer-right{
-    margin-top: 40px;
-    text-align: center;
+    .menu-list:hover {
+        color: #333;
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    /***** メニューオープン時位置0にして画面内に *****/
+    .menu.open {
+        transform: translate(-94.5%, 8%);
+    }
+
+    /* 600px以上はハンバーガーボタン非表示、ヘッダー固定 */
+    @media screen and (min-width: 960px) {
+        .btn {
+            display: none;
+        }
+
+        .menu {
+            position: fixed;
+            transform: translateY(0);
+            width: 100%;
+            height: 100px;
+            /* メニューを横に */
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    /**************** ここまで、メニューのスタイリング ****************/
+
+
+
+    /******** FAQ　SPpage　ジェイド担当 ********/
+    .faq-mainvisual-top {
+        flex-direction: column;
+    }
+
+    .faq-mainvisual-wrapper {
+        margin-top: 30px;
+    }
+
+    faq-mainvisual-title {
+        text-align: center;
+    }
+
+    main .faq-mainvisual h2 {
+        font-size: 2.875rem;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    main .faq-mainvisual h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    main .faq-mainvisual .faq-image {
+        width: 45%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    main .faq-mainvisual h4 {
+        font-size: 3.5rem;
+        margin-top: 0;
+    }
+
+    .faq-section {
+        margin-block: 20px 50px;
+        padding: 10% 4% 15% 4%;
+    }
+
+
+    .faq-section h5 {
+        font-size: 1rem;
+    }
+
+    .faq-section h5::before {
+        font-size: 2.5rem;
+    }
+
+    .faq-accordion-header {
+        padding: 10px 45px 10px;
+    }
+
+    .faq-accordion-header span::before {
+        top: -10px;
+        left: -35px;
+        font-size: 1.5rem;
+    }
+
+
+    .free-counseling-wrapper p {
+        font-size: 1rem;
+    }
+
+    .free-counseling-wrapper h4 {
+        font-size: 1.5rem;
+        padding: 0 40px;
+    }
+
+    .free-counseling-wrapper h4::before {
+        font-size: 3.5rem;
+        top: 30px;
+        left: 60px;
+    }
+
+
+    /******** RESULTS実績　SPpage　ジェイド担当 ********/
+    .results-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .results-no {
+        font-size: 1.275rem;
+    }
+
+    .sp-br {
+        display: none;
+    }
+
+    .results-title {
+        margin: 10px 0 20px 0px;
+        margin: 0 auto;
+    }
+
+
+    .results-box img {
+        margin: 10px 0;
+    }
+
+    .results-box-right {
+        flex-flow: column-reverse;
+    }
+
+    .results-text-title {
+        font-size: 1.375rem;
+        text-align: center;
+        padding: 0 20px 10px 20px;
+    }
+
+    .results-text p {
+        font-size: 0.875rem;
+    }
+
+
+
+    /*******　footer SP JADE　*******/
+    footer {
+        padding: 30px 6%;
+    }
+
+    .footer-contents {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .footer-contents h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-left h2::before {
+        display: none;
+    }
+
+    .footer-left p {
+        text-align: center;
+    }
+
+    .footer-right {
+        margin: 20px 0 30px;
+        text-align: center;
+    }
+
+    .footer-right .footer-right-text {
+        padding: 0 50px;
+    }
+
+    .footer-btn {
+        display: none;
+    }
+
+    .counseling img {
+        display: block;
+        margin-inline: auto;
+        background-color: white;
+    }
+
+
 }
 
-.footer-right .footer-right-text{
-    padding: 0 50px;
-}
-
-}
