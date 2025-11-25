@@ -1,7 +1,7 @@
 /* 共通CSS */
 
 * {
-border: 1px solid red;
+    border: 1px solid red;
 }
 
 html {
@@ -19,6 +19,11 @@ a {
 ul {
     list-style: none;
 }
+
+body {
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
 /* headerセクション */
 header {
     width: 100%;
@@ -35,11 +40,11 @@ header {
 
 header .header-wrapper {
     padding-inline: 5%;
-    max-width: 1100px !important;
+    max-width: 1300px !important;
     margin: 0 auto;
 }
 
-.header-box #hamburger{
+.header-box #hamburger {
     display: none;
 }
 
@@ -87,7 +92,8 @@ header .header-box .header-right {
 }
 
 .header-counseling-btn {
-    font-size: 12px;
+    font-size: 1rem;
+    font-weight: 700;
     background-color: #F8BD28;
     color: #FFFFFF;
     border-radius: 30px;
@@ -98,6 +104,8 @@ header .header-box .header-right {
 }
 
 .counseling-btn {
+    font-size: 1rem;
+    font-weight: 700;
     background-color: #F8BD28;
     color: #FFFFFF;
     border-radius: 30px;
@@ -203,6 +211,7 @@ header .header-box .header-right {
 .problem {
     background-color: #4fbad2;
 }
+
 .problem .problem-wrapper {
     max-width: 1100px;
     margin: 0 auto;
@@ -504,6 +513,7 @@ header .header-box .header-right {
 .oursuport {
     margin-block: 200px;
 }
+
 .oursuport-container {
     margin: 0 auto;
     max-width: 1100px;
@@ -561,7 +571,10 @@ header .header-box .header-right {
     padding-left: 40px;
 }
 
-.oursuport-left-top,.oursuport-left-bottom,.oursuport-right-top,.oursuport-right-bottom {
+.oursuport-left-top,
+.oursuport-left-bottom,
+.oursuport-right-top,
+.oursuport-right-bottom {
     height: 50%;
     color: #FFFFFF;
 }
@@ -601,7 +614,7 @@ header .header-box .header-right {
 
 .oursuport-right-bottom {
     color: #282D33;
-    background-color : #FFFFFF;
+    background-color: #FFFFFF;
     padding: 16px 32px;
 }
 
@@ -614,7 +627,7 @@ header .header-box .header-right {
     font-size: 33px;
     margin-right: 8px;
     letter-spacing: 0.05em;
-    
+
 }
 
 .oursuport-right-bottom p {
@@ -630,7 +643,8 @@ header .header-box .header-right {
         align-items: center;
     }
 
-    .student-voice-item,.teacher-voice-item {
+    .student-voice-item,
+    .teacher-voice-item {
         width: 60%;
     }
 
@@ -639,37 +653,53 @@ header .header-box .header-right {
         max-width: 600px;
     }
 
-    
+
 }
 
 
 /* スクロールの動き確認用 */
 .top-page-curriculum {
-  position: relative;      
-  height: 100vh;
-  padding-inline: 32px;
-  margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    padding-inline: 32px;
+    margin: 0 auto;
 }
 
 .top-page-curriculum_pin {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;            /* セクションいっぱいに表示 */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  background: #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* セクションいっぱいに表示 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    background: #ccc;
 }
 
 
-.step01 .top-page-curriculum_pin { background: #f8b400; }
-.step02 .top-page-curriculum_pin { background: #6ab04c; }
-.step03 .top-page-curriculum_pin { background: #eb4d4b; }
-.step04 .top-page-curriculum_pin { background: #2980b9; }
-.step05 .top-page-curriculum_pin { background: #8e44ad; }
+.step01 .top-page-curriculum_pin {
+    background: #f8b400;
+}
+
+.step02 .top-page-curriculum_pin {
+    background: #6ab04c;
+}
+
+.step03 .top-page-curriculum_pin {
+    background: #eb4d4b;
+}
+
+.step04 .top-page-curriculum_pin {
+    background: #2980b9;
+}
+
+.step05 .top-page-curriculum_pin {
+    background: #8e44ad;
+}
+
 /* スクロールの動き確認用 */
 
 
@@ -714,7 +744,7 @@ header .header-box .header-right {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .student-voice-title-text {
@@ -723,6 +753,7 @@ header .header-box .header-right {
     font-size: 24px;
 
 }
+
 .student-voice-title-text span {
     color: #FCCC42;
     font-size: 32px;
@@ -732,7 +763,7 @@ header .header-box .header-right {
     display: flex;
     background-color: #FFF9F1;
     border-radius: 10px;
-    margin-inline:16px;
+    margin-inline: 16px;
 }
 
 .student-voice-box {
@@ -741,7 +772,7 @@ header .header-box .header-right {
     position: relative;
     margin: 8px;
     padding: 8px;
-    
+
 }
 
 .student-voice-box h4 {
@@ -775,7 +806,8 @@ header .header-box .header-right {
     width: 100%;
 }
 
-.name-join,.job-year {
+.name-join,
+.job-year {
     display: flex;
     justify-content: space-between;
     margin-block: 8px;
@@ -783,7 +815,7 @@ header .header-box .header-right {
 
 .voice-text {
     text-align: left;
-    border-top: 1px solid #6296D0; 
+    border-top: 1px solid #6296D0;
     position: relative;
 }
 
@@ -791,7 +823,7 @@ header .header-box .header-right {
     content: '';
     width: 10px;
     height: 10px;
-    border:0;
+    border: 0;
     border-top: 1px solid #6296D0;
     border-right: 1px solid #6296D0;
     transform: rotate(45deg);
@@ -860,7 +892,7 @@ header .header-box .header-right {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .teacher-voice-title-text {
@@ -869,6 +901,7 @@ header .header-box .header-right {
     font-size: 24px;
 
 }
+
 .teacher-voice-title-text span {
     color: #FCCC42;
     font-size: 32px;
@@ -878,7 +911,7 @@ header .header-box .header-right {
     display: flex;
     background-color: #FFF9F1;
     border-radius: 10px;
-    margin-inline:16px;
+    margin-inline: 16px;
 }
 
 .teacher-voice-box {
@@ -887,7 +920,7 @@ header .header-box .header-right {
     position: relative;
     margin: 8px;
     padding: 8px;
-    
+
 }
 
 .teacher-voice-box h4 {
@@ -929,7 +962,7 @@ header .header-box .header-right {
 
 .voice-text {
     text-align: left;
-    border-top: 1px solid #6296D0; 
+    border-top: 1px solid #6296D0;
     position: relative;
 }
 
@@ -937,7 +970,7 @@ header .header-box .header-right {
     content: '';
     width: 10px;
     height: 10px;
-    border:0;
+    border: 0;
     border-top: 1px solid #6296D0;
     border-right: 1px solid #6296D0;
     transform: rotate(45deg);
@@ -963,21 +996,25 @@ header .header-box .header-right {
 
 
 /* 大きい下三角形 */
-.arrow_wrap{
-    padding-bottom: 200px; /* 高さに合わせて調節してください。*/ 
+.arrow_wrap {
+    padding-bottom: 200px;
+    /* 高さに合わせて調節してください。*/
     overflow: hidden;
-} 
-.arrow{
+}
+
+.arrow {
     position: relative;
 }
-.arrow::after{
+
+.arrow::after {
     content: '';
     position: absolute;
     top: 100%;
     left: calc(50vw - 50%);
     width: 0;
     height: 0;
-    border-top: 100px solid #497DA1; /* 好みで高さ色を変えてください */
+    border-top: 100px solid #497DA1;
+    /* 好みで高さ色を変えてください */
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
 }
@@ -995,6 +1032,7 @@ header .header-box .header-right {
     border-radius: 40px;
     padding-block: 56px;
 }
+
 .price-title {
     position: relative;
     display: flex;
@@ -1035,7 +1073,8 @@ header .header-box .header-right {
     font-weight: 600;
 }
 
-.service-title-box,.service-content-box {
+.service-title-box,
+.service-content-box {
     background-color: #497DA1;
     padding-block: 8px;
     border-radius: 5px;
@@ -1062,7 +1101,8 @@ header .header-box .header-right {
     height: 40%;
 }
 
-.service-title-box,.service-content-box p {
+.service-title-box,
+.service-content-box p {
     font-size: 24px;
     color: #FFFFFF;
     font-weight: 900;
@@ -1072,7 +1112,8 @@ header .header-box .header-right {
 .service-title-content-text p {
     margin: 8px;
     font-size: 14px;
-    text-align: left;;
+    text-align: left;
+    ;
 }
 
 .service-right {
@@ -1140,19 +1181,25 @@ header .header-box .header-right {
     margin-bottom: 16px;
 }
 
-.installment-payment-left,.installment-payment-center ,.installment-payment-right {
-   background-color: #FFFFFF; 
-   width: 30%;
+.installment-payment-left,
+.installment-payment-center,
+.installment-payment-right {
+    background-color: #FFFFFF;
+    width: 30%;
 }
 
-.installment-payment-left-box ,.installment-payment-center-box,.installment-payment-right-box {
+.installment-payment-left-box,
+.installment-payment-center-box,
+.installment-payment-right-box {
     background-color: #497DA1;
     padding-block: 8px;
     border-radius: 5px;
-    
+
 }
 
-.installment-payment-left-box p,.installment-payment-center-box p,.installment-payment-right-box p {
+.installment-payment-left-box p,
+.installment-payment-center-box p,
+.installment-payment-right-box p {
     font-size: 24px;
     color: #FFFFFF;
     font-weight: 900;
@@ -1182,6 +1229,7 @@ header .header-box .header-right {
     border-radius: 40px;
     padding-block: 56px;
 }
+
 .results-title {
     position: relative;
     display: flex;
@@ -1231,6 +1279,7 @@ header .header-box .header-right {
     border-radius: 40px;
     padding-block: 56px;
 }
+
 .faq-page-title {
     position: relative;
     display: flex;
@@ -1270,8 +1319,9 @@ header .header-box .header-right {
 
 
 
-/* 受講の流れ */
-.curriculum-background {
+/******* 受講の流れ 市川PC ジェイドSP*******/
+
+/* .curriculum-background {
     background: linear-gradient(to left, #6296D0, #D9D9D9);
     background: -webkit-linear-gradient(left, #6296D0, #D9D9D9);
     background: -moz-linear-gradient(left, #6296D0, #D9D9D9);
@@ -1281,17 +1331,17 @@ header .header-box .header-right {
 .curriculum-mainvisual {
     height: 60dvh;
     padding-top: 67px;
-}
-
+} */
+/* 
 .curriculum-mainvisual-wrapper {
     position: relative;
     margin: 0 auto;
     max-width: 1100px;
     padding-inline: 32px;
     margin-top: 110px;
-}
+} */
 
-.curriculum-mainvisual-wrapper h2 {
+/* .curriculum-mainvisual-wrapper h2 {
     color: #FFFFFF;
     font-size: 120px;
     background-image: url(img/受講の流れ_img/ワイヤ用イラスト_32\ \(2\).png);
@@ -1309,21 +1359,21 @@ header .header-box .header-right {
     font-weight: 900;
     text-align: center;
     margin-top: 100px;
-}
+} */
 
-.curriculum-mainvisual-wrapper .curriculum-image {
+/* .curriculum-mainvisual-wrapper .curriculum-image {
     height: 300px;
     position: absolute;
     top: 0;
     right: 0;
-}
+} */
 
-.curriculum-section-wrapper {
+/* .curriculum-section-wrapper {
     padding-inline: 32px;
     height: 100%;
     max-width: 1100px;
     margin: 0 auto;
-}
+} */
 
 .curriculum-section {
     background-color: #CADFF7;
@@ -1344,7 +1394,7 @@ header .header-box .header-right {
 
 }
 
-.curriculum-section h5::before {
+.curriculum-title h5::before {
     position: absolute;
     top: -20px;
     left: 50%;
@@ -1356,18 +1406,19 @@ header .header-box .header-right {
     z-index: -1;
 }
 
-.curriculum-content {
+.curriculum-bg {
     text-align: center;
-    background-image :url(img/受講の流れ_img/受講の流れイラスト_background\ 1.png); 
-    background-size: 930px;
+    background-image: url(img/受講の流れ_img/受講の流れイラスト_background\ 1.png);
+    background-size: 80%;
+    background-position: 100px 200px;
     position: relative;
 }
 
 .start {
     width: 250px;
     position: absolute;
-    left: 30%;
-    transform: translate(-60%, -15%);
+    left: 12%;
+    /* transform: translate(-60%, -15%); */
 }
 
 .curriculum-step-container {
@@ -1377,7 +1428,7 @@ header .header-box .header-right {
 }
 
 .curriculum-step-container:nth-of-type(2) {
-    margin-top: 250px;
+    margin-top: 100px;
 }
 
 .curriculum-step-container:nth-of-type(3) {
@@ -1389,62 +1440,45 @@ header .header-box .header-right {
 }
 
 .curriculum-step-container:nth-of-type(5) {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
-.curriculum-step01 {
-    position: relative;
-    width: 60%;
-    border-radius: 20px;
-    background-color: #3E67B0;
-    color: white;
-    padding: 24px 40px;
-    text-align: left;
-    z-index: 1;
-}
-
-.curriculum-step02 {
-    position: relative;
-    width: 60%;
-    border-radius: 20px;
-    background-color: #4A71B7;
-    color: white;
-    padding: 24px 40px;
-    text-align: left;
-    z-index: 1;
-}
-
-.curriculum-step03 {
-    position: relative;
-    width: 60%;
-    border-radius: 20px;
-    background-color: #577CBD;
-    color: white;
-    padding: 24px 40px;
-    text-align: left;
-    z-index: 1;
-}
-
-.curriculum-step04 {
-    position: relative;
-    width: 60%;
-    border-radius: 20px;
-    background-color: #7394C9;
-    color: white;
-    padding: 24px 40px;
-    text-align: left;
-    z-index: 1;
-}
-
+.curriculum-step01,
+.curriculum-step02,
+.curriculum-step03,
+.curriculum-step04,
 .curriculum-step05 {
     position: relative;
     width: 60%;
     border-radius: 20px;
-    background-color: #B7C4DA;
     color: white;
     padding: 24px 40px;
     text-align: left;
     z-index: 1;
+}
+
+.curriculum-step01 {
+    background-color: #3E67B0;
+}
+
+.curriculum-step02 {
+    background-color: #4A71B7;
+}
+
+.curriculum-step03 {
+    background-color: #577CBD;
+}
+
+.curriculum-step04 {
+    background-color: #7394C9;
+}
+
+.curriculum-step05 {
+    background-color: #B7C4DA;
+}
+
+.curri-sp-img {
+    display: none;
 }
 
 .step-img {
@@ -1498,13 +1532,13 @@ header .header-box .header-right {
 
 .goal {
     width: 250px;
-    margin-top: 800px;
+    margin-top: 80px;
 }
 
 .goal-people {
     display: block;
     margin: 10px auto 0;
-    width: 500px;
+    width: 80%;
 }
 
 .curriculum-free-counseling {
@@ -1556,7 +1590,7 @@ header .header-box .header-right {
 .results-box {
     display: flex;
     margin-top: 60px;
-    padding: 20px;
+    padding: 30px 50px;
     background-color: #497DA1;
     border-radius: 20px;
 }
@@ -1685,7 +1719,7 @@ main .faq-background {
 main .faq-wrapper {
     padding-inline: 5%;
     height: 100%;
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -1712,7 +1746,8 @@ main .faq-mainvisual {
 
 main .faq-mainvisual h2 {
     color: #FFFFFF;
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 700;
     background-image: url(img/文字背景グラデーション.png);
     /* background: linear-gradient(to right,#c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073); */
     display: inline;
@@ -1723,13 +1758,14 @@ main .faq-mainvisual h2 {
 
 main .faq-mainvisual h3 {
     color: #FFFFFF;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    font-weight: 300;
 }
 
 main .faq-mainvisual h4 {
     color: #FFFFFF;
     opacity: 0.7;
-    font-size: 156px;
+    font-size: 8rem;
     font-weight: 900;
     text-align: center;
     margin-top: 100px;
@@ -1751,27 +1787,53 @@ main .faq-mainvisual .faq-image {
     color: #366383;
     position: relative;
     margin-bottom: 0.2rem;
-    font-weight: bold;
-    font-size: 32px;
+    font-weight: 700;
+    font-size: 2rem;
     text-align: center;
     z-index: 2;
 }
 
-.faq-section h5::before,
-.results-section h5::before {
+.section h5::before {
     position: absolute;
-    top: -20px;
+    top: -40px;
     left: 50%;
     transform: translateX(-50%);
     color: #FFFFFF;
     opacity: 0.7;
-    font-size: 56px;
-    content: 'QUESTION';
+    font-size: 6rem;
     z-index: -1;
 }
 
+.faq-section h5::before {
+    content: 'QUESTION';
+}
+
+#results-section-title h5::before {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 6rem;
+    z-index: -1;
+    content: "RESULTS";
+}
+
+#curri-section-title h5::before {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 6rem;
+    z-index: -1;
+    content: "CURRICULUM";
+}
+
 .faq-accordion {
-    margin-top: 24px;
+    margin-top: 50px;
     margin-bottom: 48px;
 }
 
@@ -1856,7 +1918,8 @@ main .faq-mainvisual .faq-image {
 
 .free-counseling-wrapper p {
     color: #F87C00;
-    font-size: 20px;
+    font-size: 1.275rem;
+    font-weight: 500;
     margin-bottom: 8px;
 }
 
@@ -1871,8 +1934,8 @@ main .faq-mainvisual .faq-image {
 .free-counseling-wrapper h4::before {
     position: absolute;
     top: -70px;
-    /* left: 50%;
-    transform: translateX(-50%); */
+    right: 5%;
+    /* transform: translateX(-50%); */
     color: #497DA1;
     opacity: 0.15;
     font-size: 200px;
@@ -1881,6 +1944,9 @@ main .faq-mainvisual .faq-image {
     z-index: -1;
 }
 
+.counseling {
+    text-align: center;
+}
 
 /* FAQfooter */
 footer {
@@ -1988,7 +2054,8 @@ footer {
     .header-box {
         justify-content: space-between;
     }
-    .header-box #hamburger{
+
+    .header-box #hamburger {
         display: block;
     }
 
@@ -2019,8 +2086,8 @@ footer {
     .btn {
         /* ボタンの配置位置  */
         position: fixed;
-    top: 10px;
-    right: 50px;
+        top: 10px;
+        right: 5%;
         /* ボタンの大きさ  */
         width: 80px;
         height: 80px;
@@ -2124,14 +2191,14 @@ footer {
         align-items: center;
     }
 
-.menu-list a{
-    color: #497DA1;
-    font-size: 2rem;
-}
+    .menu-list a {
+        color: #497DA1;
+        font-size: 2rem;
+    }
 
-.menu-list .counseling a{
-    color: white;
-}
+    .menu-list .counseling a {
+        color: white;
+    }
 
     .menu-list:hover {
         color: #333;
@@ -2143,6 +2210,7 @@ footer {
     /***** メニューオープン時位置0にして画面内に *****/
     .menu.open {
         transform: translate(-94.5%, 8%);
+        height: 93vh;
     }
 
     /* 600px以上はハンバーガーボタン非表示、ヘッダー固定 */
@@ -2237,8 +2305,8 @@ footer {
     }
 
     .free-counseling-wrapper h4::before {
-        font-size: 3.5rem;
-        top: 30px;
+        font-size: 8rem;
+        top: -50px;
         left: 60px;
     }
 
@@ -2252,7 +2320,8 @@ footer {
     }
 
     .results-no {
-        font-size: 1.275rem;
+        font-size: 1.75rem;
+        margin: 5px auto;
     }
 
     .sp-br {
@@ -2266,7 +2335,7 @@ footer {
 
 
     .results-box img {
-        margin: 10px 0;
+        margin: 20px 0;
     }
 
     .results-box-right {
@@ -2281,6 +2350,40 @@ footer {
 
     .results-text p {
         font-size: 0.875rem;
+    }
+
+
+    /******** CURRICULUM　SPpage　ジェイド担当 ********/
+
+    .curri-pc-img {
+        display: none;
+    }
+
+    .curri-sp-img {
+        display: block;
+    }
+
+    .curriculum-step01,
+    .curriculum-step02,
+    .curriculum-step03,
+    .curriculum-step04,
+    .curriculum-step05 {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .curriculum-step-container {
+        margin-top: 150px;
+    }
+
+    .start {
+        width: 250px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
     }
 
 
@@ -2316,6 +2419,7 @@ footer {
 
     .footer-right .footer-right-text {
         padding: 0 50px;
+        margin-bottom: 20px;
     }
 
     .footer-btn {
@@ -2331,3 +2435,76 @@ footer {
 
 }
 
+
+
+@media screen and (max-width: 400px) {
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu-list a{
+        font-size: 1rem;
+    }
+    .menu.open {
+        transform: translate(-94.5%, 11%);
+        height: 90vh;
+    }
+
+    .btn {
+        right: 5%;
+    }
+
+
+    .free-counseling-wrapper h4::before {
+        font-size: 4.5rem;
+        top: -30px;
+        left: 30px;
+    }
+
+
+    .faq-section h5::before {
+        font-size: 3.875rem;
+        top: -30px;
+    }
+
+    #results-section-title h5::before{
+        font-size: 4rem;
+        top: -30px;
+    }
+
+    #curri-section-title h5::before{
+        font-size: 2.5rem;
+        top: -20px;
+    }
+
+    main .faq-mainvisual h4{
+        font-size: 3rem;
+    }
+
+    .results-box {
+        padding: 24px 20px;
+    }
+
+
+    .curriculum-step01, .curriculum-step02, 
+    .curriculum-step03, .curriculum-step04, 
+    .curriculum-step05 {
+padding: 24px 20px;
+    }
+
+    .curriculum-step-container:nth-of-type(2) {
+        margin-top: 25px;
+    }
+    .curriculum-step-container:nth-of-type(3) {
+        margin-top: 25px;
+    }
+    .curriculum-step-container:nth-of-type(4) {
+        margin-top: 25px;
+    }
+    .curriculum-step-container:nth-of-type(5) {
+        margin-top: 25px;
+    }
+
+
+}
