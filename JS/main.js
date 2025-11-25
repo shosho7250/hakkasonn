@@ -6,3 +6,9 @@ $(function () {
         // $(this)...$('.accordion-header')に、activeというクラスが追加と削除を交互にする
     });
 });
+
+document.querySelectorAll(".flip-card").forEach((card) => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("active");
+    });
+});

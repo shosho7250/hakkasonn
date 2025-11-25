@@ -49,7 +49,6 @@ header .header-box h1 a {
 header .header-box .header-nav {
     display: flex;
     align-items: center;
-
 }
 
 header .header-box .header-nav li {
@@ -128,14 +127,15 @@ header .header-box .header-right {
     margin-top: -150px;
 }
 
+
 /* TOPページ */
 /* mainvisual 翔太：担当 */
 .mainvisual {
     width: 100%;
     min-height: calc(110vh - 70px);
     background-image: url(/img/トップベージ/mainvisual01.png);
-    background-size: 60%;
-    background-position: 370px  170px;
+    background-size: 65%;
+    background-position: 70% 100%;
     background-repeat: no-repeat;
     padding-top: 70px;
 }
@@ -186,9 +186,142 @@ header .header-box .header-right {
     background-color: #F8BD28;
     color: #FFF;
     border-radius: 40px;
+    margin-bottom: 30px;
 }
 
+/* headerレスポンシブ */
+@media(max-width:960px) {
+
+    .mainvisual {
+        background-size: 85%;
+        background-position: 30% 10%;
+    }
+
+    .mainvisual-wrapper {
+        margin-top: 380px;
+    }
+
+    .mainvisual .mainvisual-wrapper .title h2 {
+        display: block;
+        text-align: center;
+    }
+
+    .mainvisual .mainvisual-wrapper .title h3 {
+        display: block;
+        text-align: center;
+    }
+
+    .mainvisual .mainvisual-wrapper .text-wrapper {
+        text-align: center;
+    }
+
+    .mainvisual .mainvisual-wrapper .title h4 {
+        text-align: center;
+    }
+
+    .mainvisual .mainvisual-wrapper .text-wrapper {
+        margin:  0 auto;
+    }
+    
+    .mainvisual .mainvisual-wrapper .text-wrapper {
+        display: block;
+    }
+
+    .mainvisual .mainvisual-wrapper .text-wrapper a {
+        width: 500px;
+    }
+
+    .mainvisual .mainvisual-wrapper .text-wrapper .mainvisual-image img {
+        width: 200px;
+        padding-inline: 20px;
+    }
+}
+
+
 /* お悩み 翔太：担当*/
+.problem-flip-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-inline: 10%;
+    height: 400px;
+}
+
+.flip-card {
+    width: 100%;
+    height: 320px;
+    perspective: 1000px;
+}
+
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-card.active .flip-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* ======= 表（グレーの悩みカード） ======= */
+.flip-front {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background: #EFEFEF;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    padding-top: 10px;
+}
+
+.flip-front p {
+    background: #D9D9D9;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.flip-front img {
+    width: 90%;
+    margin-top: 10px;
+}
+
+/* ======= 裏（カラーの変化カード） ======= */
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background: #FFF9F1;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    padding-top: 10px;
+}
+
+.flip-back p {
+    background: #FFE7C6;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.flip-back img {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
 .problem {
     background-color: #4fbad2;
 }
@@ -229,76 +362,40 @@ header .header-box .header-right {
     font-size: 32px;
 }
 
-.problem-befor {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding-inline: 15%;
+@media (max-width:960px) {
+
+    .flip-card {
+        height: 100px;
+    }
+
+    .flip-front {
+        display: flex;
+    }
+    .problem-flip-area {
+        display: block;
+        height: 100%;
+    }
+
+    .flip-front {
+        height: 150px;
+    }
+
+    .flip-front img {
+        width: 25%;
+    }
+
+    .flip-back {
+        display: flex;
+        height: 150px;
+    }
+
+    .flip-back img {
+        width: 25%;
+    }
+
+    
 }
 
-.problem-befor .problem-befor-item {
-    background-color: #EFEFEF;
-    border-radius: 20px;
-}
-
-.problem-befor .problem-befor-item p {
-    font-size: 10px;
-    padding: 10px 8px 8px 8px;
-    margin: 5px;
-    background-color: #D9D9D9;
-    border-radius: 10px;
-    text-align: left;
-    font-weight: bold;
-    position: relative;
-}
-
-.problem-befor-item p::after {
-    content: "";
-    position: absolute;
-    bottom: -14px;
-    left: 30px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 16px solid #D9D9D9;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.problem-befor .problem-befor-item img {
-    width: 90%;
-    margin-top: 10px;
-}
-
-.problem-after {
-    display: flex;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding-inline: 10%;
-}
-
-.problem-after .problem-after-item {
-    background-color: #FFF9F1;
-    border-radius: 20px;
-}
-
-.problem-after .problem-after-item p {
-    font-size: 12px;
-    padding: 10px 8px 8px 8px;
-    margin: 10px;
-    background-color: #FFE7C6;
-    border-radius: 10px;
-    font-weight: bold;
-    position: relative;
-}
-
-.problem-after .problem-after-item img {
-    width: 90%;
-    margin-top: 10px;
-    align-items: center;
-}
 
 /* CHANGE 　翔太：担当*/
 .change-wrapper {
