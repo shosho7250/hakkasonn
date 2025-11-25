@@ -11,6 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- slickのCSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,612 +22,893 @@
             <div class="header-box">
                 <h1>
                     <a href="index.html" class="logo">
-                        <img src="img/LOGO/プロナビlogo.png" alt="">
+                        <img src="img/LOGO/プロナビlogo.png" alt="LOGO">
                     </a>
                 </h1>
-                <div class="header-right">
+                <div class="header-right" id="header-right-PC">
                     <ul class="header-nav">
-                        <li>
-                            <a href="#">プロナビとは？</a>
-                        </li>
-                        <li>
-                            <a href="#">プロナビの強み</a>
-                        </li>
-                        <li>
-                            <a href="#">受講の流れ</a>
-                        </li>
-                        <li>
-                            <a href="#">実績</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
+                        <li><a href="index.html">プロナビとは？</a></li>
+                        <li><a href="index.html">プロナビの強み</a></li>
+                        <li><a href="curriculum.html">受講の流れ</a></li>
+                        <li><a href="results.html">実績</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
-                    <a class="header-btn" href="#">無料カウンセリングを予約する</a>
+                    <div class="counseling">
+                        <a class="header-counseling-btn" href="#">無料カウンセリングへ</a>
+                    </div>
                 </div>
+            </div>
+
+            <div id="hamburger">
+                <button type="button" class="btn js-btn">
+                    <span class="btn-line"></span>
+                </button>
+                <nav>
+                    <div class="mask">
+                        <ul class="menu">
+                            <li class="menu-list"><a href="index.html">プロナビとは？</a></li>
+                            <li class="menu-list"><a href="index.html">プロナビの強み</a></li>
+                            <li class="menu-list"><a href="curriculum.html">受講の流れ</a></li>
+                            <li class="menu-list"><a href="results.html">実績</a></li>
+                            <li class="menu-list"><a href="faq.html">FAQ</a></li>
+                            <li class="menu-list">
+                                <div class="counseling">
+                                    <a class="counseling-btn" href="#">無料カウンセリングへ</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
-    <section class="mainvisual">
-        <div class="mainvisual-wrapper">
-            <div class="title">
-                <h2>ひとりで走らなくていい。</h2>
-                <h3>あなたの隣にPro Naviがいる。</h3>
-                <h4>不安な「最初の一歩」も伴走があれば、踏み出せる。<br>
-                    あなたのペースで、未来の向かって一緒に走る。
-                </h4>
-            </div>
-            <div class="text-wrapper">
-                <p>学ぶ・伴走・実践の3ステップで、</p>
-                <p class="border">キャリアを確実に前進させるオンラインスクールです。</p>
-                <a class="mainvisual-btn" href="#">無料カウンセリングを予約する</a>
-                <div class="mainvisual-image">
-                    <img src="img/トップベージ/桂冠数字_1.png" alt="">
-                    <img src="img/トップベージ/桂冠数字_2.png" alt="">
-                    <img src="img/トップベージ/桂冠数字_3.png" alt="">
+    <main>
+
+        <section class="mainvisual">
+            <div class="mainvisual-wrapper">
+                <div class="title">
+                    <h2>ひとりで走らなくていい。</h2>
+                    <h3>あなたの隣にPro Naviがいる。</h3>
+                    <h4>不安な「最初の一歩」も伴走があれば、踏み出せる。<br>
+                        あなたのペースで、未来の向かって一緒に走る。
+                    </h4>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="problem">
-        <div class="problem-wrapper">
-            <div class="problem-back-text">
-                <h2>PROBLEM</h2>
-            </div>
-            <div class="problem-front-text">
-                <p>副業を始めたいけど、不安で一歩踏み出せない</p>
-                <h2>こんな<span>お悩み</span>を抱えているあなたへ</h2>
-            </div>
-            <div class="problem-flip-area">
-                <div class="flip-card">
-                    <div class="flip-inner">
-                        <div class="flip-front">
-                            <p>在宅でできる仕事を探しているけど、どこから始めていいか分からない</p>
-                            <img src="img/トップベージ/悩みイラスト_01.png" alt="">
-                        </div>
-                        <div class="flip-back">
-                            <p>通勤時間を勉強や家族との時間に変えたい</p>
-                            <img src="img/トップベージ/変化イラスト_01.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-inner">
-                        <div class="flip-front">
-                            <p>本当はもっとスキルを伸ばしたい。でも一人では続かない...</p>
-                            <img src="img/トップベージ/悩みイラスト_02.png" alt="">
-                        </div>
-                        <div class="flip-back">
-                            <p>「自分の強み」をいかした在宅ワークを実現</p>
-                            <img src="img/トップベージ/変化イラスト_02.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-inner">
-                        <div class="flip-front">
-                            <p>子供が落ち着いた今、自分の時間をもう一度取り戻したい</p>
-                            <img src="img/トップベージ/悩みイラスト_03.png" alt="">
-                        </div>
-                        <div class="flip-back">
-                            <p>午前中は仕事、午後は子供と過ごす生活に変化</p>
-                            <img src="img/トップベージ/変化イラスト_03.png" alt="">
-                        </div>
+                <div class="text-wrapper">
+                    <p>学ぶ・伴走・実践の3ステップで、</p>
+                    <p class="border">キャリアを確実に前進させるオンラインスクールです。</p>
+                    <a class="mainvisual-btn" href="#">無料カウンセリングを予約する</a>
+                    <div class="mainvisual-image">
+                        <img src="img/トップベージ/桂冠数字_1.png" alt="">
+                        <img src="img/トップベージ/桂冠数字_2.png" alt="">
+                        <img src="img/トップベージ/桂冠数字_3.png" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="change">
-        <div class="change-wrapper">
-            <div class="change-back-text">
-                <h2>CHANGE</h2>
-                <h2>YOUR.</h2>
-                <h2>LIFE.</h2>
-            </div>
-            <div class="change-front-text">
-                <p>６ヵ月後の自分を変えてみませんか？</p>
-                <p>ここからは<span>成長のスタート</span>です！</p>
-                <p class="font-s">
-                    <span>一緒に</span>
-                    第一歩を踏み出してみませんか？
-                </p>
-                <p>既に色んな人が走り抜けています。</p>
-                <p>不安すぎで何から始めるかわからなくても大丈夫です。</p>
-                <p>最初の一歩も、ゴールまでの道も。共に走る<span>ナビゲーター</span>。</p>
-                <p><span>ひとりで走らなくていい。</span></p>
-                <p>あなたの隣にPro Naviがいる。</p>
-                <p><span>ゴールへ向かって、一緒に走る。</span></p>
-            </div>
-        </div>
-    </section>
-    <div class="free-counseling">
-        <div class="free-counseling-wrapper">
-            <p> 一人では見つけられなかった「理想のゴール」へ、<br>
-                共に走り抜けよう。</p>
-            <h4>走るのはあなた。導くのはPro Navi。</h4>
-            <div class="counseling">
-                <a class="counseling-btn" href="#">無料カウンセリングを予約する</a>
-            </div>
-        </div>
-    </div>
-    <img class="counseling-background" src="img/仮の帯用2 4 (1).png" alt="">
-    <section class="massage">
-        <h2>ひとりで走らなくていい。</h2>
-        <h2>あなたの隣に、Pro Naviがいる。</h2>
-    </section>
-    <section class="strength">
-        <div class="strength-wrapper">
-            <div class="strength-back-text">
-                <h2>STRENGTH</h2>
-            </div>
-            <div class="strength-front-text">
-                <h3>プロナビの強み</h3>
-                <h4>プロナビが選ばれる５つの理由</h4>
-            </div>
-            <div class="card-container">
-                <!-- point01 -->
-                <input type="radio" name="slide" id="p1" checked>
-                <label for="p1" class="point-card opened">
-                    <div class="card-title">POINT 01</div>
-                    <div class="card-item">
-                        <h4>あなた専属の講師が伴走</h4>
-                        <h3><span>現役エンジニアの</span><br>
-                            <span class="sub">個別指導</span>
-                        </h3>
-                        <p>現役エンジニア講師が、学習計画から課題レビューまで１対１で伴走。</p>
-                        <p>進捗が止まっても「次に何をすればいいか」が常に明確だから、挫折率はなんと１％以下。</p>
+        </section>
+        <section class="problem">
+            <div class="problem-wrapper">
+                <div class="problem-back-text">
+                    <h2>PROBLEM</h2>
+                </div>
+                <div class="problem-front-text">
+                    <p>副業を始めたいけど、不安で一歩踏み出せない</p>
+                    <h2>こんな<span>お悩み</span>を抱えているあなたへ</h2>
+                </div>
+                <div class="problem-flip-area">
+                    <div class="flip-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <p>在宅でできる仕事を探しているけど、どこから始めていいか分からない</p>
+                                <img src="img/トップベージ/悩みイラスト_01.png" alt="">
+                            </div>
+                            <div class="flip-back">
+                                <p>通勤時間を勉強や家族との時間に変えたい</p>
+                                <img src="img/トップベージ/変化イラスト_01.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                </label>
-                <!-- point02 -->
-                <input type="radio" name="slide" id="p2">
-                <label for="p2" class="point-card">
-                    <div class="card-title">POINT 02</div>
-                    <div class="card-item">
-                        <h4>学習設計で迷わない</h4>
-                        <h3><span>初心者にも優しい</span><br>
-                            <span class="sub">学習設計</span>
-                        </h3>
-                        <p>「専門用語がわからない」状態からスタートOK!</p>
-                        <p>一歩ずつ段階的に進められるカリキュラム＋２４時間質問し放題の個別サポートで、パソコン初心者でも迷わず安心に学べます。</p>
+                    <div class="flip-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <p>本当はもっとスキルを伸ばしたい。でも一人では続かない...</p>
+                                <img src="img/トップベージ/悩みイラスト_02.png" alt="">
+                            </div>
+                            <div class="flip-back">
+                                <p>「自分の強み」をいかした在宅ワークを実現</p>
+                                <img src="img/トップベージ/変化イラスト_02.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                </label>
-                <!-- point03 -->
-                <input type="radio" name="slide" id="p3">
-                <label for="p3" class="point-card">
-                    <div class="card-title">POINT 03</div>
-                    <div class="card-item">
-                        <h4>実務案件まで徹底伴走</h4>
-                        <h3><span>営業・提案まで</span><br>
-                            <span class="sub">フルサポート</span>
-                        </h3>
-                        <p>受講後の「学習完了」で終わりません。</p>
-                        <p>ポートフォリオの作成から提案分の添削などの案件獲得サポートまで、時間や場所に縛られない理想な在宅ワークを「実現できる状態」に導きます。
-                        </p>
+                    <div class="flip-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <p>子供が落ち着いた今、自分の時間をもう一度取り戻したい</p>
+                                <img src="img/トップベージ/悩みイラスト_03.png" alt="">
+                            </div>
+                            <div class="flip-back">
+                                <p>午前中は仕事、午後は子供と過ごす生活に変化</p>
+                                <img src="img/トップベージ/変化イラスト_03.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                </label>
-                <!-- point04 -->
-                <input type="radio" name="slide" id="p4">
-                <label for="p4" class="point-card">
-                    <div class="card-title">POINT 04</div>
-                    <div class="card-item">
-                        <h4>孤独にならない学習環境</h4>
-                        <h3><span>仲間と成長できる</span><br>
-                            <span class="sub">コミュニティ</span>
-                        </h3>
-                        <p>同じ目標を持つ受講生が交流できる学習コミュニティを用意。</p>
-                        <p>情報交換、作品共有、勉強会など、学習の刺激になる機会が充実。ハッカソンや月一セミナーに参加して、一生物のスキルを向上させることができます。
-                        </p>
-                    </div>
-                </label>
-                <!-- point05 -->
-                <input type="radio" name="slide" id="p5">
-                <label for="p5" class="point-card">
-                    <div class="card-title">POINT 05</div>
-                    <div class="card-item">
-                        <h4>場所を選ばす学べる自由さ</h4>
-                        <h3><span>オンライン完結で</span><br>
-                            <span class="sub">効率よく成長</span>
-                        </h3>
-                        <p>授業・相談・課題添削まで、すべてオンラインで完結。</p>
-                        <p> 忙しい社会人でもスキマ時間を活用しやすく、通学の負担ゼロ。自分の生活リズムのまま、最短ルートでスキルを習得できます。</p>
-                    </div>
-                </label>
+                </div>
+            </div>
+        </section>
+        <section class="change">
+            <div class="change-wrapper">
+                <div class="change-back-text">
+                    <h2>CHANGE</h2>
+                    <h2>YOUR.</h2>
+                    <h2>LIFE.</h2>
+                </div>
+                <div class="change-front-text">
+                    <p>６ヵ月後の自分を変えてみませんか？</p>
+                    <p>ここからは<span>成長のスタート</span>です！</p>
+                    <p class="font-s">
+                        <span>一緒に</span>
+                        第一歩を踏み出してみませんか？
+                    </p>
+                    <p>既に色んな人が走り抜けています。</p>
+                    <p>不安すぎで何から始めるかわからなくても大丈夫です。</p>
+                    <p>最初の一歩も、ゴールまでの道も。共に走る<span>ナビゲーター</span>。</p>
+                    <p><span>ひとりで走らなくていい。</span></p>
+                    <p>あなたの隣にPro Naviがいる。</p>
+                    <p><span>ゴールへ向かって、一緒に走る。</span></p>
+                </div>
+            </div>
+        </section>
+        <div class="free-counseling">
+            <div class="free-counseling-wrapper">
+                <p> 一人では見つけられなかった「理想のゴール」へ、<br>
+                    共に走り抜けよう。</p>
+                <h4>走るのはあなた。導くのはPro Navi。</h4>
+                <div class="counseling">
+                    <a class="counseling-btn" href="#">無料カウンセリングを予約する</a>
+                </div>
             </div>
         </div>
-    </section>
-    </main>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const inputs = document.querySelectorAll(".strength input");
-            const cards = document.querySelectorAll(".point-card");
-            cards[0].classList.add("opened");
-            inputs.forEach(function (input, index) {
-                input.addEventListener("change", function () {
-                    cards.forEach(function (card) {
-                        card.classList.remove("opened");
+        <img class="counseling-background" src="img/仮の帯用2 4 (1).png" alt="">
+        <section class="massage">
+            <h2>ひとりで走らなくていい。</h2>
+            <h2>あなたの隣に、Pro Naviがいる。</h2>
+        </section>
+        <section class="strength">
+            <div class="strength-wrapper">
+                <div class="strength-back-text">
+                    <h2>STRENGTH</h2>
+                </div>
+                <div class="strength-front-text">
+                    <h3>プロナビの強み</h3>
+                    <h4>プロナビが選ばれる５つの理由</h4>
+                </div>
+                <div class="card-container">
+                    <!-- point01 -->
+                    <input type="radio" name="slide" id="p1" checked>
+                    <label for="p1" class="point-card opened">
+                        <div class="card-title">POINT 01</div>
+                        <div class="card-item">
+                            <h4>あなた専属の講師が伴走</h4>
+                            <h3><span>現役エンジニアの</span><br>
+                                <span class="sub">個別指導</span>
+                            </h3>
+                            <p>現役エンジニア講師が、学習計画から課題レビューまで１対１で伴走。</p>
+                            <p>進捗が止まっても「次に何をすればいいか」が常に明確だから、挫折率はなんと１％以下。</p>
+                        </div>
+                    </label>
+                    <!-- point02 -->
+                    <input type="radio" name="slide" id="p2">
+                    <label for="p2" class="point-card">
+                        <div class="card-title">POINT 02</div>
+                        <div class="card-item">
+                            <h4>学習設計で迷わない</h4>
+                            <h3><span>初心者にも優しい</span><br>
+                                <span class="sub">学習設計</span>
+                            </h3>
+                            <p>「専門用語がわからない」状態からスタートOK!</p>
+                            <p>一歩ずつ段階的に進められるカリキュラム＋２４時間質問し放題の個別サポートで、パソコン初心者でも迷わず安心に学べます。</p>
+                        </div>
+                    </label>
+                    <!-- point03 -->
+                    <input type="radio" name="slide" id="p3">
+                    <label for="p3" class="point-card">
+                        <div class="card-title">POINT 03</div>
+                        <div class="card-item">
+                            <h4>実務案件まで徹底伴走</h4>
+                            <h3><span>営業・提案まで</span><br>
+                                <span class="sub">フルサポート</span>
+                            </h3>
+                            <p>受講後の「学習完了」で終わりません。</p>
+                            <p>ポートフォリオの作成から提案分の添削などの案件獲得サポートまで、時間や場所に縛られない理想な在宅ワークを「実現できる状態」に導きます。
+                            </p>
+                        </div>
+                    </label>
+                    <!-- point04 -->
+                    <input type="radio" name="slide" id="p4">
+                    <label for="p4" class="point-card">
+                        <div class="card-title">POINT 04</div>
+                        <div class="card-item">
+                            <h4>孤独にならない学習環境</h4>
+                            <h3><span>仲間と成長できる</span><br>
+                                <span class="sub">コミュニティ</span>
+                            </h3>
+                            <p>同じ目標を持つ受講生が交流できる学習コミュニティを用意。</p>
+                            <p>情報交換、作品共有、勉強会など、学習の刺激になる機会が充実。ハッカソンや月一セミナーに参加して、一生物のスキルを向上させることができます。
+                            </p>
+                        </div>
+                    </label>
+                    <!-- point05 -->
+                    <input type="radio" name="slide" id="p5">
+                    <label for="p5" class="point-card">
+                        <div class="card-title">POINT 05</div>
+                        <div class="card-item">
+                            <h4>場所を選ばす学べる自由さ</h4>
+                            <h3><span>オンライン完結で</span><br>
+                                <span class="sub">効率よく成長</span>
+                            </h3>
+                            <p>授業・相談・課題添削まで、すべてオンラインで完結。</p>
+                            <p> 忙しい社会人でもスキマ時間を活用しやすく、通学の負担ゼロ。自分の生活リズムのまま、最短ルートでスキルを習得できます。</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const inputs = document.querySelectorAll(".strength input");
+                const cards = document.querySelectorAll(".point-card");
+                cards[0].classList.add("opened");
+                inputs.forEach(function (input, index) {
+                    input.addEventListener("change", function () {
+                        cards.forEach(function (card) {
+                            card.classList.remove("opened");
+                        });
+                        if (index === 0) {
+                            cards[0].classList.add("opened");
+                            return;
+                        }
+                        setTimeout(function () {
+                            cards[index].classList.add("opened");
+                        }, 500);
                     });
-                    if (index === 0) {
-                        cards[0].classList.add("opened");
-                        return;
-                    }
-                    setTimeout(function () {
-                        cards[index].classList.add("opened");
-                    }, 500);
                 });
             });
-        });
-    </script>
+        </script>
 
-    <!-- TOPページ上半分 -->
-    <!-- 受講生の声 -->
-    <section class="student-voice">
-        <div class="student-voice-container">
-            <div class="student-voice-word">
-                <h2 class="student-voice-word-top">STUDENTS</h2>
-                <h2 class="student-voice-word-under">VOICE</h2>
-                <div class="student-voice-title">
-                    <h3 class="student-voice-title-text">「未経験でも、一歩で変われる。」<br><span>「できる自分」</span>に変わった先輩の声</h3>
+        <!-- TOPページ上半分 -->
+        <!-- 受講の流れ -->
+        <section class="oursuport">
+
+            <div class="container">
+                <div class="cards">
+
+                    <div class="card card0">
+                        <div class="card-body">
+                            <div class="oursuport-container-title">
+                                <h2>OURSUPORT</h2>
+                                <h3>受講の流れ</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card1">
+                        <a href="curriculum.html">
+                            <div class="card-body">
+                                <div class="oursuport-container-box-left">
+                                    <div class="oursuport-left-top">
+                                        <h2>STEP01</h2>
+                                        <h3>無料カウンセリング</h3>
+                                    </div>
+                                    <div class="oursuport-left-bottom">
+                                        <img src="img/トップベージ/受講step01.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="oursuport-container-box-right">
+                                    <div class="oursuport-right-top">
+                                        <div class="under-arrow"></div>
+                                    </div>
+                                    <div class="oursuport-right-bottom">
+                                        <h4><span>01</span>カスタマイズの学習プラン</h4>
+                                        <p>あなたの現在のスキルや目的を確認し、最適な学習プランを作成。<br>専属の現役エンジニアコーチが選任され、安心してスタートできる準備を整えます。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card card2">
+                        <div class="card-body">
+                            <div class="oursuport-container-box-left">
+                                <div class="oursuport-left-top">
+                                    <h2>STEP02</h2>
+                                    <h3>学習スタート</h3>
+                                </div>
+                                <div class="oursuport-left-bottom">
+                                    <img src="img/トップベージ/受講step02.png" alt="">
+                                </div>
+                            </div>
+                            <div class="oursuport-container-box-right">
+                                <div class="oursuport-right-top">
+                                    <div class="under-arrow"></div>
+                                </div>
+                                <div class="oursuport-right-bottom">
+                                    <h4><span>02</span>専属のコーチがサポート</h4>
+                                    <p>毎日の学習は専属コーチと公式LINEでやり取りしながら進行。<br>
+                                        つまずきや疑問はすぐに解決できるため、初心者でも迷わずスムーズに成長できます。</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card3">
+                        <div class="card-body">
+                            <div class="oursuport-container-box-left">
+                                <div class="oursuport-left-top">
+                                    <h2>STEP03</h2>
+                                    <h3>毎週のパーソナル授業</h3>
+                                </div>
+                                <div class="oursuport-left-bottom">
+                                    <img src="img/トップベージ/受講step03.png" alt="">
+                                </div>
+                            </div>
+                            <div class="oursuport-container-box-right">
+                                <div class="oursuport-right-top">
+                                    <div class="under-arrow"></div>
+                                </div>
+                                <div class="oursuport-right-bottom">
+                                    <h4><span>03</span>専属エンジニアが直接指導</h4>
+                                    <p>週1回のマンツーマン授業で理解度を確認し、あなた専用の次の課題を提示。<br>
+                                        今やるべきことが明確になるので、学習が習慣化しやすい環境です。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card4">
+                        <div class="card-body">
+                            <div class="oursuport-container-box-left">
+                                <div class="oursuport-left-top">
+                                    <h2>STEP04</h2>
+                                    <h3>学習習慣の定着</h3>
+                                </div>
+                                <div class="oursuport-left-bottom">
+                                    <img src="img/トップベージ/受講step04.png" alt="">
+                                </div>
+                            </div>
+                            <div class="oursuport-container-box-right">
+                                <div class="oursuport-right-top">
+                                    <div class="under-arrow"></div>
+                                </div>
+                                <div class="oursuport-right-bottom">
+                                    <h4><span>04</span>学習の継続のサポート</h4>
+                                    <p>学習と授業を繰り返し、基礎→応用→実践へとステップアップ。<br>
+                                        スキルが安定してきたら、案件獲得に向けてポートフォリオや実績の準備に入ります。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card5">
+                        <div class="card-body">
+                            <div class="oursuport-container-box-left">
+                                <div class="oursuport-left-top">
+                                    <h2>STEP05</h2>
+                                    <h3>案件獲得サポート</h3>
+                                </div>
+                                <div class="oursuport-left-bottom">
+                                    <img src="img/トップベージ/受講step05.png" alt="">
+                                </div>
+                            </div>
+                            <div class="oursuport-container-box-right">
+                                <div class="oursuport-right-top">
+                                    <div class="under-arrow"></div>
+                                </div>
+                                <div class="oursuport-right-bottom">
+                                    <h4><span>05</span>営業同行・代行も実施</h4>
+                                    <p>営業同行・代行など、最初の案件獲得をプロの営業が徹底サポート。<br>
+                                        受注のコツや提案方法まで実践形式で学び、在宅ワークデビューを実現します。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <ul class="student-voice-contents">
-                <li>
-                    <div class="student-voice-item">
-                        <div class="student-voice-box">
-                            <h4>STUDENT</h4>
-                            <div class="student-voice-box-top">
-                                <div class="voice-box-left">
-                                    <h5>01</h5>
-                                </div>
-                                <div class="voice-box-right">
-                                    <img src="img/トップベージ/student1.png" alt="">
-                                </div>
-                            </div>
-                            <div class="profile">
-                                <div class="name-join">
-                                    <p>M.Mさん</p>
-                                    <p>2023年5月入会</p>
-                                </div>
-                                <div class="job-year">
-                                    <p>会社員</p>
-                                    <p>30代後半</p>
-                                </div>
-                            </div>
-                            <div class="voice-text">
-                                <p>在宅で稼げる仕事に興味はあるけど、<span class="mark1">何から手をつければいいか分からず不安で迷っていました。</span></p>
-                                <h5 class="voice-text-bottom">BEFORE</h5>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+        </section>
 
-                <li>
-                    <div class="student-voice-item">
-                        <div class="student-voice-box">
-                            <h4>STUDENT</h4>
-                            <div class="student-voice-box-top">
-                                <div class="voice-box-left">
-                                    <h5>02</h5>
-                                </div>
-                                <div class="voice-box-right">
-                                    <img src="img/トップベージ/student2.png" alt="">
-                                </div>
-                            </div>
-                            <div class="profile">
-                                <div class="name-join">
-                                    <p>N.Yさん</p>
-                                    <p>2022年6月入会</p>
-                                </div>
-                                <div class="job-year">
-                                    <p>主婦</p>
-                                    <p>20代後半</p>
-                                </div>
-                            </div>
-                            <div class="voice-text">
-                                <p>将来在宅で働きたいけど、<span class="mark1">スクール選びに迷い、どこなら自分に合うか分からず</span>悩んでいました。</p>
-                                <h5 class="voice-text-bottom">BEFORE</h5>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="student-voice-item">
-                        <div class="student-voice-box">
-                            <h4>STUDENT</h4>
-                            <div class="student-voice-box-top">
-                                <div class="voice-box-left">
-                                    <h5>03</h5>
-                                </div>
-                                <div class="voice-box-right">
-                                    <img src="img/トップベージ/student3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="profile">
-                                <div class="name-join">
-                                    <p>Y.Kさん</p>
-                                    <p>2023年4月入会</p>
-                                </div>
-                                <div class="job-year">
-                                    <p>会社員</p>
-                                    <p>20代後半</p>
-                                </div>
-                            </div>
-                            <div class="voice-text">
-                                <p><span class="mark1">仕事の忙しさで独学の時間が取れず、スキルアップが進まないこと</span>に焦りを感じていました。</p>
-                                <h5 class="voice-text-bottom">BEFORE</h5>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-
-            </ul>
-        </div>
-
-    </section>
-
-    <!-- 講師の声 -->
-    <section class="teacher-voice">
-        <div class="teacher-voice-container">
-            <div class="teacher-voice-word">
-                <h2 class="teacher-voice-word-top">TEACHER</h2>
-                <h2 class="teacher-voice-word-under">VOICE</h2>
-                <div class="teacher-voice-title">
-                    <h3 class="teacher-voice-title-text">
-                        「現役エンジニアのサポート体制」<br><span>指導力</span>と<span>現場経験を活かす</span>講師の声</h3>
+        <div class="free-counseling">
+            <div class="free-counseling-wrapper">
+                <p> 一人では見つけられなかった「理想のゴール」へ、<br>
+                    共に走り抜けよう。</p>
+                <h4>走るのはあなた。導くのはPro Navi。</h4>
+                <div class="counseling">
+                    <a class="counseling-btn" href="#">無料カウンセリングを予約する</a>
                 </div>
             </div>
-            <ul class="teacher-voice-contents">
-                <li>
-                    <div class="teacher-voice-item">
-                        <div class="teacher-voice-box">
-                            <h4>TEACHER</h4>
-                            <div class="teacher-voice-box-top">
-                                <div class="voice-box-left">
-                                    <h5>01</h5>
-                                </div>
-                                <div class="voice-box-right">
-                                    <img src="img/トップベージ/teacher 1.png" alt="">
-                                </div>
-                            </div>
-                            <div class="profile">
-                                <div class="name-join">
-                                    <p>TOP講師</p>
-                                    <p>現役エンジニア</p>
-                                </div>
-                            </div>
-                            <div class="voice-text">
-                                <p>在宅で稼げる仕事に興味はあるけど、何から手をつければいいか分からず不安で迷っていました。</p>
-                                <h5 class="voice-text-bottom">VOICE</h5>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+        </div>
+        <img class="counseling-background" src="img/仮の帯用2 4 (1).png" alt="">
 
-                <li>
-                    <div class="teacher-voice-item">
-                        <div class="teacher-voice-box">
-                            <h4>TEACHER</h4>
-                            <div class="teacher-voice-box-top">
-                                <div class="voice-box-left">
-                                    <h5>02</h5>
-                                </div>
-                                <div class="voice-box-right">
-                                    <img src="img/トップベージ/teacher2.png" alt="">
-                                </div>
-                            </div>
-                            <div class="profile">
-                                <div class="name-join">
-                                    <p>TESTU</p>
-                                    <p>現役エンジニア</p>
-                                </div>
-                            </div>
-                            <div class="voice-text">
-                                <p>在宅で稼げる仕事に興味はあるけど、何から手をつければいいか分からず不安で迷っていました。</p>
-                                <h5 class="voice-text-bottom">VOICE</h5>
-                            </div>
-                        </div>
-                    </div>
-                </li>
 
-                <li>
-                    <div class="teacher-voice-item">
-                        <div class="teacher-voice-box">
-                            <h4>TEACHER</h4>
-                            <div class="teacher-voice-box-top">
-                                <div class="voice-box-left">
-                                    <h5>03</h5>
+
+
+        <!-- 受講生の声 -->
+        <section class="student-voice">
+            <div class="student-voice-container">
+                <div class="student-voice-word">
+                    <h2 class="student-voice-word-top">STUDENTS</h2>
+                    <h2 class="student-voice-word-under">VOICE</h2>
+                    <div class="student-voice-title">
+                        <h3 class="student-voice-title-text">「未経験でも、一歩で変われる。」<br><span>「できる自分」</span>に変わった先輩の声</h3>
+                    </div>
+                </div>
+
+                <ul class="before-after">
+                    <li class="student-card">
+                        <!-- 裏面のコンテンツ -->
+                        <div class="back">
+                            <div class="student-voice-item">
+                                <div class="student-voice-box">
+                                    <h4>STUDENT</h4>
+                                    <div class="student-voice-box-top">
+                                        <div class="voice-box-left">
+                                            <h5>01</h5>
+                                        </div>
+                                        <div class="voice-box-right">
+                                            <img src="img/トップベージ/student1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="name-join">
+                                            <p>M.Mさん</p>
+                                            <p>2023年5月入会</p>
+                                        </div>
+                                        <div class="job-year">
+                                            <p>会社員</p>
+                                            <p>30代後半</p>
+                                        </div>
+                                    </div>
+                                    <div class="voice-text">
+                                        <p>在宅で稼げる仕事に興味はあるけど、<span class="mark1">何から手をつければいいか分からず不安で迷っていました。</span></p>
+                                        <h5 class="voice-text-bottom">BEFORE</h5>
+                                    </div>
                                 </div>
-                                <div class="voice-box-right">
-                                    <img src="img/トップベージ/teacher3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="profile">
-                                <div class="name-join">
-                                    <p>YURIKO</p>
-                                    <p>現役エンジニア</p>
-                                </div>
-                            </div>
-                            <div class="voice-text">
-                                <p>在宅で稼げる仕事に興味はあるけど、何から手をつければいいか分からず不安で迷っていました。</p>
-                                <h5 class="voice-text-bottom">VOICE</h5>
                             </div>
                         </div>
+                        <!-- 表面のコンテンツ -->
+                        <div class="front">
+                            <div class="front-student-voice-item">
+                                <div class="front-student-voice-box">
+                                    <h4>STUDENT</h4>
+                                    <div class="student-voice-box-top">
+                                        <div class="voice-box-left">
+                                            <h5>01</h5>
+                                        </div>
+                                        <div class="voice-box-right">
+                                            <img src="img/トップベージ/student1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="name-join">
+                                            <p>M.Mさん</p>
+                                            <p>2023年5月入会</p>
+                                        </div>
+                                        <div class="job-year">
+                                            <p>会社員</p>
+                                            <p>30代後半</p>
+                                        </div>
+                                    </div>
+                                    <div class="voice-text">
+                                        <p>プロナビで基礎から学び、案件獲得までサポートを受けたおかげで、<span
+                                                class="front-mark1">在宅ワークで月収を得られるようになりました。</span></p>
+                                        <h5 class="voice-text-bottom">AFTER</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="student-card">
+                        <!-- 裏面のコンテンツ -->
+                        <div class="back">
+                            <div class="student-voice-item">
+                                <div class="student-voice-box">
+                                    <h4>STUDENT</h4>
+                                    <div class="student-voice-box-top">
+                                        <div class="voice-box-left">
+                                            <h5>02</h5>
+                                        </div>
+                                        <div class="voice-box-right">
+                                            <img src="img/トップベージ/student2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="name-join">
+                                            <p>N.Yさん</p>
+                                            <p>2022年6月入会</p>
+                                        </div>
+                                        <div class="job-year">
+                                            <p>主婦</p>
+                                            <p>20代後半</p>
+                                        </div>
+                                    </div>
+                                    <div class="voice-text">
+                                        <p>将来在宅で働きたいけど、<span class="mark1">スクール選びに迷い、どこなら自分に合うか分からず</span>悩んでいました。</p>
+                                        <h5 class="voice-text-bottom">BEFORE</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 表面のコンテンツ -->
+                        <div class="front">
+                            <div class="front-student-voice-item">
+                                <div class="front-student-voice-box">
+                                    <h4>STUDENT</h4>
+                                    <div class="student-voice-box-top">
+                                        <div class="voice-box-left">
+                                            <h5>02</h5>
+                                        </div>
+                                        <div class="voice-box-right">
+                                            <img src="img/トップベージ/student2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="name-join">
+                                            <p>N.Yさん</p>
+                                            <p>2022年6月入会</p>
+                                        </div>
+                                        <div class="job-year">
+                                            <p>主婦</p>
+                                            <p>20代後半</p>
+                                        </div>
+                                    </div>
+                                    <div class="voice-text">
+                                        <p>毎日のサポートと週1の個別授業で学習を習慣化。数ヶ月でポートフォリオを完成させ、<span
+                                                class="front-mark1">在宅ワークに挑戦できる自信がつきました。</span></p>
+                                        <h5 class="voice-text-bottom">AFTER</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="student-card">
+                        <!-- 裏面のコンテンツ -->
+                        <div class="back">
+                            <div class="student-voice-item">
+                                <div class="student-voice-box">
+                                    <h4>STUDENT</h4>
+                                    <div class="student-voice-box-top">
+                                        <div class="voice-box-left">
+                                            <h5>03</h5>
+                                        </div>
+                                        <div class="voice-box-right">
+                                            <img src="img/トップベージ/student3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="name-join">
+                                            <p>Y.Kさん</p>
+                                            <p>2023年4月入会</p>
+                                        </div>
+                                        <div class="job-year">
+                                            <p>会社員</p>
+                                            <p>20代後半</p>
+                                        </div>
+                                    </div>
+                                    <div class="voice-text">
+                                        <p><span class="mark1">仕事の忙しさで独学の時間が取れず、スキルアップが進まないこと</span>に焦りを感じていました。</p>
+                                        <h5 class="voice-text-bottom">BEFORE</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 表面のコンテンツ -->
+                        <div class="front">
+                            <div class="front-student-voice-item">
+                                <div class="front-student-voice-box">
+                                    <h4>STUDENT</h4>
+                                    <div class="student-voice-box-top">
+                                        <div class="voice-box-left">
+                                            <h5>03</h5>
+                                        </div>
+                                        <div class="voice-box-right">
+                                            <img src="img/トップベージ/student3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="name-join">
+                                            <p>Y.Kさん</p>
+                                            <p>2023年4月入会</p>
+                                        </div>
+                                        <div class="job-year">
+                                            <p>会社員</p>
+                                            <p>20代後半</p>
+                                        </div>
+                                    </div>
+                                    <div class="voice-text">
+                                        <p>プロナビで自分に合った学習ペースを
+                                            設定してもらい、<span class="front-mark1">初めての案件受注までしっかりサポート。</span>安心して学べました。</p>
+                                        <h5 class="voice-text-bottom">AFTER</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- 講師の声 -->
+        <section class="teacher-voice">
+            <div class="teacher-voice-container">
+                <div class="teacher-voice-word">
+                    <h2 class="teacher-voice-word-top">TEACHER</h2>
+                    <h2 class="teacher-voice-word-under">VOICE</h2>
+                    <div class="teacher-voice-title">
+                        <h3 class="teacher-voice-title-text">
+                            「現役エンジニアのサポート体制」<br><span>指導力</span>と<span>現場経験を活かす</span>講師の声</h3>
                     </div>
-                </li>
-            </ul>
+                </div>
+                <ul class="teacher-voice-contents">
+                    <li>
+                        <div class="teacher-voice-item">
+                            <div class="teacher-voice-box">
+                                <h4>TEACHER</h4>
+                                <div class="teacher-voice-box-top">
+                                    <div class="voice-box-left">
+                                        <h5>01</h5>
+                                    </div>
+                                    <div class="voice-box-right">
+                                        <img src="img/トップベージ/teacher 1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="profile">
+                                    <div class="name-join">
+                                        <p>TOP講師</p>
+                                        <p>現役エンジニア</p>
+                                    </div>
+                                    <p class="profile-mark">
+                                        <span class="mark2">一人ひとりの目的と課題に最適化した学習カリキュラムを提供</span>
+                                    </p>
+                                </div>
+                                <div class="voice-text">
+                                    <p>在宅で稼げる仕事に興味はあるけど、何から手をつければいいか分からず不安で迷っていました。</p>
+                                    <h5 class="voice-text-bottom">VOICE</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="teacher-voice-item">
+                            <div class="teacher-voice-box">
+                                <h4>TEACHER</h4>
+                                <div class="teacher-voice-box-top">
+                                    <div class="voice-box-left">
+                                        <h5>02</h5>
+                                    </div>
+                                    <div class="voice-box-right">
+                                        <img src="img/トップベージ/teacher2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="profile">
+                                    <div class="name-join">
+                                        <p>TESTU</p>
+                                        <p>現役エンジニア</p>
+                                    </div>
+                                    <p class="profile-mark">
+                                        <span class="mark2">継続可能で着実にスキルが身につく学習方法を一緒に探します</span>
+                                    </p>
+                                </div>
+                                <div class="voice-text">
+                                    <p>在宅で稼げる仕事に興味はあるけど、何から手をつければいいか分からず不安で迷っていました。</p>
+                                    <h5 class="voice-text-bottom">VOICE</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="teacher-voice-item">
+                            <div class="teacher-voice-box">
+                                <h4>TEACHER</h4>
+                                <div class="teacher-voice-box-top">
+                                    <div class="voice-box-left">
+                                        <h5>03</h5>
+                                    </div>
+                                    <div class="voice-box-right">
+                                        <img src="img/トップベージ/teacher3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="profile">
+                                    <div class="name-join">
+                                        <p>YURIKO</p>
+                                        <p>現役エンジニア</p>
+                                    </div>
+                                    <p class="profile-mark">
+                                        <span class="mark2">目標達成のために最適な環境と覚悟を持って学ぶ重要性を伝えます</span>
+                                    </p>
+                                </div>
+                                <div class="voice-text">
+                                    <p>在宅で稼げる仕事に興味はあるけど、何から手をつければいいか分からず不安で迷っていました。</p>
+                                    <h5 class="voice-text-bottom">VOICE</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <div class="arrow_wrap">
+            <div class="arrow"></div>
         </div>
 
-    </section>
-
-    <div class="arrow_wrap">
-        <div class="arrow"></div>
-    </div>
-
-    <div class="free-counseling">
-        <div class="free-counseling-wrapper">
-            <p> 一人では見つけられなかった「理想のゴール」へ、<br>
-                共に走り抜けよう。</p>
-            <h4>走るのはあなた。導くのはPro Navi。</h4>
-            <div class="counseling">
-                <a class="counseling-btn" href="#">無料カウンセリングを予約する</a>
+        <div class="free-counseling">
+            <div class="free-counseling-wrapper">
+                <p> 一人では見つけられなかった「理想のゴール」へ、<br>
+                    共に走り抜けよう。</p>
+                <h4>走るのはあなた。導くのはPro Navi。</h4>
+                <div class="counseling">
+                    <a class="counseling-btn" href="#">無料カウンセリングを予約する</a>
+                </div>
             </div>
         </div>
-    </div>
-    <img class="counseling-background" src="img/仮の帯用2 4 (1).png" alt="">
+        <img class="counseling-background" src="img/仮の帯用2 4 (1).png" alt="">
 
-    <section class="price">
-        <div class="price-wrapper">
-            <div class="price-title">
-                <h2>PRICE</h2>
-                <h3>料金＆サービス</h3>
-                <div class="price-img">
-                    <img src="img/トップベージ/料金用イラスト.png" alt="">
+        <section class="price">
+            <div class="price-wrapper">
+                <div class="price-title">
+                    <h2>PRICE</h2>
+                    <h3>料金＆サービス</h3>
+                    <div class="price-img">
+                        <img src="img/トップベージ/料金用イラスト.png" alt="">
+                    </div>
+                </div>
+
+                <div class="price-service-container">
+                    <div class="service-content">
+                        <div class="service-left">
+                            <div class="service-title-box">
+                                <p>サービス名</p>
+                            </div>
+                            <div class="service-title-content">
+                                <p class="service-title">6ヶ月間<br>
+                                    集中プログラム</p>
+                            </div>
+                            <div class="service-title-content-text">
+                                <p>※基本的には６ヶ月期間を設定しますが、受講生の学習ペースに応じて短縮可</p>
+                                <p>※随時開催するイベントにより、特典付きサポート期間長くする場合もございます。</p>
+                            </div>
+
+                        </div>
+                        <div class="service-right">
+                            <div class="service-content-box">
+                                <p>サービス内容</p>
+                            </div>
+                            <div class="service-content-img">
+                                <img src="img/トップベージ/サポート内容 2.png" alt="">
+                                <p>※MetaLeaf参加は別途費用あり。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                        <div class="price-content-box">
+                            <p>総額</p>
+                        </div>
+                        <div class="price-number">
+                            <p>¥550,000 円（税込）</p>
+                        </div>
+                    </div>
+                    <h4>振り込みやクレジットカード分割対応可能</h4>
+                    <div class="installment-payment">
+                        <div class="installment-payment-left">
+                            <div class="installment-payment-left-box">
+                                <p>分割回数</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>24回</p>
+                                </li>
+                                <li>
+                                    <p>12回</p>
+                                </li>
+                                <li>
+                                    <p>10回</p>
+                                </li>
+                                <li>
+                                    <p>6回</p>
+                                </li>
+                                <li>
+                                    <p>2回</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="installment-payment-center">
+                            <div class="installment-payment-center-box">
+                                <p>初回支払い</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>32,692円</p>
+                                </li>
+                                <li>
+                                    <p>59,246円</p>
+                                </li>
+                                <li>
+                                    <p>70,605円</p>
+                                </li>
+                                <li>
+                                    <p>114,123円</p>
+                                </li>
+                                <li>
+                                    <p>223,412円</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="installment-payment-right">
+                            <div class="installment-payment-right-box">
+                                <p>２回目以降の支払い</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>31,600円</p>
+                                </li>
+                                <li>
+                                    <p>59,000円</p>
+                                </li>
+                                <li>
+                                    <p>69,900円</p>
+                                </li>
+                                <li>
+                                    <p>113,700円</p>
+                                </li>
+                                <li>
+                                    <p>223,200円</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="caution1">
+                        ※分割回数は【3、6、10、12、24】回からお選びいただけます。お支払いはき銀行口座からの引き落としとなります。ローン会社様のご指定は出来かねますのでご了承ください。</p>
+                    <p class="caution2">※表示価格はすべて税込価格です。</p>
                 </div>
             </div>
 
-            <div class="price-service-container">
-                <div class="service-content">
-                    <div class="service-left">
-                        <div class="service-title-box">
-                            <p>サービス名</p>
-                        </div>
-                        <div class="service-title-content">
-                            <p class="service-title">6ヶ月間<br>
-                                集中プログラム</p>
-                        </div>
-                        <div class="service-title-content-text">
-                            <p>※基本的には６ヶ月期間を設定しますが、受講生の学習ペースに応じて短縮可</p>
-                            <p>※随時開催するイベントにより、特典付きサポート期間長くする場合もございます。</p>
-                        </div>
+        </section>
 
-                    </div>
-                    <div class="service-right">
-                        <div class="service-content-box">
-                            <p>サービス内容</p>
-                        </div>
-                        <div class="service-content-img">
-                            <img src="img/トップベージ/サポート内容 2.png" alt="">
-                            <p>※MetaLeaf参加は別途費用あり。</p>
-                        </div>
+        <section class="results">
+            <a class="results-link" href="results.html">
+                <div class="results-wrapper">
+                    <div class="top-results-title">
+                        <h2>RESULTS</h2>
+                        <h3>実績で見るプロナビ</h3>
                     </div>
                 </div>
-                <div class="price-content">
-                    <div class="price-content-box">
-                        <p>総額</p>
-                    </div>
-                    <div class="price-number">
-                        <p>¥550,000 円（税込）</p>
-                    </div>
-                </div>
-                <h4>振り込みやクレジットカード分割対応可能</h4>
-                <div class="installment-payment">
-                    <div class="installment-payment-left">
-                        <div class="installment-payment-left-box">
-                            <p>分割回数</p>
-                        </div>
-                        <ul>
-                            <li>
-                                <p>24回</p>
-                            </li>
-                            <li>
-                                <p>12回</p>
-                            </li>
-                            <li>
-                                <p>10回</p>
-                            </li>
-                            <li>
-                                <p>6回</p>
-                            </li>
-                            <li>
-                                <p>2回</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="installment-payment-center">
-                        <div class="installment-payment-center-box">
-                            <p>初回支払い</p>
-                        </div>
-                        <ul>
-                            <li>
-                                <p>32,692円</p>
-                            </li>
-                            <li>
-                                <p>59,246円</p>
-                            </li>
-                            <li>
-                                <p>70,605円</p>
-                            </li>
-                            <li>
-                                <p>114,123円</p>
-                            </li>
-                            <li>
-                                <p>223,412円</p>
-                            </li>
-                        </ul>
+            </a>
+        </section>
 
-                    </div>
-                    <div class="installment-payment-right">
-                        <div class="installment-payment-right-box">
-                            <p>２回目以降の支払い</p>
-                        </div>
-                        <ul>
-                            <li>
-                                <p>31,600円</p>
-                            </li>
-                            <li>
-                                <p>59,000円</p>
-                            </li>
-                            <li>
-                                <p>69,900円</p>
-                            </li>
-                            <li>
-                                <p>113,700円</p>
-                            </li>
-                            <li>
-                                <p>223,200円</p>
-                            </li>
-                        </ul>
+        <section class="faq-page">
+            <a class="faq-link" href="faq.html">
+                <div class="faq-page-wrapper">
+                    <div class="faq-page-title">
+                        <h2>FAQ</h2>
+                        <h3>走り始める前に知っておきたいこと</h3>
                     </div>
                 </div>
-                <p class="caution1">
-                    ※分割回数は【3、6、10、12、24】回からお選びいただけます。お支払いはき銀行口座からの引き落としとなります。ローン会社様のご指定は出来かねますのでご了承ください。</p>
-                <p class="caution2">※表示価格はすべて税込価格です。</p>
+            </a>
+        </section>
+
+        <div class="free-counseling">
+            <div class="free-counseling-wrapper">
+                <p> 一人では見つけられなかった「理想のゴール」へ、<br>
+                    共に走り抜けよう。</p>
+                <h4>走るのはあなた。導くのはPro Navi。</h4>
+                <div class="counseling">
+                    <a class="counseling-btn" href="#">無料カウンセリングを予約する</a>
+                </div>
             </div>
         </div>
-
-    </section>
-
-    <section class="results">
-        <div class="results-wrapper">
-            <div class="results-title">
-                <h2>RESULTS</h2>
-                <h3>実績で見るプロナビ</h3>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq-page">
-        <div class="faq-page-wrapper">
-            <div class="faq-page-title">
-                <h2>FAQ</h2>
-                <h3>走り始める前に知っておきたいこと</h3>
-            </div>
-        </div>
-    </section>
-
-    <div class="free-counseling">
-        <div class="free-counseling-wrapper">
-            <p> 一人では見つけられなかった「理想のゴール」へ、<br>
-                共に走り抜けよう。</p>
-            <h4>走るのはあなた。導くのはPro Navi。</h4>
-            <div class="counseling">
-                <a class="counseling-btn" href="#">無料カウンセリングを予約する</a>
-            </div>
-        </div>
-    </div>
-    <img class="counseling-background" src="img/仮の帯用2 4 (1).png" alt="">
+        <img class="counseling-background" src="img/仮の帯用2 4 (1).png" alt="">
 
     </main>
 
@@ -639,7 +922,8 @@
                 <div class="footer-right">
                     <p class="footer-right-text">最初の一歩も、ゴールまでの道も。共に走るナビゲーター。</p>
                     <div class="counseling">
-                        <a class="counseling-btn" href="#">無料カウンセリングを予約する</a>
+                        <a class="counseling-btn footer-btn" href="#">無料カウンセリングへ</a>
+                        <img src="./img/LOGO/プロナビlogo.png" alt="LOGO">
                     </div>
                 </div>
             </div>
@@ -662,6 +946,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- jsファイル -->
     <script src="js/main.js"></script>
+    <!-- slickのJavaScript -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
 </body>
 
 </html>
