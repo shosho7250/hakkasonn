@@ -9,22 +9,50 @@ $(function () {
         $(this).toggleClass('active');
         // $(this)...$('.accordion-header')に、activeというクラスが追加と削除を交互にする
     });
+
+    // slick
+    $(".before-after").slick({
+        autoplay: true, // 自動再生
+        autoplaySpeed: 6000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
+        infinite: true, // 無限スライド
+        autoplay: true, // 自動再生
+        centerMode: true,// 前後スライドを部分表示
+        centerPadding: '33%',// 両端の見切れるスライド幅
+        prevArrow: '<img src="img/トップベージ/arrow left.png" class="slide-arrow prev-arrow">',
+        nextArrow: '<img src="img/トップベージ/arrow right.png" class="slide-arrow next-arrow">',
+        responsive: [
+            {
+                breakpoint: 500, // 500px未満で・・・
+                settings: "unslick", // スライダーを無効
+            },
+        ],
+    });
+
+    $(window).on("resize orientationchange", function () {
+        $(".slider").slick("resize");
+
+    });
+
+    $(".teacher-voice-contents").slick({
+        autoplay: true, // 自動再生
+        autoplaySpeed: 6000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
+        infinite: true, // 無限スライド
+        autoplay: true, // 自動再生
+        centerMode: true,// 前後スライドを部分表示
+        centerPadding: '33%',// 両端の見切れるスライド幅
+        prevArrow: '<img src="img/トップベージ/arrow left.png" class="slide-arrow prev-arrow">',
+        nextArrow: '<img src="img/トップベージ/arrow right.png" class="slide-arrow next-arrow">',
+        responsive: [
+            {
+                breakpoint: 500, // 500px未満で・・・
+                settings: "unslick", // スライダーを無効
+            },
+        ],
+    });
+
+    $(window).on("resize orientationchange", function () {
+        $(".slider").slick("resize");
+
+    });
 });
 
-// CDNでGSAPとScrollTriggerを読み込んだ前提
-gsap.registerPlugin(ScrollTrigger);
-
-const sections = document.querySelectorAll(".top-page-curriculum");
-
-sections.forEach((section) => {
-  const pin = section.querySelector(".top-page-curriculum_pin");
-
-  ScrollTrigger.create({
-    trigger: section,
-    start: "top top",        // セクションが画面上端に来たら
-    end: "+=100%",            // 1画面分スクロールで終了
-    pin: pin,                 // pinに固定
-    pinSpacing: false,        // 次の要素の位置をずらさず重ねる
-    markers: true
-  });
-});
