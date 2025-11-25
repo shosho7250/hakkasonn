@@ -1,5 +1,4 @@
 /* 共通CSS */
-
 * {
     border: 1px solid red;
 }
@@ -20,32 +19,17 @@ ul {
     list-style: none;
 }
 
-body {
-    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-}
-
 /* headerセクション */
 header {
     width: 100%;
-    height: 96px;
-    margin: 0 auto;
     background-color: white;
     position: fixed;
-    z-index: 30;
-    /* display: flex;
-    justify-content: center; */
-    text-align: center;
-    padding: 5px 0;
 }
 
 header .header-wrapper {
-    padding-inline: 5%;
-    max-width: 1300px !important;
+    padding-inline: 4%;
+    max-width: 1100px;
     margin: 0 auto;
-}
-
-.header-box #hamburger {
-    display: none;
 }
 
 header .header-box {
@@ -77,7 +61,7 @@ header .header-box .header-nav li a {
 
 }
 
-header .header-box .header-right .counseling-btn {
+header .header-box .header-right .counseiling-btn {
     margin-left: 5px;
 }
 
@@ -85,15 +69,13 @@ header .header-box .header-right {
     display: flex;
 }
 
-
 /* 無料カウンセリングボタン */
 .free-counseling {
     position: relative;
 }
 
 .header-counseling-btn {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 12px;
     background-color: #F8BD28;
     color: #FFFFFF;
     border-radius: 30px;
@@ -104,8 +86,6 @@ header .header-box .header-right {
 }
 
 .counseling-btn {
-    font-size: 1rem;
-    font-weight: 700;
     background-color: #F8BD28;
     color: #FFFFFF;
     border-radius: 30px;
@@ -152,9 +132,9 @@ header .header-box .header-right {
 .mainvisual {
     width: 100%;
     min-height: calc(110vh - 70px);
-    background-image: url(/img/トップベージ/mainvisual01\ \(1\).png);
-    background-size: contain;
-    background-position: center;
+    background-image: url(/img/トップベージ/mainvisual01.png);
+    background-size: 65%;
+    background-position: 70% 100%;
     background-repeat: no-repeat;
     padding-top: 70px;
 }
@@ -205,9 +185,140 @@ header .header-box .header-right {
     background-color: #F8BD28;
     color: #FFF;
     border-radius: 40px;
+    margin-bottom: 30px;
+}
+
+/* headerレスポンシブ */
+@media(max-width:960px) {
+
+    .mainvisual {
+        background-size: 85%;
+        background-position: 30% 10%;
+    }
+
+    .mainvisual-wrapper {
+        margin-top: 380px;
+    }
+
+    .mainvisual .mainvisual-wrapper .title h2 {
+        display: block;
+        text-align: center;
+    }
+
+    .mainvisual .mainvisual-wrapper .title h3 {
+        display: block;
+        text-align: center;
+    }
+
+    .mainvisual .mainvisual-wrapper .text-wrapper {
+        text-align: center;
+    }
+
+    .mainvisual .mainvisual-wrapper .title h4 {
+        text-align: center;
+    }
+
+    .mainvisual .mainvisual-wrapper .text-wrapper {
+        margin:  0 auto;
+    }
+    
+    .mainvisual .mainvisual-wrapper .text-wrapper {
+        display: block;
+    }
+
+    .mainvisual .mainvisual-wrapper .text-wrapper a {
+        width: 500px;
+    }
+
+    .mainvisual .mainvisual-wrapper .text-wrapper .mainvisual-image img {
+        width: 200px;
+        padding-inline: 20px;
+    }
 }
 
 /* お悩み 翔太：担当*/
+.problem-flip-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-inline: 10%;
+    height: 400px;
+}
+
+.flip-card {
+    width: 100%;
+    height: 320px;
+    perspective: 1000px;
+}
+
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-card.active .flip-inner {
+    transform: rotateY(180deg);
+}
+
+/* ======= 表（グレーの悩みカード） ======= */
+.flip-front {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background: #EFEFEF;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    padding-top: 10px;
+}
+
+.flip-front p {
+    background: #D9D9D9;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.flip-front img {
+    width: 90%;
+    margin-top: 10px;
+}
+
+/* ======= 裏（カラーの変化カード） ======= */
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background: #FFF9F1;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    padding-top: 10px;
+}
+
+.flip-back p {
+    background: #FFE7C6;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.flip-back img {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
 .problem {
     background-color: #4fbad2;
 }
@@ -248,75 +359,38 @@ header .header-box .header-right {
     font-size: 32px;
 }
 
-.problem-befor {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding-inline: 15%;
-}
+@media (max-width:960px) {
 
-.problem-befor .problem-befor-item {
-    background-color: #EFEFEF;
-    border-radius: 20px;
-}
+    .flip-card {
+        height: 100px;
+    }
 
-.problem-befor .problem-befor-item p {
-    font-size: 10px;
-    padding: 10px 8px 8px 8px;
-    margin: 5px;
-    background-color: #D9D9D9;
-    border-radius: 10px;
-    text-align: left;
-    font-weight: bold;
-    position: relative;
-}
+    .flip-front {
+        display: flex;
+    }
+    .problem-flip-area {
+        display: block;
+        height: 100%;
+    }
 
-.problem-befor-item p::after {
-    content: "";
-    position: absolute;
-    bottom: -14px;
-    left: 30px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 16px solid #D9D9D9;
-    left: 50%;
-    transform: translateX(-50%);
-}
+    .flip-front {
+        height: 150px;
+    }
 
-.problem-befor .problem-befor-item img {
-    width: 90%;
-    margin-top: 10px;
-}
+    .flip-front img {
+        width: 25%;
+    }
 
-.problem-after {
-    display: flex;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding-inline: 10%;
-}
+    .flip-back {
+        display: flex;
+        height: 150px;
+    }
 
-.problem-after .problem-after-item {
-    background-color: #FFF9F1;
-    border-radius: 20px;
-}
+    .flip-back img {
+        width: 25%;
+    }
 
-.problem-after .problem-after-item p {
-    font-size: 12px;
-    padding: 10px 8px 8px 8px;
-    margin: 10px;
-    background-color: #FFE7C6;
-    border-radius: 10px;
-    font-weight: bold;
-    position: relative;
-}
-
-.problem-after .problem-after-item img {
-    width: 90%;
-    margin-top: 10px;
-    align-items: center;
+    
 }
 
 /* CHANGE 　翔太：担当*/
@@ -358,6 +432,7 @@ header .header-box .header-right {
 
 /* メッセージ */
 .massage {
+    background-image: url(/img/トップベージ/帯用矢印\ 1.png);
     background: linear-gradient(90deg, #72A4AF 0%, #E6F3FF 100%);
     width: 100%;
     padding: 80px 20px;
@@ -370,7 +445,6 @@ header .header-box .header-right {
     color: #FFFFFF;
     font-size: 48px;
 }
-
 
 /*プロナビの強み */
 .strength .strength-wrapper {
@@ -386,10 +460,6 @@ header .header-box .header-right {
     color: #497DA140;
 }
 
-.strength .strength-wrapper .strength-front-text {
-    width: 100%;
-}
-
 .strength .strength-wrapper .strength-front-text h3 {
     font-size: 48px;
     color: #497DA1;
@@ -403,37 +473,27 @@ header .header-box .header-right {
     color: #80A3BC;
 }
 
-
-/* ============================
-   POINT CARD（アニメーション統合）
-============================ */
-
-/* point-card の入力チェック制御 */
 .strength input {
     display: none;
 }
 
-/* 5枚のカードを横に並べる中央配置 */
 .strength .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
-    height: 450px;
-    gap: 10px;
+    height: 480px;
     overflow: hidden;
 }
 
 .strength .point-card {
     width: 160px;
-    border-radius: 20px;
-    padding: 20px 30px 20px 20px;
-    flex: 0 0 calc((100% - 80px) / 5);
-    margin: 0 10px;
+    height: 480px;
+    margin-right: 10px;
+    border-radius: 30px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
     background: linear-gradient(90deg,
             #497DA1 0%,
             #528CB4 25%,
@@ -442,70 +502,71 @@ header .header-box .header-right {
     color: #ffffff;
     overflow: hidden;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.2);
+    transition: width .6s cubic-bezier(.28, -0.03, 0, .99);
 }
 
-.strength .point-card:hover {
-    transform: translateX(20px);
-    z-index: 10;
-}
-
-
-/* ====== タイトル縦書き（元デザインそのまま） ====== */
 .strength .point-card .card-title {
-    font-size: 88px;
+    font-size: 64px;
     font-weight: bold;
     writing-mode: vertical-rl;
     text-orientation: sideways;
+    padding-bottom: 20px;
 }
 
-/* 内容の初期状態（非アクティブでは隠れる） */
 .strength .point-card .card-item {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: .4s ease;
     width: 400px;
+    height: 480px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .4s ease, transform .4s ease;
 }
 
+.point-card.opened .card-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
 
-/* hタグ pタグは元のまま */
+.strength input:checked+label.point-card.opened .card-item {
+    opacity: 1 !important;
+}
+
 .strength .point-card .card-item h4 {
-    font-size: 40px;
+    font-size: 32px;
+    margin-block: 20px;
 }
 
 .strength .point-card .card-item h3 {
-    font-size: 48px;
-    background-image: url(/img/文字背景グラデーション.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-size: 40px;
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 4px solid #FFFFFF;
 }
 
-.strength .point-card .card-item p {
-    font-size: 20px;
-    margin-bottom: 20px;
+.strength .point-card .card-item h3 .sub {
+    display: inline-block;
+    margin-top: 10px;
 }
 
-
-/* ============================
-   チェックされたカードのアニメーション
-============================ */
+.strength .point-card .card-item h3 span {
+    background-image: url(/img/文字背景グラデーション.png);
+    background-size: cover;
+}
 
 .strength input:checked+label.point-card {
     width: 650px;
-    /* 選択されたカードが大きくなる */
 }
 
-.strength input:checked+label.point-card .card-item {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* 非アクティブカードはより細く */
 .strength input:not(:checked)+label.point-card {
     width: 120px;
 }
+
+.strength .point-card .card-item p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 
 /* TOPページ後半 市川担当 */
 
