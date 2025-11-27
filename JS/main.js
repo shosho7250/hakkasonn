@@ -20,18 +20,15 @@ $(function () {
     centerPadding: '33%',// 両端の見切れるスライド幅
     prevArrow: '<img src="img/トップベージ/arrow left.png" class="slide-arrow prev-arrow">',
     nextArrow: '<img src="img/トップベージ/arrow right.png" class="slide-arrow next-arrow">',
-    responsive: [
-      {
-        breakpoint: 500, // 500px未満で・・・
-        settings: "unslick", // スライダーを無効
-      },
-    ],
+  
   });
 
-  $(window).on("resize orientationchange", function () {
-    $(".slider").slick("resize");
+  // $(".before-after-hide").slick({
+  //   autoplay: true, // 自動再生
+  //   slidesToShow: 1, // 表示するスライド枚数
+  //   slidesToScroll: 1,// スライドする数
 
-  });
+  // });
 
   $(".teacher-voice-contents").slick({
     autoplay: true, // 自動再生
@@ -42,17 +39,21 @@ $(function () {
     centerPadding: '33%',// 両端の見切れるスライド幅
     prevArrow: '<img src="img/トップベージ/arrow left.png" class="slide-arrow prev-arrow">',
     nextArrow: '<img src="img/トップベージ/arrow right.png" class="slide-arrow next-arrow">',
-    responsive: [
-      {
-        breakpoint: 500, // 500px未満で・・・
-        settings: "unslick", // スライダーを無効
-      },
-    ],
+  
   });
 
-  $(window).on("resize orientationchange", function () {
-    $(".slider").slick("resize");
 
+  $(".test-slick").slick({
+    autoplay: true, // 自動再生
+    slidesToShow: 3, // 表示するスライド枚数
+    slidesToScroll: 1,// スライドする数
+    responsive: [{ // レスポンシブ対応に関する記述
+      breakpoint: 960, // ブレイクポイント 767px
+      settings: { // その場合のオプション設定
+        slidesToShow: 1, // 一度に表示するスライドの数 1
+        // オプションを追加する場合はここ
+      }
+    }]
   });
 });
 
