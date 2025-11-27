@@ -568,6 +568,40 @@ header .header-box .header-right {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* TOPページ後半 市川担当 */
 
 /* TOPページの受講の流れセクション */
@@ -762,7 +796,7 @@ header .header-box .header-right {
 .card {
     position: sticky;
     top: 0;
-    padding-top: calc(var(--index) * 80px);
+    padding-top: calc(var(--index) * 100px);
 }
 
 .card-body {
@@ -809,6 +843,7 @@ header .header-box .header-right {
 
     .cards {
         gap: 20vh;
+        padding-bottom: 0;
     }
 
 
@@ -843,6 +878,27 @@ header .header-box .header-right {
 
     .card0 .card-body {
         height: 400px;
+        margin-top: 200px;
+    }
+
+    .card1 .card-body {
+        margin-top: 200px;
+    }
+
+    .card2 .card-body {
+        margin-top: 200px;
+    }
+
+    .card3 .card-body {
+        margin-top: 200px;
+    }
+
+    .card4 .card-body {
+        margin-top: 200px;
+    }
+
+    .card5 .card-body {
+        margin-top: 200px;
     }
 
     .under-arrow {
@@ -871,8 +927,13 @@ header .header-box .header-right {
         top: 16%;
         left: 50%;
         transform: translate(-50%,-50%);
-        font-size: 48px;
+        font-size: 40px;
     }
+
+    .price-content .price-number p {
+        font-size: 24px;
+    }
+
 
     .service-content {
         flex-direction: column;
@@ -881,10 +942,30 @@ header .header-box .header-right {
 
     .service-content .service-left {
         width: 100%;
+        margin-right: 0px;
+        padding-bottom: 40px;
+    }
+
+    .service-title-content-text {
+        padding-inline: 5%;
     }
 
     .service-content .service-right{
         width: 100%;
+    }
+
+    .service-left .service-title-content {
+        margin-block: 40px;
+        padding-inline: 5%;
+    }
+
+    .service-left .service-title-content .service-title {
+        font-size: 32px;
+    }
+
+    .service-right .service-content-img p {
+        padding-inline: 5%;
+        margin-block: 16px;
     }
 
     .installment-payment .installment-payment-left {
@@ -898,11 +979,138 @@ header .header-box .header-right {
     .installment-payment .installment-payment-right {
         width:40%;
     }
+
+    .student-voice-word .student-voice-word-top
+    ,.teacher-voice-word .teacher-voice-word-top {
+        font-size: 80px;
+    }
+
+    .student-voice-word .student-voice-word-under
+    ,.teacher-voice-word .teacher-voice-word-under {
+        font-size: 96px;
+    }
+
+    .installment-payment-left .installment-payment-left-box p {
+        font-size: 16px;
+    }
+
+    .installment-payment-center .installment-payment-center-box p {
+        font-size: 16px;
+    }
+
+    .installment-payment-right .installment-payment-right-box p {
+        font-size: 16px;
+    }
+
+    .price-service-container .creditcard {
+        font-size: 24px;
+    }
+
+    .price-wrapper .price-service-container {
+        margin-top: 40px;
+    }
+
+    .results-wrapper .top-results-title h2 {
+        font-size: 96px;
+    }
+
+    .faq-page-wrapper .faq-page-title h2 {
+        font-size: 96px;
+    }
+
+    .results-wrapper .top-results-title h3 {
+        font-size: 32px;
+    }
+
+    .faq-page-wrapper .faq-page-title h3 {
+        font-size: 32px;
+    }
+
+    .results-link .top-results-title ,.faq-page-wrapper .faq-page-title {
+        justify-content: center;
+    }
+
+    .top-results-title h3 ,.faq-page-title h3 {
+        width: 100%;
+
+    }
+
+    .faq-page-title-top {
+        display: none;
+    }
+
+    .faq-page-wrapper .faq-page-title .faq-page-title-under {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+
+
+
 }
 
 @media screen and (max-width: 375px) {
     .card-body {
         max-width: 300px;
+    }
+
+    .price-service-container .creditcard {
+        font-size: 16px;
+    }
+
+    .price-wrapper .price-title h2 {
+        font-size: 40px;
+    }
+
+    .price-wrapper .price-title h3 {
+        font-size: 16px;
+        position: absolute;
+        top: 10%;
+    }
+
+    .price-img img {
+        width :150px;
+    }
+
+    .service-left .service-title-content {
+        margin-block: 16px;
+        padding-inline: 5%;
+    }
+
+    .results-wrapper .top-results-title h2 {
+        font-size: 40px;
+    }
+
+    .faq-page-wrapper .faq-page-title h2 {
+        font-size: 40px;
+    }
+
+    .results-wrapper .top-results-title h3 {
+        font-size: 16px;
+    }
+
+    .faq-page-wrapper .faq-page-title h3 {
+        font-size: 16px;
+    }
+
+    .service-left .service-title-content .service-title {
+        font-size: 24px;
+    }
+
+    .price-content .price-number p {
+        font-size: 16px;
+    }
+
+    .installment-payment-left .division-price li p {
+        font-size: 12px;
+    }
+
+    .installment-payment-center .first-price li p {
+        font-size: 12px;
+    }
+
+    .installment-payment-right .second-price li p {
+        font-size: 12px;
     }
 }
 
@@ -933,14 +1141,12 @@ header .header-box .header-right {
 
 /* カード裏表 */
 .before-after {
-    display: flex;
-    justify-content: space-between;
     margin-top: -100px;
-    padding-inline: 56px;
+    padding-inline: 32px;
 }
 
 .student-card {
-  width: 33%; 
+  width: 100%;
   position: relative;
   cursor: pointer;
 }
@@ -989,7 +1195,6 @@ header .header-box .header-right {
 .student-voice-container {
     margin: 0 auto;
     max-width: 1100px;
-    /* padding-inline: 32px; */
 }
 
 .student-voice-word {
@@ -1036,7 +1241,7 @@ header .header-box .header-right {
     display: flex;
     background-color: #FFF9F1;
     border-radius: 10px;
-    margin-inline:16px;
+    margin-inline: 8px;
 }
 
 .front-student-voice-item {
@@ -1153,17 +1358,135 @@ header .header-box .header-right {
     display: flex;
 }
 
+.before-after-hide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .before-after-hide {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    }
+    .before-after {
+    display: none;
+    }
+
+    .student-voice-item {
+        margin: 0 auto;
+    }
+
+    .student-card::before {
+        padding-top: 87.5%;
+
+    }
+
+    /* 講師の声960px以下から */
+    .teacher-voice-container .teacher-voice-contents-hide {
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .teacher-voice-container .teacher-voice-contents-hide li {
+        margin-bottom: 32px;
+    }
+
+    .teacher-voice-contents {
+        display: none;
+    }
+
+    .teacher-voice-container .teacher-voice-contents {
+            display: none;
+    }
+
+    .teacher-voice-container .teacher-voice-item {
+        margin: 0 auto;
+    }
+
+    .student-voice  {
+        background-color: #4FBAD2;
+    } 
+
+    main .teacher-voice {
+        background-color: #4FBAD2;
+    }
+
+    .arrow_wrap .arrow::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: calc(50vw - 50%);
+        width: 0;
+        height: 0;
+        border-top: 100px solid #4FBAD2;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+    }
+
+}
+
+
+.teacher-voice-contents-hide {
+    display: none;
+}
+
+
+/* 練習用 */
+/* 
+.test-slick {
+    width: 100%;
+    height: 100%;
+}
+
+.test-slick img {
+    width: 100%;
+    object-fit: cover;
+}
+ 
+.test-section1 {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .test-section1 {
+    display: block;
+}
+}
+
+.test-slick li {
+    margin:10px;
+}
+
+.test-slick1 {
+    width: 100%;
+    height: 100%;
+}
+
+.test-slick1 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.test-slick1 li {
+    margin:10px;
+} */
+
+/* 練習用 */
+
 /* slickボタン */
 .slide-arrow {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
 .prev-arrow {
     position: absolute;
     z-index:100;
     top: 50%;
-    left: 0;
+    left: -6px;
     transform: translate(0,-50%);
 }
 
@@ -1171,7 +1494,7 @@ header .header-box .header-right {
     position: absolute;
     z-index:100;
     top: 50%;
-    right: 0;
+    right: -6px;
     transform: translate(0,-50%);
 }
 
@@ -1232,7 +1555,7 @@ header .header-box .header-right {
     display: flex;
     background-color: #FFF9F1;
     border-radius: 10px;
-    margin-inline:16px;
+    margin-inline:8px;
 }
 
 .teacher-voice-box {
@@ -1320,7 +1643,7 @@ header .header-box .header-right {
 .teacher-voice-contents {
     margin-top: -100px;
     display: flex;
-    padding-inline: 56px;
+    padding-inline: 32px;
 }
 
 
@@ -1531,6 +1854,7 @@ header .header-box .header-right {
 
 .results {
     margin-top: 100px;
+    padding-inline: 5%;
 }
 
 .results-link {
@@ -1584,6 +1908,7 @@ header .header-box .header-right {
 /* FAQへ */
 .faq-page {
     margin-block: 100px;
+    padding-inline: 5%;
 }
 
 .faq-link {
@@ -1634,6 +1959,61 @@ header .header-box .header-right {
     top: 30%;
     left: 0;
 }
+
+.faq-page-title .faq-page-title-under {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
