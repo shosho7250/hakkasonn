@@ -172,18 +172,31 @@ header .header-box .header-right {
 /* mainvisual 翔太：担当 */
 .mainvisual {
     width: 100%;
-    min-height: calc(110vh - 70px);
-    background-image: url(/img/トップベージ/mainvisual01.png);
-    background-size: 800px;
-    background-position: 380px 170px;
-    background-repeat: no-repeat;
+    min-height: calc(100vh - 120px);
     padding-top: 80px;
+    /* background-image: url(/img/トップベージ/mainvisual01.png); */
+    /* background-size: 800px;
+    background-position: 380px 170px;
+    background-repeat: no-repeat; */
+    position: relative;
+}
+
+.mainvisual-img-tb {
+    display: none;
+}
+
+.mainvisual-img {
+    width: 100%;
+    object-fit: cover;
+    height: calc(100dvh - 96px);
 }
 
 .mainvisual-wrapper {
     max-width: 1100px;
     margin: 0 auto;
     padding-inline: 4%;
+    position: absolute;
+    top: 13%;
 }
 
 .mainvisual .mainvisual-wrapper .title h2 {
@@ -205,7 +218,8 @@ header .header-box .header-right {
 }
 
 .mainvisual .mainvisual-wrapper .title h4 {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+    margin-top: 24px
 }
 
 .mainvisual .mainvisual-wrapper .text-wrapper {
@@ -213,15 +227,144 @@ header .header-box .header-right {
     text-align: center;
 }
 
-.mainvisual .mainvisual-wrapper .text-wrapper p {
-    font-weight: bold;
-}
+
 
 .slide-up {
     opacity: 0;
     transform: translateY(30px);
     animation: slideUp 0.8s ease-out forwards;
 }
+
+.mainvisual-image-tb {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .mainvisual-btn {
+        margin-bottom: 32px;
+    }
+
+    .mainvisual .mainvisual-wrapper .title h2 {
+        font-size: 32px;
+    }
+
+    .mainvisual .bg .inn {
+        font-size: 32px;
+    }
+
+
+    .mainvisual-img-tb {
+        display: block;
+        /* height: 50dvh; */
+        margin: 0 auto;
+   }
+
+   .mainvisual-img {
+        display: none;
+   }
+
+   .mainvisual-wrapper {
+    position: static;
+   }
+
+   .mainvisual-image-tb {
+    display: block;
+}
+
+   .text-wrapper .mainvisual-image {
+    display: none;
+   }
+
+    .problem-content .problem-content-top {
+        font-size: 112px;
+    }
+
+    .problem-wrapper .problem-flip-area {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .flip-front {
+        padding: 16px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .mainvisual .bg .inn {
+        font-size: 24px;
+    }
+
+    .mainvisual .mainvisual-wrapper .title h4 {
+        font-size: 14px;
+    }
+
+    .side-up ,.border {
+        font-size: 12px;
+    }
+
+    .mainvisual-img-tb {
+        width: 70%;
+    }
+
+    .problem-content .problem-content-top {
+        font-size: 64px;
+    }
+
+    .problem-content-title-text {
+        font-size: 12px;
+    }
+
+    .problem-content-title {
+        width: 360px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .problem-content-title .problem-content-title-text {
+        font-size: 10px;
+    }
+
+    .problem-content-title-text .problem-content-title-text span  {
+        font-size: 16px;
+    }
+    
+    .mainvisual .bg .inn {
+        font-size: 16px;
+    }
+
+    .mainvisual .mainvisual-wrapper .title h4 {
+        font-size: 12px;
+    }
+
+    .side-up ,.border {
+        font-size: 10px;
+    }
+
+    .mainvisual-image-tb img {
+        width: 100px;
+
+    }
+
+    .mainvisual-btn {
+        font-size: 14px;
+    }
+
+    .mainvisual .mainvisual-container .mainvisual-wrapper .text-wrapper a {
+        width: 240px;
+    }
+
+    .flip-card .flip-inner .flip-front p {
+        margin: 0;
+    }
+
+
+
+ 
+
+}
+
 
 /* 下からフワッと */
 @keyframes slideUp {
@@ -246,7 +389,7 @@ header .header-box .header-right {
 
 .mainvisual .mainvisual-wrapper .text-wrapper p.border {
     margin-bottom: 20px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .mainvisual .mainvisual-wrapper .text-wrapper a {
@@ -256,6 +399,8 @@ header .header-box .header-right {
     background-color: #F8BD28;
     color: #FFF;
     border-radius: 40px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+    margin-top: 16px;
 }
 
 .mainvisual .mainvisual-wrapper .text-wrapper {
@@ -302,6 +447,7 @@ header .header-box .header-right {
     gap: 12px;
     align-items: center;
     flex-shrink: 0;
+    margin-top: 48px;
 }
 
 /* テキスト部分でボタンや余白の調整 */
@@ -343,7 +489,7 @@ header .header-box .header-right {
     }
 
     .mainvisual-wrapper {
-        margin-top: 380px;
+        /* margin-top: 380px; */
     }
 
     .mainvisual .mainvisual-wrapper .title h2 {
@@ -373,7 +519,7 @@ header .header-box .header-right {
     }
 
     .mainvisual .mainvisual-wrapper .text-wrapper a {
-        width: 500px;
+        width: 300px;
     }
 
     .mainvisual .mainvisual-wrapper .text-wrapper .mainvisual-image img {
@@ -394,6 +540,40 @@ header .header-box .header-right {
 }
 
 /* お悩み 翔太：担当*/
+.problem-content {
+    position: relative;
+    padding-top: 32px;
+}
+
+.problem-content-top {
+    font-size: 156px;
+    opacity: 0.2;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0.01em;
+}
+
+.problem-content-title {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.problem-content-title-text {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+
+}
+.problem-content-title-text span {
+    color: #FCCC42;
+    font-size: 24px;
+}
+
+
+
 .problem-flip-area {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -439,6 +619,19 @@ header .header-box .header-right {
     padding: 10px;
     font-size: 12px;
     font-weight: bold;
+    text-align: left;
+    position: relative;
+}
+
+.flip-front p::before {
+    content: "";
+  border: 10px solid transparent;
+  border-top: 10px solid #D9D9D9;
+  margin-left: -10px;
+  top: 100%;
+  left: 50%;
+  position: absolute;
+
 }
 
 .flip-front img {
@@ -455,7 +648,7 @@ header .header-box .header-right {
     border-radius: 20px;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    padding-top: 10px;
+    padding: 10px;
 }
 
 .flip-back p {
@@ -465,10 +658,23 @@ header .header-box .header-right {
     padding: 10px;
     font-size: 12px;
     font-weight: bold;
+    text-align: left;
+    position:relative;
+}
+
+.flip-back p::before {
+    content: "";
+  border: 10px solid transparent;
+  border-top: 10px solid #FFE7C6;
+  margin-left: -10px;
+  top: 100%;
+  left: 50%;
+  position: absolute;
+
 }
 
 .flip-back img {
-    width: 70%;
+    /* width: 70%; */
     margin-top: 10px;
 }
 
@@ -490,6 +696,7 @@ header .header-box .header-right {
 .problem .problem-wrapper .problem-back-text {
     font-size: 128px;
     color: #FFFFFF40;
+    position: relative;
 }
 
 .problem .problem-wrapper .problem-front-text p {
@@ -497,18 +704,18 @@ header .header-box .header-right {
     color: #FFFFFF;
     font-size: 16px;
     position: absolute;
-    top: 13%;
+    /* top: 13%;
     left: 38%;
-    transform: translate(-50% -50%);
+    transform: translate(-50% -50%); */
 }
 
 .problem .problem-wrapper .problem-front-text h2 {
     font-weight: bold;
     color: #FFFFFF;
     position: absolute;
-    top: 20%;
+    /* top: 20%;
     left: 34%;
-    transform: translate(-50% -50%);
+    transform: translate(-50% -50%); */
 }
 
 .problem .problem-wrapper .problem-front-text h2 span {
@@ -543,9 +750,9 @@ header .header-box .header-right {
         height: 150px;
     }
 
-    .flip-front img {
-        width: 25%;
-    }
+    /* .flip-inner .flip-front:nth-of-type(2){
+        flex-direction: row-reverse;
+    } */
 
     .flip-back {
         display: flex;
@@ -554,7 +761,7 @@ header .header-box .header-right {
     }
 
     .flip-back img {
-        width: 25%;
+        width: 90%;
     }
 
     .problem .problem-wrapper .problem-front-text p {
@@ -569,14 +776,34 @@ header .header-box .header-right {
     }
 
     .flip-front p {
-        padding: 30px;
-        margin: 30px;
+        margin-block: 20px;
     }
 
     .flip-back p {
-        padding: 30px;
-        margin: 30px;
+        padding: 10px;
+        margin: 20px;
     }
+
+    .flip-front p::before {
+        transform: rotate(-90deg);
+        /* right: -14%; */
+    }
+
+    .flip-front p::before {
+        left: 105%;
+        top: 40%;
+    }
+
+    .flip-back p::before {
+        transform: rotate(-90deg);
+    }
+
+    .flip-back p::before {
+        left: 105%;
+        top: 40%;
+    }
+
+    
 }
 
 /* CHANGE 　翔太：担当*/
@@ -945,7 +1172,7 @@ header .header-box .header-right {
 }
 
 .oursuport-container-title h3 {
-    font-size: 64px;
+    font-size: 52px;
     color: #FFFFFF;
     position: absolute;
     top: 0;
@@ -984,8 +1211,13 @@ header .header-box .header-right {
     padding-left: 40px;
 }
 
-.oursuport-left-top,.oursuport-left-bottom,.oursuport-right-top,.oursuport-right-bottom {
-    height: 50%;
+.oursuport-left-top,.oursuport-right-top {
+    height: 40%;
+    color: #FFFFFF;
+}
+
+.oursuport-left-bottom,.oursuport-right-bottom {
+    height: 60%;
     color: #FFFFFF;
 }
 
@@ -1054,13 +1286,17 @@ header .header-box .header-right {
     }
 
     .student-voice-item,.teacher-voice-item {
-        width: 60%;
+        width: 50%;
     }
 
     .teacher-voice-contents {
         flex-direction: column;
         max-width: 600px;
     }
+
+    .oursuport-left-bottom img {
+    height: 150px;
+}
 
 
 
@@ -1113,18 +1349,18 @@ header .header-box .header-right {
 .card {
     position: sticky;
     top: 0;
-    padding-top: calc(var(--index) * 40px);
+    padding-top: calc(var(--index) * 80px);
 }
 
 .card-body {
     border-radius:56px;
-    height: auto;
+    height: 350px;
     display: flex;
     background-color: #366383;
     border-radius: 40px;
-    padding: 16px 48px;
+    padding: 24px 48px;
     text-align: left;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 @media screen and (max-width: 960px) {
@@ -1139,6 +1375,7 @@ header .header-box .header-right {
         flex-direction: column;
         height: auto;
         align-items: center;
+        padding: 14px 48px;
 
     }
 
@@ -1148,7 +1385,7 @@ header .header-box .header-right {
     }
 
     .oursuport-container-title h3 {
-        font-size: 32px;
+        font-size: 28px;
         left: 42%;
         transform: translate(-37%, 0);
     }
@@ -1168,7 +1405,7 @@ header .header-box .header-right {
     .card {
         margin: 0 auto;
         /* width: 600px; */
-        padding-top: calc(var(--index) * 70px);
+        padding-top: calc(var(--index) * 50px);
     }
 
     .oursuport-container-box-left {
@@ -1236,7 +1473,7 @@ header .header-box .header-right {
 
     .card0 .card-body {
         height: 400px;
-        margin-top: 50px;
+        margin-top: 48px;
         width: 600px;
     }
 
@@ -1451,9 +1688,14 @@ header .header-box .header-right {
         /* max-width: 400px; */
     }
 
+    .student-voice-item .student-voice-box {
+        margin: 0px;
+    }
+
     .back .student-voice-item {
         display: block;
         width: 300px;
+        padding: 8px;
     }
 
     .teacher-voice-container .teacher-voice-item {
@@ -1512,6 +1754,85 @@ header .header-box .header-right {
 
 
 @media screen and (max-width: 375px) {
+
+    .results .results-link .results-wrapper {
+        padding: 24px;
+    }
+
+    .faq-page .faq-page-wrapper {
+        padding: 24px;
+    }
+
+    .results-link .results-wrapper {
+        border-radius: 20px;;
+    }
+
+    .faq-link .faq-page-wrapper {
+        border-radius: 20px;;
+    }
+
+    .division-price-pc {
+        display: none;
+    }
+
+    .first-price-pc {
+        display: none;
+    }
+
+    .second-price-pc {
+        display: none;
+    }
+
+    .installment-payment-left-box .division-price-sp {
+        display: block;
+    }
+    
+    .installment-payment-center-box .first-price-sp {
+        display: block;
+    }
+
+    .installment-payment-right-box .second-price-sp {
+        display: block;
+    }
+
+
+    .service-left .service-title-content-text p {
+        font-size: 12px;
+    }
+
+    .service-content-img p {
+        font-size: 12px;
+    }
+
+    .price-service-container .price-content {
+        height: 150px;
+    }
+
+    .price-wrapper .price-service-container .creditcard {
+        font-size: 13px;
+    }
+
+    .price-service-container p {
+        font-size: 10px;
+    }
+
+
+    .oursuport-container-title h3 {
+        font-size: 20px;
+    }
+
+    .oursuport-left-top h3 {
+        font-size: 20px;
+    }
+
+    .oursuport-right-bottom h4 {
+        font-size: 16px;
+    }
+
+    .oursuport-right-bottom span {
+        margin-right: 5px;
+    }
+
     .card-body {
         max-width: 300px;
     }
@@ -1592,6 +1913,7 @@ header .header-box .header-right {
     .back .student-voice-item {
         display: block;
         width: 270px;
+        padding: 8px;
     }
 
     .student-card {
@@ -1949,6 +2271,7 @@ header .header-box .header-right {
     .teacher-voice-container .teacher-voice-item {
         display: block;
         margin: 0 auto;
+        padding: 8px;
     }
 
     .student-voice  {
@@ -1979,47 +2302,6 @@ header .header-box .header-right {
 }
 
 
-/* 練習用 */
-/* 
-.test-slick {
-    width: 100%;
-    height: 100%;
-}
-
-.test-slick img {
-    width: 100%;
-    object-fit: cover;
-}
- 
-.test-section1 {
-    display: none;
-}
-
-@media screen and (max-width: 960px) {
-    .test-section1 {
-    display: block;
-}
-}
-
-.test-slick li {
-    margin:10px;
-}
-
-.test-slick1 {
-    width: 100%;
-    height: 100%;
-}
-
-.test-slick1 img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.test-slick1 li {
-    margin:10px;
-} */
-
-/* 練習用 */
 
 /* slickボタン */
 .slide-arrow {
@@ -2031,7 +2313,7 @@ header .header-box .header-right {
     position: absolute;
     z-index:100;
     top: 50%;
-    left: -6px;
+    left: 2px;
     transform: translate(0,-50%);
 }
 
@@ -2039,7 +2321,7 @@ header .header-box .header-right {
     position: absolute;
     z-index:100;
     top: 50%;
-    right: -6px;
+    right: 2px;
     transform: translate(0,-50%);
 }
 
@@ -2107,7 +2389,6 @@ header .header-box .header-right {
     text-align: center;
     border: 1px solid #6296D0;
     position: relative;
-    margin: 8px;
     padding: 8px;
     
 }
@@ -2295,7 +2576,7 @@ header .header-box .header-right {
 .service-title-box,.service-content-box p {
     font-size: 24px;
     color: #FFFFFF;
-    font-weight: 900;
+    font-weight: 700;
     /* height: 10%; */
 }
 
@@ -2313,6 +2594,10 @@ header .header-box .header-right {
 .service-content-img {
     display: flex;
     flex-direction: column;
+}
+
+.service-content-img p {
+    margin-block: 8px;
 }
 
 .service-content-img img {
@@ -2336,7 +2621,7 @@ header .header-box .header-right {
 .price-content-box p {
     font-size: 24px;
     color: #FFFFFF;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
     letter-spacing: 0.5em;
 }
@@ -2382,7 +2667,7 @@ header .header-box .header-right {
 .installment-payment-left-box p,.installment-payment-center-box p,.installment-payment-right-box p {
     font-size: 24px;
     color: #FFFFFF;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -2393,6 +2678,10 @@ header .header-box .header-right {
 
 .caution1 {
     margin-bottom: 16px;
+}
+
+.division-price-sp,.first-price-sp,.second-price-sp {
+    display: none;
 }
 
 /* 実績で見るプロナビへ */
