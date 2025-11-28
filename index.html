@@ -22,60 +22,46 @@
             <div class="header-box">
                 <h1>
                     <a href="index.html" class="logo">
-                        <img src="img/LOGO/プロナビlogo.png" alt="LOGO">
+                        <img src="img/LOGO/プロナビlogo.png" alt="">
                     </a>
                 </h1>
-                <div class="header-right" id="header-right-PC">
+                <div class="header-right">
                     <ul class="header-nav">
-                        <li><a href="index.html">プロナビとは？</a></li>
-                        <li><a href="index.html">プロナビの強み</a></li>
-                        <li><a href="curriculum.html">受講の流れ</a></li>
-                        <li><a href="results.html">実績</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+                        <li>
+                            <a href="#">プロナビとは？</a>
+                        </li>
+                        <li>
+                            <a href="#">プロナビの強み</a>
+                        </li>
+                        <li>
+                            <a href="#">受講の流れ</a>
+                        </li>
+                        <li>
+                            <a href="#">実績</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
                     </ul>
-                    <div class="counseling">
-                        <a class="header-counseling-btn" href="#">無料カウンセリングへ</a>
-                    </div>
+                    <a class="header-btn" href="#">無料カウンセリングを予約する</a>
                 </div>
-            </div>
-
-            <div id="hamburger">
-                <button type="button" class="btn js-btn">
-                    <span class="btn-line"></span>
-                </button>
-                <nav>
-                    <div class="mask">
-                        <ul class="menu">
-                            <li class="menu-list"><a href="index.html">プロナビとは？</a></li>
-                            <li class="menu-list"><a href="index.html">プロナビの強み</a></li>
-                            <li class="menu-list"><a href="curriculum.html">受講の流れ</a></li>
-                            <li class="menu-list"><a href="results.html">実績</a></li>
-                            <li class="menu-list"><a href="faq.html">FAQ</a></li>
-                            <li class="menu-list">
-                                <div class="counseling">
-                                    <a class="counseling-btn" href="#">無料カウンセリングへ</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
             </div>
         </div>
     </header>
-    <main>
 
+    <main>
         <section class="mainvisual">
             <div class="mainvisual-wrapper">
                 <div class="title">
-                    <h2>ひとりで走らなくていい。</h2>
-                    <h3>あなたの隣にPro Naviがいる。</h3>
+                    <h2 class="bg"><span class="bg-wrap"><span class="inn">ひとりで走らなくていい。</span></span></h2>
+                    <h3 class="bg"><span class="bg-wrap"><span class="inn">あなたの隣にPro Naviがいる。</span></span></h3>
                     <h4>不安な「最初の一歩」も伴走があれば、踏み出せる。<br>
                         あなたのペースで、未来の向かって一緒に走る。
                     </h4>
                 </div>
                 <div class="text-wrapper">
-                    <p>学ぶ・伴走・実践の3ステップで、</p>
-                    <p class="border">キャリアを確実に前進させるオンラインスクールです。</p>
+                    <p class="side-up">学ぶ・伴走・実践の3ステップで、</p>
+                    <p class="border side-up">キャリアを確実に前進させるオンラインスクールです。</p>
                     <a class="mainvisual-btn" href="#">無料カウンセリングを予約する</a>
                     <div class="mainvisual-image">
                         <img src="img/トップベージ/桂冠数字_1.png" alt="">
@@ -85,6 +71,7 @@
                 </div>
             </div>
         </section>
+
         <section class="problem">
             <div class="problem-wrapper">
                 <div class="problem-back-text">
@@ -138,8 +125,8 @@
             <div class="change-wrapper">
                 <div class="change-back-text">
                     <h2>CHANGE</h2>
-                    <h2>YOUR.</h2>
-                    <h2>LIFE.</h2>
+                    <h2>YOUR</h2>
+                    <h2>LIFE BY</h2>
                 </div>
                 <div class="change-front-text">
                     <p>６ヵ月後の自分を変えてみませんか？</p>
@@ -167,7 +154,7 @@
                 </div>
             </div>
         </div>
-        <img class="counseling-background" src="./img/帯用arrows.png" alt="">
+        <img class="counseling-background" src="img/仮の帯用2 4 (1).png" alt="">
         <section class="massage">
             <h2>ひとりで走らなくていい。</h2>
             <h2>あなたの隣に、Pro Naviがいる。</h2>
@@ -273,6 +260,27 @@
                 });
             });
         </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const inputs = document.querySelectorAll(".strength input");
+                const cards = document.querySelectorAll(".point-card");
+                cards[0].classList.add("opened");
+                inputs.forEach(function (input, index) {
+                    input.addEventListener("change", function () {
+                        cards.forEach(function (card) {
+                            card.classList.remove("opened");
+                        });
+                        if (index === 0) {
+                            cards[0].classList.add("opened");
+                            return;
+                        }
+                        setTimeout(function () {
+                            cards[index].classList.add("opened");
+                        }, 500);
+                    });
+                });
+            });
+        </script> 
 
         <!-- TOPページ上半分 -->
         <!-- 受講の流れ -->
