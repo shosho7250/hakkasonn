@@ -678,7 +678,7 @@ header .header-box .header-right {
 
 .oursuport-left-top h3 {
     font-size: 32px;
-    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .oursuport-left-bottom img {
@@ -766,7 +766,7 @@ header .header-box .header-right {
 }
 
 .card0 .card-body {
-    height: 50vh;
+    height: 40vh;
 }
 
 .card0 {
@@ -811,7 +811,7 @@ header .header-box .header-right {
 
 @media screen and (max-width: 960px) {
     .oursuport {
-        margin-bottom: 400px;
+        margin-bottom: 600px;
     }
 
 
@@ -825,20 +825,20 @@ header .header-box .header-right {
     }
 
     .oursuport-container-title h2 {
-        font-size: 56px;
+        font-size: 40px;
         
     }
 
     .oursuport-container-title h3 {
-        font-size: 24px;
-        left: 50%;
-        transform: translate(-50%,0);
+        font-size: 32px;
+        left: 42%;
+        transform: translate(-37%, 0);
     }
 
     .oursuport-left-top h2 {
         margin-bottom: 8px;
         position: relative;
-        font-size: 24px;
+        font-size: 32px;
     }
 
     .cards {
@@ -849,8 +849,8 @@ header .header-box .header-right {
 
     .card {
         margin: 0 auto;
-        width: 600px;
-        padding-top: calc(var(--index) * 60px);
+        /* width: 600px; */
+        padding-top: calc(var(--index) * 70px);
     }
 
     .oursuport-container-box-left {
@@ -862,6 +862,8 @@ header .header-box .header-right {
         width: 100%;
         padding-left: 0px;
     }
+
+    
 
     .oursuport-left-top h2::after {
         position: absolute;
@@ -876,29 +878,68 @@ header .header-box .header-right {
         transform: rotate(45deg);
     }
 
+    .oursuport-left-top h3 {
+        font-size: 24px;
+    }
+
+    .oursuport-right-bottom span {
+        font-size: 24px;
+    }
+
+
+    /* 受講生の声 */
+
+    .student-voice-word .student-voice-title {
+        top: 42%;
+    }
+
+    .student-voice-word .student-voice-title-text {
+        font-size: 16px;
+        width: 400px;
+    }
+
+    .teacher-voice-title .teacher-voice-title-text span {
+        font-size: 24px;
+    }
+
+    .teacher-voice-word .teacher-voice-title-text {
+        font-size: 16px;
+        width: 400px;
+    }
+
+    .teacher-voice-title .teacher-voice-title-text span {
+        font-size: 20px;
+    }
+
+    .teacher-voice-word .teacher-voice-title {
+        top: 42%;
+    }
+
+
     .card0 .card-body {
         height: 400px;
-        margin-top: 200px;
+        margin-top: 50px;
+        width: 600px;
     }
 
     .card1 .card-body {
-        margin-top: 200px;
+        margin-top: 50px;
     }
 
     .card2 .card-body {
-        margin-top: 200px;
+        margin-top: 50px;
     }
 
     .card3 .card-body {
-        margin-top: 200px;
+        margin-top: 50px;
     }
 
     .card4 .card-body {
-        margin-top: 200px;
+        margin-top: 50px;
     }
 
     .card5 .card-body {
-        margin-top: 200px;
+        margin-top: 50px;
     }
 
     .under-arrow {
@@ -928,6 +969,8 @@ header .header-box .header-right {
         left: 50%;
         transform: translate(-50%,-50%);
         font-size: 40px;
+        width: 100%;
+        text-align: center;
     }
 
     .price-content .price-number p {
@@ -973,11 +1016,19 @@ header .header-box .header-right {
     }
 
     .installment-payment .installment-payment-center {
-        width:30%;
+        width:33%;
     }
 
     .installment-payment .installment-payment-right {
-        width:40%;
+        width:43%;
+    }
+
+    .student-voice-title .student-voice-title-text span {
+    font-size: 20px;
+}
+
+    .student-voice-word {
+        margin-bottom: 32px;
     }
 
     .student-voice-word .student-voice-word-top
@@ -988,6 +1039,10 @@ header .header-box .header-right {
     .student-voice-word .student-voice-word-under
     ,.teacher-voice-word .teacher-voice-word-under {
         font-size: 96px;
+    }
+
+    .student-card {
+        margin-bottom: 32px;
     }
 
     .installment-payment-left .installment-payment-left-box p {
@@ -1045,9 +1100,98 @@ header .header-box .header-right {
         top: 0;
     }
 
+    .teacher-voice-word {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card-body {
+        max-width: 400px;
+    }
+
+    .student-voice-word .student-voice-title-text {
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .student-voice-word .student-voice-word-top
+    ,.teacher-voice-word .teacher-voice-word-top {
+        font-size: 56px;
+    }
+
+    .student-voice-word .student-voice-word-under
+    ,.teacher-voice-word .teacher-voice-word-under {
+        font-size: 64px;
+    }
+
+    .student-card {
+        margin-bottom: 160px;
+    }
+
+    .student-voice-container .before-after-hide {
+        /* max-width: 400px; */
+    }
+
+    .back .student-voice-item {
+        display: block;
+        width: 300px;
+    }
+
+    .teacher-voice-container .teacher-voice-item {
+        width: 300px;
+    }
+
+    .price-wrapper .price-title h3 {
+        font-size: 32px;
+    }
+
+    .price-wrapper .price-title h2 {
+        font-size: 80px;;
+    }
+
+    .results-wrapper .top-results-title h2 {
+        font-size: 60px;
+    }
+
+    .results-wrapper .top-results-title h3 {
+        font-size: 24px;
+    }
+
+    .faq-page-wrapper .faq-page-title h2 {
+        font-size: 60px;
+    }
+
+    .faq-page-wrapper .faq-page-title h3 {
+        font-size: 24px;
+    }
+
+    .results .results-link .results-wrapper {
+        padding-block: 40px;
+    }
+
+    .faq-page .faq-page-wrapper {
+        padding-block: 40px;
+    }
+
+    .oursuport-left-top h2 {
+        font-size: 24px;
+    }
+
+    .oursuport-left-top h2::after {
+        right: 24%;
+        width: 12px;
+        height: 12px;
+    }
+
+    .oursuport-container-title h3 {
+        font-size: 24px;
+    }
+
 
 
 }
+
 
 @media screen and (max-width: 375px) {
     .card-body {
@@ -1102,16 +1246,88 @@ header .header-box .header-right {
     }
 
     .installment-payment-left .division-price li p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .installment-payment-center .first-price li p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .installment-payment-right .second-price li p {
+        font-size: 10px;
+    }
+
+    .oursuport-left-bottom img {
+        width: 100%;
+    }
+
+    .student-voice-word .student-voice-word-top
+    ,.teacher-voice-word .teacher-voice-word-top {
+        font-size: 40px;
+    }
+
+    .student-voice-word .student-voice-word-under
+    ,.teacher-voice-word .teacher-voice-word-under {
+        font-size: 48px;
+    }
+
+    .back .student-voice-item {
+        display: block;
+        width: 270px;
+    }
+
+    .student-card {
+        margin-bottom: 250px;
+    }
+
+    .teacher-voice-container .teacher-voice-item {
+        width: 270px;
+    }
+
+    .teacher-voice-word .teacher-voice-title-text {
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .teacher-voice-title .teacher-voice-title-text span {
+        font-size: 16px;
+    }
+
+    .price-wrapper .price-title h3 {
+        top: 13%;
+    }
+
+     .installment-payment-left .installment-payment-left-box p {
         font-size: 12px;
     }
+
+    .installment-payment-center .installment-payment-center-box p {
+        font-size: 12px;
+    }
+
+    .installment-payment-right .installment-payment-right-box p {
+        font-size: 12px;
+    }
+
+    .student-voice-item .student-voice-box h4 {
+        font-size: 36px
+    }
+
+    .oursuport-left-top h2 {
+        font-size: 16px;
+    }
+
+    .oursuport-left-top h2::after {
+        width: 10px;
+        height: 10px;
+    }
+
+    .oursuport-container-title h2 {
+        font-size: 32px;
+    }
+
+    
+
 }
 
 
@@ -1380,10 +1596,20 @@ header .header-box .header-right {
 
     .student-card::before {
         padding-top: 87.5%;
+    }
 
+    .front-student-voice-item {
+        width: 350px;
+        margin: 0 auto;
     }
 
     /* 講師の声960px以下から */
+
+    .front-student-voice-item {
+        width: 300px;
+        margin: 0 auto;
+    }
+
     .teacher-voice-container .teacher-voice-contents-hide {
         display: block;
         max-width: 600px;
@@ -1403,6 +1629,7 @@ header .header-box .header-right {
     }
 
     .teacher-voice-container .teacher-voice-item {
+        display: block;
         margin: 0 auto;
     }
 
@@ -1953,7 +2180,7 @@ header .header-box .header-right {
 }
 
 .faq-page-title h3 {
-    font-size: 56px;
+    font-size: 48px;
     color: #FFFFFF;
     position: absolute;
     top: 30%;

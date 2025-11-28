@@ -43,18 +43,6 @@ $(function () {
   });
 
 
-  $(".test-slick").slick({
-    autoplay: true, // 自動再生
-    slidesToShow: 3, // 表示するスライド枚数
-    slidesToScroll: 1,// スライドする数
-    responsive: [{ // レスポンシブ対応に関する記述
-      breakpoint: 960, // ブレイクポイント 767px
-      settings: { // その場合のオプション設定
-        slidesToShow: 1, // 一度に表示するスライドの数 1
-        // オプションを追加する場合はここ
-      }
-    }]
-  });
 });
 
 
