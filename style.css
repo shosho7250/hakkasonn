@@ -881,6 +881,44 @@ header .header-box .header-right {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* TOPページ後半 市川担当 */
 
 /* TOPページの受講の流れセクション */
@@ -1075,7 +1113,7 @@ header .header-box .header-right {
 .card {
     position: sticky;
     top: 0;
-    padding-top: calc(var(--index) * 100px);
+    padding-top: calc(var(--index) * 40px);
 }
 
 .card-body {
@@ -1086,6 +1124,7 @@ header .header-box .header-right {
     border-radius: 40px;
     padding: 16px 48px;
     text-align: left;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 960px) {
@@ -2469,29 +2508,6 @@ header .header-box .header-right {
 .faq-page-title .faq-page-title-under {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
