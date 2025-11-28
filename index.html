@@ -45,19 +45,19 @@
                 </button>
                 <nav>
                     <div class="mask">
-                    <ul class="menu">
-                        <li class="menu-list"><a href="index.html">プロナビとは？</a></li>
-                        <li class="menu-list"><a href="index.html">プロナビの強み</a></li>
-                        <li class="menu-list"><a href="curriculum.html">受講の流れ</a></li>
-                        <li class="menu-list"><a href="results.html">実績</a></li>
-                        <li class="menu-list"><a href="faq.html">FAQ</a></li>
-                        <li class="menu-list">
-                            <div class="counseling">
-                                <a class="counseling-btn" href="#">無料カウンセリングへ</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                        <ul class="menu">
+                            <li class="menu-list"><a href="index.html">プロナビとは？</a></li>
+                            <li class="menu-list"><a href="index.html">プロナビの強み</a></li>
+                            <li class="menu-list"><a href="curriculum.html">受講の流れ</a></li>
+                            <li class="menu-list"><a href="results.html">実績</a></li>
+                            <li class="menu-list"><a href="faq.html">FAQ</a></li>
+                            <li class="menu-list">
+                                <div class="counseling">
+                                    <a class="counseling-btn" href="#">無料カウンセリングへ</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -65,22 +65,31 @@
 
     <main>
         <section class="mainvisual">
-            <div class="mainvisual-wrapper">
-                <div class="title">
-                    <h2 class="bg"><span class="bg-wrap"><span class="inn">ひとりで走らなくていい。</span></span></h2>
-                    <h3 class="bg"><span class="bg-wrap"><span class="inn">あなたの隣にPro Naviがいる。</span></span></h3>
-                    <h4>不安な「最初の一歩」も伴走があれば、踏み出せる。<br>
-                        あなたのペースで、未来の向かって一緒に走る。
-                    </h4>
-                </div>
-                <div class="text-wrapper">
-                    <p class="side-up">学ぶ・伴走・実践の3ステップで、</p>
-                    <p class="border side-up">キャリアを確実に前進させるオンラインスクールです。</p>
-                    <a class="mainvisual-btn" href="#">無料カウンセリングを予約する</a>
-                    <div class="mainvisual-image">
-                        <img src="img/トップベージ/桂冠数字_1.png" alt="">
-                        <img src="img/トップベージ/桂冠数字_2.png" alt="">
-                        <img src="img/トップベージ/桂冠数字_3.png" alt="">
+            <div class="mainvisual-container">
+                <img class="mainvisual-img" src="img/トップベージ/メインビジュアル画像.png" alt="">
+                <img class="mainvisual-img-tb" src="img/トップベージ/メインビジュアル960以下.png" alt="">
+                <div class="mainvisual-wrapper">
+                    <div class="title">
+                        <h2 class="bg"><span class="bg-wrap"><span class="inn">ひとりで走らなくていい。</span></span></h2>
+                        <h3 class="bg"><span class="bg-wrap"><span class="inn">あなたの隣にPro Naviがいる。</span></span></h3>
+                        <h4>不安な「最初の一歩」も伴走があれば、踏み出せる。<br>
+                            あなたのペースで、未来の向かって一緒に走る。
+                        </h4>
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="mainvisual-image-tb">
+                            <img src="img/トップベージ/桂冠数字_1.png" alt="">
+                            <img src="img/トップベージ/桂冠数字_2.png" alt="">
+                            <img src="img/トップベージ/桂冠数字_3.png" alt="">
+                        </div>
+                        <p class="side-up">学ぶ・伴走・実践の3ステップで、</p>
+                        <p class="border side-up">キャリアを確実に前進させるオンラインスクールです。</p>
+                        <a class="mainvisual-btn" href="#">無料カウンセリングを予約する</a>
+                        <div class="mainvisual-image">
+                            <img src="img/トップベージ/桂冠数字_1.png" alt="">
+                            <img src="img/トップベージ/桂冠数字_2.png" alt="">
+                            <img src="img/トップベージ/桂冠数字_3.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,12 +97,14 @@
 
         <section class="problem">
             <div class="problem-wrapper">
-                <div class="problem-back-text">
-                    <h2>PROBLEM</h2>
-                </div>
-                <div class="problem-front-text">
-                    <p>副業を始めたいけど、不安で一歩踏み出せない</p>
-                    <h2>こんな<span>お悩み</span>を抱えているあなたへ</h2>
+                <div class="problem-content">
+                    <h2 class="problem-content-top">PROBLEM</h2>
+
+                    <div class="problem-content-title">
+                        <h3 class="problem-content-title-text">「副業を始めたいけど、不安で一歩踏み出せない
+                            <br>こんな<span>お悩み</span>を抱えているあなたへ
+                        </h3>
+                    </div>
                 </div>
                 <div class="problem-flip-area">
                     <div class="flip-card">
@@ -294,7 +305,7 @@
                     });
                 });
             });
-        </script> 
+        </script>
 
         <!-- TOPページ上半分 -->
         <!-- 受講の流れ -->
@@ -1150,7 +1161,8 @@
                     <div class="installment-payment">
                         <div class="installment-payment-left">
                             <div class="installment-payment-left-box">
-                                <p>分割回数</p>
+                                <p class="division-price-pc">分割回数</p>
+                                <p class="division-price-sp">分割<br>回数</p>
                             </div>
                             <ul class="division-price">
                                 <li>
@@ -1172,7 +1184,8 @@
                         </div>
                         <div class="installment-payment-center">
                             <div class="installment-payment-center-box">
-                                <p>初回支払い</p>
+                                <p class="first-price-pc">初回支払い</p>
+                                <p class="first-price-sp">初回<br>支払い</p>
                             </div>
                             <ul class="first-price">
                                 <li>
@@ -1195,7 +1208,8 @@
                         </div>
                         <div class="installment-payment-right">
                             <div class="installment-payment-right-box">
-                                <p>２回目以降の支払い</p>
+                                <p class="second-price-pc">２回目以降の支払い</p>
+                                <p class="second-price-sp">２回目以降の<br>支払い</p>
                             </div>
                             <ul class="second-price">
                                 <li>
