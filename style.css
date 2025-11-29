@@ -417,7 +417,7 @@ header .header-box .header-right {
 
 .mainvisual .bg .bg-wrap::before {
     animation: bg 8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    background-image: url(/img/文字背景グラデーション.png);
+    background-image: url("../img/文字背景グラデーション.png");
     background-size: cover;
     background-repeat: no-repeat;
     content: "";
@@ -823,7 +823,7 @@ header .header-box .header-right {
 .change-wrapper .change-front-text {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
