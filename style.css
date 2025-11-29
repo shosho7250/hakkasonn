@@ -636,7 +636,7 @@ header .header-box .header-right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding-inline: 10%;
+    padding-inline: 50px;
     height: 400px;
 }
 
@@ -663,17 +663,18 @@ header .header-box .header-right {
 .flip-front {
     position: absolute;
     width: 100%;
-    height: 350px;
+    /* height: 350px; */
     background: #EFEFEF;
     border-radius: 20px;
     backface-visibility: hidden;
     padding-top: 10px;
+    padding-bottom: 16px
 }
 
 .flip-front p {
     background: #D9D9D9;
     border-radius: 10px;
-    margin: 10px;
+    margin-inline: 32px;
     padding: 10px;
     font-size: 12px;
     font-weight: bold;
@@ -693,7 +694,7 @@ header .header-box .header-right {
 }
 
 .flip-front img {
-    width: 90%;
+    /* width: 100px; */
     margin-top: 10px;
 }
 
@@ -701,18 +702,19 @@ header .header-box .header-right {
 .flip-back {
     position: absolute;
     width: 100%;
-    height: 350px;
+    /* height: 350px; */
     background: #FFF9F1;
     border-radius: 20px;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    padding: 10px;
+    /* padding-top: 10px; */
+    padding: 16px
 }
 
 .flip-back p {
     background: #FFE7C6;
     border-radius: 10px;
-    margin: 10px;
+    margin-inline: 32px;
     padding: 10px;
     font-size: 12px;
     font-weight: bold;
@@ -732,7 +734,7 @@ header .header-box .header-right {
 }
 
 .flip-back img {
-    /* width: 70%; */
+    width: 50%;
     margin-top: 10px;
 }
 
@@ -783,14 +785,16 @@ header .header-box .header-right {
 
 @media (max-width:960px) {
 
+    .flip-front img {
+        width: 120px;
+    }
+
+
     .flip-card {
         height: 100px;
         margin-bottom: 100px;
     }
 
-    .flip-front {
-        display: flex;
-    }
 
     .problem-flip-area {
         display: block;
@@ -806,20 +810,19 @@ header .header-box .header-right {
         display: flex;
         justify-content: space-around;
         height: 150px;
+        align-items: center;
     }
 
-    /* .flip-inner .flip-front:nth-of-type(2){
-        flex-direction: row-reverse;
-    } */
 
     .flip-back {
         display: flex;
         justify-content: space-around;
         height: 150px;
+        align-items: center;
     }
 
     .flip-back img {
-        width: 90%;
+        width:120px;
     }
 
     .problem .problem-wrapper .problem-front-text p {
@@ -840,6 +843,7 @@ header .header-box .header-right {
     .flip-back p {
         padding: 10px;
         margin: 20px;
+        font-size: 11px;
     }
 
     .flip-front p::before {
@@ -857,12 +861,45 @@ header .header-box .header-right {
     }
 
     .flip-back p::before {
-        left: 105%;
+        left: 103%;
         top: 40%;
     }
+}
 
+@media (max-width:500px) {
+    .flip-front p{
+        margin-inline: 8px;
+    }
+
+    .flip-back p{
+        margin-inline: 8px;
+    }
 
 }
+
+@media (max-width:400px) {
+    .flip-card .flip-inner .flip-front p {
+        font-size: 10px;
+    }
+
+    .flip-back p {
+        font-size: 10px;
+    }
+
+    .flip-back img,.flip-front img {
+        width: 80px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 
 /* CHANGE 　翔太：担当*/
