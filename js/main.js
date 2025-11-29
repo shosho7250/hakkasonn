@@ -20,7 +20,7 @@ $(function () {
     centerPadding: '33%',// 両端の見切れるスライド幅
     prevArrow: '<img src="img/トップベージ/arrow left.png" class="slide-arrow prev-arrow">',
     nextArrow: '<img src="img/トップベージ/arrow right.png" class="slide-arrow next-arrow">',
-  
+
   });
 
   // $(".before-after-hide").slick({
@@ -39,7 +39,7 @@ $(function () {
     centerPadding: '33%',// 両端の見切れるスライド幅
     prevArrow: '<img src="img/トップベージ/arrow left.png" class="slide-arrow prev-arrow">',
     nextArrow: '<img src="img/トップベージ/arrow right.png" class="slide-arrow next-arrow">',
-  
+
   });
 
 
@@ -51,4 +51,18 @@ $(function () {
   $('.js-btn').on('click', function () { // js-btnクラスをクリックすると、
     $('.menu , .btn , .btn-line').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
   })
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const targets = document.querySelectorAll('.fade-left');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  targets.forEach(el => observer.observe(el));
 });
