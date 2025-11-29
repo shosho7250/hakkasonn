@@ -223,6 +223,18 @@ header .header-box .header-right {
     margin-top: 24px
 }
 
+.fade-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+/* 表示されたときに付与するクラス */
+.fade-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .mainvisual .mainvisual-wrapper .text-wrapper {
     display: inline-block;
     text-align: center;
@@ -419,7 +431,7 @@ header .header-box .header-right {
 
 .mainvisual .bg .bg-wrap::before {
     animation: bg 8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    background-image: url("../img/bg-gradient.png");
+    background-image: url(/img/文字背景グラデーション.png);
     background-size: cover;
     background-repeat: no-repeat;
     content: "";

@@ -52,3 +52,17 @@ $(function () {
     $('.menu , .btn , .btn-line').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
   })
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const targets = document.querySelectorAll('.fade-left');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  targets.forEach(el => observer.observe(el));
+});
