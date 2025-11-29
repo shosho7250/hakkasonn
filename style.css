@@ -832,10 +832,9 @@ header .header-box .header-right {
     color: #497DA1;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
     width: 100%;
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .change-wrapper .change-front-text p span {
@@ -863,6 +862,68 @@ header .header-box .header-right {
     }
 }
 
+@media (max-width:370px) {
+    .change-wrapper .change-back-text {
+        font-size: 40px;
+    }
+
+    .change-wrapper .change-front-text p {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .change-wrapper .change-front-text p span {
+        font-size: 14px;
+    }
+
+    .change-wrapper {
+        margin-bottom: 0;
+    }
+
+}
+
+/* --- 初期状態 --- */
+.slide-right,
+.slide-left,
+.slide-up {
+    opacity: 0;
+    transition: 1.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* --- 右からスライド --- */
+.slide-right.animate {
+    animation: slideRight 2s ease forwards;
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* --- 左からスライド --- */
+.slide-left.animate {
+    animation: slideLeft 2s ease forwards;
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* メッセージ */
 .massage {
     background-image:
@@ -883,6 +944,17 @@ header .header-box .header-right {
 @media (max-width:960px) {
     .massage h2 {
         font-size: 36px;
+    }
+}
+
+@media (max-width:960px) {
+
+    .massage {
+        padding: 20px 10px;
+    }
+
+    .massage h2 {
+        font-size: 20px;
     }
 }
 
@@ -972,7 +1044,6 @@ header .header-box .header-right {
 
 .strength input:checked+label.point-card.opened .card-item {
     opacity: 1 !important;
-    margin-left: 30px;
 }
 
 .strength .point-card .card-item h4 {
@@ -1069,12 +1140,12 @@ header .header-box .header-right {
     .strength input:checked+label.point-card .card-item {
         width: 100%;
         max-height: 1000px;
-        /* 内容より大きければOK */
         opacity: 1;
         transform: translateY(0);
         margin-top: 15px;
         text-align: center;
         margin-top: 0 !important;
+        margin-left: 0;
     }
 
     /* 文章 調整 */
@@ -1106,12 +1177,59 @@ header .header-box .header-right {
         font-size: 30px;
     }
 
+    @media (max-width:370px) {
+
+        .strength .strength-wrapper {
+            margin: 0 auto 30px auto;
+        }
+
+        .strength .strength-wrapper .strength-back-text {
+            font-size: 36px;
+        }
+
+        .strength .strength-wrapper .strength-front-text h3 {
+            font-size: 16px;
+            top: 30px;
+            left: 40px;
+        }
+
+        .strength .strength-wrapper .strength-front-text h4 {
+            font-size: 14px;
+            margin-left: 25px;
+        }
+
+        .strength .card-container {
+            margin-top: 20px;
+        }
+
+        .strength input:checked+label.point-card .card-item {
+            margin-left: 0;
+        }
+
+        .strength .point-card .card-title {
+            font-size: 24px;
+        }
+
+        .strength .point-card .card-item h4 {
+            font-size: 24px;
+            margin-block: 5px;
+        }
+
+        .strength .point-card .card-item h3 {
+            font-size: 24px;
+        }
+
+        .strength .point-card .card-item p {
+            font-size: 10px;
+        }
+
+        .strength input:checked+label.point-card .card-item {
+            max-height: 250px;
+        }
+
+    }
+
 }
-
-
-
-
-
 
 
 
