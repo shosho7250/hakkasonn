@@ -2737,8 +2737,21 @@ header .header-box .header-right {
     border: 1px solid #6296D0;
     position: relative;
     padding: 8px;
-
+    margin: 8px;
 }
+
+@media (max-width:960px) {
+    .teacher-voice-box {
+        margin: 4px;
+    }
+}
+
+@media (max-width:375px) {
+    .teacher-voice-box {
+        margin: 0px;
+    }
+}
+
 
 .teacher-voice-box h4 {
     color: #8ABEA1;
