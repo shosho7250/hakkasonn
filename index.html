@@ -167,10 +167,29 @@
                     <p class="slide-left">最初の一歩も、ゴールまでの道も。共に走る<span>ナビゲーター</span>。</p>
                     <p class="slide-right"><span>ひとりで走らなくていい。</span></p>
                     <p class="slide-right">あなたの隣にPro Naviがいる。</p>
-                    <p class="font-s slide-left"><span>ゴールへ向かって、一緒に走る。</span></p>
+                    <p class="font-s slide-left"
+                    ><span>ゴールへ向かって、一緒に走る。</span></p>
                 </div>
             </div>
-        </section>
+        </section> 
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const targets = document.querySelectorAll(".slide-right, .slide-left, .slide-up");
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("animate");
+                        }
+                    });
+                }, {
+                    threshold: 0.2
+                });
+
+                targets.forEach((el) => observer.observe(el));
+            });
+        </script>
+
         
         <div class="free-counseling">
             <div class="free-counseling-wrapper">
