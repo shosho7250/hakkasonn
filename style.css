@@ -1,4 +1,5 @@
 /* 共通CSS */
+
 /* * {
     border: 1px solid red;
 } */
@@ -47,7 +48,7 @@ body {
 /* headerセクション */
 header {
     width: 100%;
-    height: 96px;
+    height: 88px;
     margin: 0 auto;
     background-color: white;
     position: fixed;
@@ -107,7 +108,7 @@ header .header-box .header-right {
 .free-counseling {
     position: relative;
     padding-top: 40px;
-    background-image: url(/img/帯用arrows.png);
+    /* background-image: url(/img/帯用arrows.png); */
     background-size: 80%;
     background-position: 50px 50px;
 }
@@ -1256,7 +1257,7 @@ header .header-box .header-right {
 
 .oursuport-right-bottom {
     color: #282D33;
-    background-color : #FFFFFF;
+    background-color: #FFFFFF;
     padding: 16px 32px;
 }
 
@@ -1269,7 +1270,7 @@ header .header-box .header-right {
     font-size: 33px;
     margin-right: 8px;
     letter-spacing: 0.05em;
-    
+
 }
 
 .oursuport-right-bottom p {
@@ -1300,7 +1301,7 @@ header .header-box .header-right {
 
 
 
-    
+
 }
 
 .container {
@@ -1381,7 +1382,7 @@ header .header-box .header-right {
 
     .oursuport-container-title h2 {
         font-size: 40px;
-        
+
     }
 
     .oursuport-container-title h3 {
@@ -1418,7 +1419,7 @@ header .header-box .header-right {
         padding-left: 0px;
     }
 
-    
+
 
     .oursuport-left-top h2::after {
         position: absolute;
@@ -1522,7 +1523,7 @@ header .header-box .header-right {
     .price-wrapper .price-title h3 {
         top: 16%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         font-size: 40px;
         width: 100%;
         text-align: center;
@@ -1548,7 +1549,7 @@ header .header-box .header-right {
         padding-inline: 5%;
     }
 
-    .service-content .service-right{
+    .service-content .service-right {
         width: 100%;
     }
 
@@ -1567,32 +1568,32 @@ header .header-box .header-right {
     }
 
     .installment-payment .installment-payment-left {
-        width:20%;
+        width: 20%;
     }
 
     .installment-payment .installment-payment-center {
-        width:33%;
+        width: 33%;
     }
 
     .installment-payment .installment-payment-right {
-        width:43%;
+        width: 43%;
     }
 
     .student-voice-title .student-voice-title-text span {
-    font-size: 20px;
-}
+        font-size: 20px;
+    }
 
     .student-voice-word {
         margin-bottom: 32px;
     }
 
-    .student-voice-word .student-voice-word-top
-    ,.teacher-voice-word .teacher-voice-word-top {
+    .student-voice-word .student-voice-word-top,
+    .teacher-voice-word .teacher-voice-word-top {
         font-size: 80px;
     }
 
-    .student-voice-word .student-voice-word-under
-    ,.teacher-voice-word .teacher-voice-word-under {
+    .student-voice-word .student-voice-word-under,
+    .teacher-voice-word .teacher-voice-word-under {
         font-size: 96px;
     }
 
@@ -1636,11 +1637,13 @@ header .header-box .header-right {
         font-size: 32px;
     }
 
-    .results-link .top-results-title ,.faq-page-wrapper .faq-page-title {
+    .results-link .top-results-title,
+    .faq-page-wrapper .faq-page-title {
         justify-content: center;
     }
 
-    .top-results-title h3 ,.faq-page-title h3 {
+    .top-results-title h3,
+    .faq-page-title h3 {
         width: 100%;
 
     }
@@ -1670,13 +1673,13 @@ header .header-box .header-right {
         width: 300px;
     }
 
-    .student-voice-word .student-voice-word-top
-    ,.teacher-voice-word .teacher-voice-word-top {
+    .student-voice-word .student-voice-word-top,
+    .teacher-voice-word .teacher-voice-word-top {
         font-size: 56px;
     }
 
-    .student-voice-word .student-voice-word-under
-    ,.teacher-voice-word .teacher-voice-word-under {
+    .student-voice-word .student-voice-word-under,
+    .teacher-voice-word .teacher-voice-word-under {
         font-size: 64px;
     }
 
@@ -1707,7 +1710,8 @@ header .header-box .header-right {
     }
 
     .price-wrapper .price-title h2 {
-        font-size: 80px;;
+        font-size: 80px;
+        ;
     }
 
     .results-wrapper .top-results-title h2 {
@@ -1852,7 +1856,7 @@ header .header-box .header-right {
     }
 
     .price-img img {
-        width :150px;
+        width: 150px;
     }
 
     .service-left .service-title-content {
@@ -1900,13 +1904,13 @@ header .header-box .header-right {
         width: 100%;
     }
 
-    .student-voice-word .student-voice-word-top
-    ,.teacher-voice-word .teacher-voice-word-top {
+    .student-voice-word .student-voice-word-top,
+    .teacher-voice-word .teacher-voice-word-top {
         font-size: 40px;
     }
 
-    .student-voice-word .student-voice-word-under
-    ,.teacher-voice-word .teacher-voice-word-under {
+    .student-voice-word .student-voice-word-under,
+    .teacher-voice-word .teacher-voice-word-under {
         font-size: 48px;
     }
 
@@ -1937,7 +1941,7 @@ header .header-box .header-right {
         top: 13%;
     }
 
-     .installment-payment-left .installment-payment-left-box p {
+    .installment-payment-left .installment-payment-left-box p {
         font-size: 12px;
     }
 
@@ -1966,7 +1970,7 @@ header .header-box .header-right {
         font-size: 32px;
     }
 
-    
+
 
 }
 
@@ -2002,42 +2006,42 @@ header .header-box .header-right {
 }
 
 .student-card {
-  width: 100%;
-  position: relative;
-  cursor: pointer;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
 }
 
 .student-card::before {
-  content: "";
-  display: block;
-  padding-top: 142.5%;
+    content: "";
+    display: block;
+    padding-top: 142.5%;
 }
 
 .student-card img {
-  width: 100%;
+    width: 100%;
 }
 
 .student-card .back,
 .student-card .front {
-  transition: all 0.8s;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
+    transition: all 0.8s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
 }
 
 .student-card .front {
-  transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
 }
 
 .student-card:hover .back {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .student-card:hover .front {
-  transform: rotateY(0);
+    transform: rotateY(0);
 }
 
 /* カード裏表 */
@@ -2079,7 +2083,7 @@ header .header-box .header-right {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .student-voice-title-text {
@@ -2088,6 +2092,7 @@ header .header-box .header-right {
     font-size: 24px;
 
 }
+
 .student-voice-title-text span {
     color: #FCCC42;
     font-size: 32px;
@@ -2104,7 +2109,7 @@ header .header-box .header-right {
     display: flex;
     background-color: #CBE4FF;
     border-radius: 10px;
-    margin-inline:16px;
+    margin-inline: 16px;
 }
 
 .student-voice-box {
@@ -2165,7 +2170,8 @@ header .header-box .header-right {
     width: 100%;
 }
 
-.name-join,.job-year {
+.name-join,
+.job-year {
     display: flex;
     justify-content: space-between;
     margin-block: 8px;
@@ -2173,7 +2179,7 @@ header .header-box .header-right {
 
 .voice-text {
     text-align: left;
-    border-top: 1px solid #6296D0; 
+    border-top: 1px solid #6296D0;
     position: relative;
 }
 
@@ -2181,7 +2187,7 @@ header .header-box .header-right {
     content: '';
     width: 10px;
     height: 10px;
-    border:0;
+    border: 0;
     border-top: 1px solid #6296D0;
     border-right: 1px solid #6296D0;
     transform: rotate(45deg);
@@ -2222,12 +2228,13 @@ header .header-box .header-right {
 
 @media screen and (max-width: 960px) {
     .before-after-hide {
-    display: block;
-    max-width: 600px;
-    margin: 0 auto;
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
     }
+
     .before-after {
-    display: none;
+        display: none;
     }
 
     .student-voice-item {
@@ -2265,7 +2272,7 @@ header .header-box .header-right {
     }
 
     .teacher-voice-container .teacher-voice-contents {
-            display: none;
+        display: none;
     }
 
     .teacher-voice-container .teacher-voice-item {
@@ -2274,9 +2281,9 @@ header .header-box .header-right {
         padding: 8px;
     }
 
-    .student-voice  {
+    .student-voice {
         background-color: #4FBAD2;
-    } 
+    }
 
     main .teacher-voice {
         background-color: #4FBAD2;
@@ -2311,7 +2318,7 @@ header .header-box .header-right {
 
 .prev-arrow {
     position: absolute;
-    z-index:100;
+    z-index: 100;
     top: 50%;
     left: 2px;
     transform: translate(0,-50%);
@@ -2319,7 +2326,7 @@ header .header-box .header-right {
 
 .next-arrow {
     position: absolute;
-    z-index:100;
+    z-index: 100;
     top: 50%;
     right: 2px;
     transform: translate(0,-50%);
@@ -2364,7 +2371,7 @@ header .header-box .header-right {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .teacher-voice-title-text {
@@ -2373,6 +2380,7 @@ header .header-box .header-right {
     font-size: 24px;
 
 }
+
 .teacher-voice-title-text span {
     color: #FCCC42;
     font-size: 32px;
@@ -2382,7 +2390,7 @@ header .header-box .header-right {
     display: flex;
     background-color: #FFF9F1;
     border-radius: 10px;
-    margin-inline:8px;
+    margin-inline: 8px;
 }
 
 .teacher-voice-box {
@@ -2390,7 +2398,7 @@ header .header-box .header-right {
     border: 1px solid #6296D0;
     position: relative;
     padding: 8px;
-    
+
 }
 
 .teacher-voice-box h4 {
@@ -2429,6 +2437,7 @@ header .header-box .header-right {
     justify-content: space-between;
     margin-block: 8px;
 }
+
 .profile-mark {
     text-align: left;
 }
@@ -2439,7 +2448,7 @@ header .header-box .header-right {
 
 .voice-text {
     text-align: left;
-    border-top: 1px solid #6296D0; 
+    border-top: 1px solid #6296D0;
     position: relative;
 }
 
@@ -2447,7 +2456,7 @@ header .header-box .header-right {
     content: '';
     width: 10px;
     height: 10px;
-    border:0;
+    border: 0;
     border-top: 1px solid #6296D0;
     border-right: 1px solid #6296D0;
     transform: rotate(45deg);
@@ -2474,21 +2483,25 @@ header .header-box .header-right {
 
 
 /* 大きい下三角形 */
-.arrow_wrap{
-    padding-bottom: 200px; /* 高さに合わせて調節してください。*/ 
+.arrow_wrap {
+    padding-bottom: 200px;
+    /* 高さに合わせて調節してください。*/
     overflow: hidden;
-} 
-.arrow{
+}
+
+.arrow {
     position: relative;
 }
-.arrow::after{
+
+.arrow::after {
     content: '';
     position: absolute;
     top: 100%;
     left: calc(50vw - 50%);
     width: 0;
     height: 0;
-    border-top: 100px solid #497DA1; /* 好みで高さ色を変えてください */
+    border-top: 100px solid #497DA1;
+    /* 好みで高さ色を変えてください */
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
 }
@@ -2506,6 +2519,7 @@ header .header-box .header-right {
     border-radius: 40px;
     padding-block: 56px;
 }
+
 .price-title {
     position: relative;
     display: flex;
@@ -2546,7 +2560,8 @@ header .header-box .header-right {
     font-weight: 600;
 }
 
-.service-title-box,.service-content-box {
+.service-title-box,
+.service-content-box {
     background-color: #497DA1;
     padding-block: 8px;
     border-radius: 5px;
@@ -2573,7 +2588,8 @@ header .header-box .header-right {
     height: 40%;
 }
 
-.service-title-box,.service-content-box p {
+.service-title-box,
+.service-content-box p {
     font-size: 24px;
     color: #FFFFFF;
     font-weight: 700;
@@ -2583,7 +2599,8 @@ header .header-box .header-right {
 .service-title-content-text p {
     margin: 8px;
     font-size: 14px;
-    text-align: left;;
+    text-align: left;
+    ;
 }
 
 .service-right {
@@ -2652,19 +2669,25 @@ header .header-box .header-right {
     margin-bottom: 16px;
 }
 
-.installment-payment-left,.installment-payment-center ,.installment-payment-right {
-   background-color: #FFFFFF; 
-   width: 30%;
+.installment-payment-left,
+.installment-payment-center,
+.installment-payment-right {
+    background-color: #FFFFFF;
+    width: 30%;
 }
 
-.installment-payment-left-box ,.installment-payment-center-box,.installment-payment-right-box {
+.installment-payment-left-box,
+.installment-payment-center-box,
+.installment-payment-right-box {
     background-color: #497DA1;
     padding-block: 8px;
     border-radius: 5px;
-    
+
 }
 
-.installment-payment-left-box p,.installment-payment-center-box p,.installment-payment-right-box p {
+.installment-payment-left-box p,
+.installment-payment-center-box p,
+.installment-payment-right-box p {
     font-size: 24px;
     color: #FFFFFF;
     font-weight: 700;
@@ -2703,6 +2726,7 @@ header .header-box .header-right {
     border-radius: 40px;
     padding-block: 56px;
 }
+
 .top-results-title {
     position: relative;
     display: flex;
@@ -2757,6 +2781,7 @@ header .header-box .header-right {
     border-radius: 40px;
     padding-block: 56px;
 }
+
 .faq-page-title {
     position: relative;
     display: flex;
@@ -2832,59 +2857,6 @@ header .header-box .header-right {
 
 /******* 受講の流れ 市川PC ジェイドSP*******/
 
-/* .curriculum-background {
-    background: linear-gradient(to left, #6296D0, #D9D9D9);
-    background: -webkit-linear-gradient(left, #6296D0, #D9D9D9);
-    background: -moz-linear-gradient(left, #6296D0, #D9D9D9);
-    position: relative;
-}
-
-.curriculum-mainvisual {
-    height: 60dvh;
-    padding-top: 67px;
-} */
-/* 
-.curriculum-mainvisual-wrapper {
-    position: relative;
-    margin: 0 auto;
-    max-width: 1100px;
-    padding-inline: 32px;
-    margin-top: 110px;
-} */
-
-/* .curriculum-mainvisual-wrapper h2 {
-    color: #FFFFFF;
-    font-size: 120px;
-    background-image: url(img/受講の流れ_img/ワイヤ用イラスト_32\ \(2\).png);
-}
-
-.curriculum-mainvisual-wrapper h3 {
-    color: #FFFFFF;
-    font-size: 32px;
-}
-
-.curriculum-mainvisual-wrapper h4 {
-    color: #FFFFFF;
-    opacity: 0.7;
-    font-size: 132px;
-    font-weight: 900;
-    text-align: center;
-    margin-top: 100px;
-} */
-
-/* .curriculum-mainvisual-wrapper .curriculum-image {
-    height: 300px;
-    position: absolute;
-    top: 0;
-    right: 0;
-} */
-
-/* .curriculum-section-wrapper {
-    padding-inline: 32px;
-    height: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-} */
 
 .curriculum-section {
     background-color: #CADFF7;
@@ -2926,10 +2898,27 @@ header .header-box .header-right {
 }
 
 .start {
-    width: 250px;
+    width: 220px;
     position: absolute;
     left: 12%;
-    /* transform: translate(-60%, -15%); */
+    transform: translate(35%, -150%);
+}
+
+
+.results-sp-br {
+    display: none;
+}
+
+.goal {
+    width: 90%;
+    margin-top: 80px;
+    margin-inline: auto;
+}
+
+.goal-img {
+    text-justify: center;
+    display: flex;
+    flex-flow: column;
 }
 
 .curriculum-step-container {
@@ -3041,10 +3030,6 @@ header .header-box .header-right {
     content: "05";
 }
 
-.goal {
-    width: 250px;
-    margin-top: 80px;
-}
 
 .goal-people {
     display: block;
@@ -3107,6 +3092,7 @@ header .header-box .header-right {
 }
 
 .results-box-left {
+    width: 50%;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -3132,6 +3118,7 @@ header .header-box .header-right {
 }
 
 .results-box img {
+    width: 90%;
     margin: 20px;
 }
 
@@ -3190,6 +3177,7 @@ header .header-box .header-right {
 
 
 .results-box-right {
+    width: 50%;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -3207,23 +3195,11 @@ header .header-box .header-right {
     text-align: justify;
 }
 
-/* li .results-box .results-text-title h4:nth-of-type(3){
-    font-size: 1.275rem;
-}
-
-.results-text-03{
-    font-size: 1.275rem !important;
-} */
 
 .results-text p {
     padding-top: 15px;
     font-size: 1rem;
     text-align: justify;
-}
-
-
-main .faq-background {
-    /* height: 100dvh; */
 }
 
 
@@ -3235,15 +3211,15 @@ main .faq-wrapper {
 }
 
 main .faq-mainvisual {
-    height: 60dvh;
+    height: 65dvh;
     background: linear-gradient(to left, #6296D0, #D9D9D9);
     background: -webkit-linear-gradient(left, #6296D0, #D9D9D9);
     background: -moz-linear-gradient(left, #6296D0, #D9D9D9);
     padding-top: 67px;
 }
 
+
 .faq-mainvisual-wrapper {
-    /* position: relative; */
     margin: 0 auto;
     max-width: 1100px;
     padding-inline: 5%;
@@ -3259,18 +3235,17 @@ main .faq-mainvisual h2 {
     color: #FFFFFF;
     font-size: 5rem;
     font-weight: 700;
-    background-image: url(img/文字背景グラデーション.png);
-    /* background: linear-gradient(to right,#c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073); */
+    background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
     display: inline;
     padding: 5px;
     margin-top: 50px;
 }
 
-
 main .faq-mainvisual h3 {
     color: #FFFFFF;
     font-size: 1.75rem;
     font-weight: 300;
+    padding-top: 20px;
 }
 
 main .faq-mainvisual h4 {
@@ -3287,11 +3262,11 @@ main .faq-mainvisual .faq-image {
 }
 
 .faq-section {
+    font-size: 1.35rem;
     background-color: #CADFF7;
     padding: 50px 56px 24px 56px;
     border-radius: 25px;
     margin-block: 100px;
-
 }
 
 .faq-section h5 {
@@ -3352,7 +3327,7 @@ main .faq-mainvisual .faq-image {
     position: relative;
     background-color: #76A6C7;
     color: white;
-    padding: 12px 45px 10px;
+    padding: 12px 65px 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -3397,18 +3372,18 @@ main .faq-mainvisual .faq-image {
 .faq-accordion-header span::before {
     position: absolute;
     content: "Q.";
-    /* top: 2px; */
-    left: -20px;
+    top: -8px;
+    left: -40px;
     color: #FFFFFF;
-    font-size: 17px;
+    font-size: 1.75rem;
 }
 
 .faq-accordion-content span::before {
     position: absolute;
     content: "A.";
-    left: -20px;
+    left: -30px;
     color: #202128;
-    font-size: 17px;
+    font-size: 1.75rem;
 }
 
 .faq-accordion-content {
@@ -3552,7 +3527,6 @@ footer {
 
     header .header-wrapper {
         width: 100%;
-        /* max-width:390px; */
         height: 80px;
         display: flex;
         justify-content: space-between;
@@ -3745,7 +3719,7 @@ footer {
 
 
 
-    /******** FAQ　SPpage　ジェイド担当 ********/
+    /********************** FAQ　SPpage　ジェイド担当 ********************/
     .faq-mainvisual-top {
         flex-direction: column;
     }
@@ -3766,14 +3740,14 @@ footer {
     }
 
     main .faq-mainvisual h3 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         text-align: center;
     }
 
     main .faq-mainvisual .faq-image {
-        width: 45%;
+        width: 35%;
         height: auto;
-        margin: 20px auto;
+        margin: 40px auto;
     }
 
     main .faq-mainvisual h4 {
@@ -3782,17 +3756,28 @@ footer {
     }
 
     .faq-section {
+        font-size: 1.3rem;
+        text-align: justify;
         margin-block: 20px 50px;
-        padding: 10% 4% 15% 4%;
+        padding: 6% 7% 15% 7%;
     }
 
+    .section h5::before {
+        top: -20px;
+        font-size: 3.875rem;
+    }
+
+    .faq-accordion {
+        margin-top: 30px;
+    }
 
     .faq-section h5 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
-    .faq-section h5::before {
-        font-size: 2.5rem;
+    #results-section-title h5::before {
+        font-size: 4rem;
+        top: -24px;
     }
 
     .faq-accordion-header {
@@ -3800,8 +3785,12 @@ footer {
     }
 
     .faq-accordion-header span::before {
-        top: -10px;
         left: -35px;
+        font-size: 1.5rem;
+    }
+
+    .faq-accordion-content span::before {
+        left: -33px;
         font-size: 1.5rem;
     }
 
@@ -3824,15 +3813,24 @@ footer {
 
     /******** RESULTS実績　SPpage　ジェイド担当 ********/
     .results-box {
+        margin-top: 35px;
+        padding: 30px 5%;
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-top: 20px;
+    }
+
+    .results-box-right {
+        width: 100%;
+    }
+
+    .results-box-left {
+        width: 100%;
     }
 
     .results-no {
         font-size: 1.75rem;
-        margin: 5px auto;
+        margin: 10px auto;
     }
 
     .sp-br {
@@ -3846,7 +3844,7 @@ footer {
 
 
     .results-box img {
-        margin: 20px 0;
+        margin: 50px 0 5px;
     }
 
     .results-box-right {
@@ -3854,13 +3852,13 @@ footer {
     }
 
     .results-text-title {
-        font-size: 1.375rem;
+        font-size: 1.575rem;
         text-align: center;
         padding: 0 20px 10px 20px;
     }
 
     .results-text p {
-        font-size: 0.875rem;
+        font-size: 1.2rem;
     }
 
 
@@ -3890,11 +3888,17 @@ footer {
     }
 
     .start {
-        width: 250px;
+        width: 150px;
         position: absolute;
-        right: 0;
-        left: 0;
+        /* left: 12%; */
+        /* transform: translate(150%, -150%); */
         margin: 0 auto;
+    }
+
+
+    #curri-section-title h5::before {
+        font-size: 3.25rem;
+        top: -20px;
     }
 
 
@@ -3946,7 +3950,81 @@ footer {
 
 }
 
+@media screen and (max-width:700px) {
 
+    main .faq-mainvisual h2 {
+        font-size: 2.25rem;
+        margin-top: 50px;
+    }
+
+    main .faq-mainvisual .faq-image {
+        margin: 50px auto;
+    }
+
+    main .faq-mainvisual {
+        height: 60dvh;
+    }
+
+    .faq-section {
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 50px 5% 24px 5%;
+    }
+
+    .faq-section h5 {
+        font-size: 1.3rem;
+        padding-inline: 10%;
+    }
+
+    .faq-accordion-header span::before {
+        top: -3px;
+    }
+
+    .faq-accordion-content span::before {
+        font-size: 1.3rem;
+        left: -30px;
+    }
+
+    .faq-accordion-header span,
+    .faq-accordion-content span {
+        text-align: justify;
+    }
+
+    .faq-accordion {
+        margin-top: 35px;
+    }
+
+    #results-section-title h5::before {
+        top: -20px;
+        font-size: 3.75rem;
+    }
+
+    .free-counseling-wrapper h4::before {
+        font-size: 5rem;
+    }
+
+
+
+
+    /*results SP:400*/
+    .results-text p {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+
+    .section h5::before {
+        top: -10px;
+        font-size: 3rem;
+    }
+
+    .results-sp-br {
+        display: block;
+    }
+}
 
 @media screen and (max-width: 400px) {
 
@@ -3954,9 +4032,10 @@ footer {
         padding: 30px;
     }
 
-    .menu-list a{
+    .menu-list a {
         font-size: 1rem;
     }
+
     .menu.open {
         transform: translate(-94.5%, 11%);
         height: 90vh;
@@ -3966,6 +4045,18 @@ footer {
         right: 5%;
     }
 
+    main .faq-mainvisual {
+        height: 55dvh;
+    }
+
+    .faq-section {
+        padding: 50px 4% 24px 4%;
+    }
+
+    .faq-accordion {
+        margin-top: 20px;
+    }
+
 
     .free-counseling-wrapper h4::before {
         font-size: 4.5rem;
@@ -3973,23 +4064,37 @@ footer {
         left: 30px;
     }
 
+    .faq-section {
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .faq-section h5 {
+        font-size: 1.2rem;
+        padding-inline: 10%;
+    }
 
     .faq-section h5::before {
-        font-size: 3.875rem;
-        top: -30px;
+        font-size: 2.3rem;
+        top: 10px;
     }
 
-    #results-section-title h5::before{
-        font-size: 4rem;
-        top: -30px;
+    #results-section-title h5::before {
+        font-size: 3rem;
+        top: -5px;
     }
 
-    #curri-section-title h5::before{
+    .results-title {
+        font-size: 1.75rem;
+    }
+
+
+    #curri-section-title h5::before {
         font-size: 2.5rem;
-        top: -20px;
+        top: -5px;
     }
 
-    main .faq-mainvisual h4{
+    main .faq-mainvisual h4 {
         font-size: 3rem;
     }
 
@@ -3998,21 +4103,26 @@ footer {
     }
 
 
-    .curriculum-step01, .curriculum-step02, 
-    .curriculum-step03, .curriculum-step04, 
+    .curriculum-step01,
+    .curriculum-step02,
+    .curriculum-step03,
+    .curriculum-step04,
     .curriculum-step05 {
-padding: 24px 20px;
+        padding: 24px 20px;
     }
 
     .curriculum-step-container:nth-of-type(2) {
         margin-top: 25px;
     }
+
     .curriculum-step-container:nth-of-type(3) {
         margin-top: 25px;
     }
+
     .curriculum-step-container:nth-of-type(4) {
         margin-top: 25px;
     }
+
     .curriculum-step-container:nth-of-type(5) {
         margin-top: 25px;
     }
