@@ -942,6 +942,43 @@ header .header-box .header-right {
 }
 
 
+/* 右からスライドイン */
+.slide-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-right.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* 左からスライドイン */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-left.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* 下からスライドイン（もし使うなら） */
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 
 
