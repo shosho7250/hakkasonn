@@ -47,6 +47,14 @@ $(function () {
 
 
 
+  window.onload = function() {
+    const fade = document.getElementsByClassName('pattern7');
+fade[0].classList.add('show');
+  }
+  
+
+
+
 $(function () {
   $('.js-btn').on('click', function () { // js-btnクラスをクリックすると、
     $('.menu , .btn , .btn-line').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする

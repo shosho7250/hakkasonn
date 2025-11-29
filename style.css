@@ -41,6 +41,51 @@ body {
     }
 }
 
+/*main visual animation*/
+
+.anime_wrap{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.pattern7::before,
+.pattern7::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.pattern7::before{
+    background: #FFF;
+    z-index: 3;
+    transition: 1s;
+}
+.pattern7::after{
+    background: #2ab2c4;
+    z-index: 2;
+    transition: 1s;
+    transition-delay: .5s;
+}
+.pattern7.show::before,
+.pattern7.show::after{
+    transform: translateY(100%);
+}
+.pattern7 img{
+    opacity: 0;
+    transform: scale(.8);
+    transition: 1.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-delay: .4s;
+}
+.pattern7.show img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
 
 /* headerセクション */
 header {
