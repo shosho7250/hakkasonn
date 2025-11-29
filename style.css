@@ -1084,7 +1084,7 @@ header .header-box .header-right {
 /* === スマホ / タブレット時のアコーディオン表示 === */
 @media (max-width: 960px) {
 
-    .strength .strength-wrapper .strength-back-text {
+    .strength .strength-wrapper .strength-back-text h2 {
         font-size: 88px;
     }
 
@@ -3329,7 +3329,7 @@ main .faq-wrapper {
 }
 
 main .faq-mainvisual {
-    height: 65dvh;
+    /* height: 65dvh; */
     background: linear-gradient(to left, #6296D0, #D9D9D9);
     background: -webkit-linear-gradient(left, #6296D0, #D9D9D9);
     background: -moz-linear-gradient(left, #6296D0, #D9D9D9);
@@ -4079,9 +4079,9 @@ footer {
         margin: 50px auto;
     }
 
-    main .faq-mainvisual {
+    /* main .faq-mainvisual {
         height: 60dvh;
-    }
+    } */
 
     .faq-section {
         font-size: 1.2rem;
@@ -4163,9 +4163,9 @@ footer {
         right: 5%;
     }
 
-    main .faq-mainvisual {
+    /* main .faq-mainvisual {
         height: 55dvh;
-    }
+    } */
 
     .faq-section {
         padding: 50px 4% 24px 4%;
