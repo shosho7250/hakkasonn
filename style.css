@@ -417,7 +417,7 @@ header .header-box .header-right {
 
 .mainvisual .bg .bg-wrap::before {
     animation: bg 8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    background-image: url("../img/文字背景グラデーション.png");
+    background-image: url(/img/bg-gradient.png);
     background-size: cover;
     background-repeat: no-repeat;
     content: "";
@@ -1051,6 +1051,7 @@ header .header-box .header-right {
 
 .strength input:checked+label.point-card.opened .card-item {
     opacity: 1 !important;
+    padding: 10px;
 }
 
 .strength .point-card .card-item h4 {
