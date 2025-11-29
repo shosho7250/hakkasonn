@@ -71,7 +71,7 @@ body {
 }
 .pattern7.show::before,
 .pattern7.show::after{
-    transform: translateY(100%);
+    transform: translateX(100%);
 }
 .pattern7 img{
     opacity: 0;
