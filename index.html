@@ -129,21 +129,38 @@
                     <h2>LIFE BY</h2>
                 </div>
                 <div class="change-front-text">
-                    <p>６ヵ月後の自分を変えてみませんか？</p>
-                    <p>ここからは<span>成長のスタート</span>です！</p>
-                    <p class="font-s">
+                    <p class="slide-right">６ヵ月後の自分を変えてみませんか？</p>
+                    <p class="slide-right">ここからは<span>成長のスタート</span>です！</p>
+                    <p class="font-s slide-left">
                         <span>一緒に</span>
                         第一歩を踏み出してみませんか？
                     </p>
-                    <p>既に色んな人が走り抜けています。</p>
-                    <p>不安すぎで何から始めるかわからなくても大丈夫です。</p>
-                    <p>最初の一歩も、ゴールまでの道も。共に走る<span>ナビゲーター</span>。</p>
-                    <p><span>ひとりで走らなくていい。</span></p>
-                    <p>あなたの隣にPro Naviがいる。</p>
-                    <p><span>ゴールへ向かって、一緒に走る。</span></p>
+                    <p class="slide-left">既に色んな人が走り抜けています。</p>
+                    <p class="slide-right">不安すぎで何から始めるかわからなくても大丈夫です。</p>
+                    <p class="slide-left">最初の一歩も、ゴールまでの道も。共に走る<span>ナビゲーター</span>。</p>
+                    <p class="slide-right"><span>ひとりで走らなくていい。</span></p>
+                    <p class="slide-right">あなたの隣にPro Naviがいる。</p>
+                    <p class="font-s slide-left"><span>ゴールへ向かって、一緒に走る。</span></p>
                 </div>
             </div>
         </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const targets = document.querySelectorAll(".slide-right, .slide-left, .slide-up");
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("animate");
+                        }
+                    });
+                }, {
+                    threshold: 0.2
+                });
+                targets.forEach((el) => observer.observe(el));
+            });
+        </script>
+        
         <div class="free-counseling">
             <div class="free-counseling-wrapper">
                 <p> 一人では見つけられなかった「理想のゴール」へ、<br>
@@ -280,7 +297,7 @@
                     });
                 });
             });
-        </script> 
+        </script>
 
         <!-- TOPページ上半分 -->
         <!-- 受講の流れ -->
