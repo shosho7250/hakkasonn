@@ -220,6 +220,18 @@ header .header-box .header-right {
     margin-top: 24px
 }
 
+.fade-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+/* 表示されたときに付与するクラス */
+.fade-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .mainvisual .mainvisual-wrapper .text-wrapper {
     display: inline-block;
     text-align: center;
@@ -255,23 +267,23 @@ header .header-box .header-right {
         display: block;
         /* height: 50dvh; */
         margin: 0 auto;
-   }
+    }
 
-   .mainvisual-img {
+    .mainvisual-img {
         display: none;
-   }
+    }
 
-   .mainvisual-wrapper {
-    position: static;
-   }
+    .mainvisual-wrapper {
+        position: static;
+    }
 
-   .mainvisual-image-tb {
-    display: block;
-}
+    .mainvisual-image-tb {
+        display: block;
+    }
 
-   .text-wrapper .mainvisual-image {
-    display: none;
-   }
+    .text-wrapper .mainvisual-image {
+        display: none;
+    }
 
     .problem-content .problem-content-top {
         font-size: 112px;
@@ -297,7 +309,8 @@ header .header-box .header-right {
         font-size: 14px;
     }
 
-    .side-up ,.border {
+    .side-up,
+    .border {
         font-size: 12px;
     }
 
@@ -324,10 +337,10 @@ header .header-box .header-right {
         font-size: 10px;
     }
 
-    .problem-content-title-text .problem-content-title-text span  {
+    .problem-content-title-text .problem-content-title-text span {
         font-size: 16px;
     }
-    
+
     .mainvisual .bg .inn {
         font-size: 16px;
     }
@@ -336,7 +349,8 @@ header .header-box .header-right {
         font-size: 12px;
     }
 
-    .side-up ,.border {
+    .side-up,
+    .border {
         font-size: 10px;
     }
 
@@ -359,7 +373,7 @@ header .header-box .header-right {
 
 
 
- 
+
 
 }
 
@@ -414,7 +428,7 @@ header .header-box .header-right {
 
 .mainvisual .bg .bg-wrap::before {
     animation: bg 8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    background-image: url("../img/文字背景グラデーション.png");
+    background-image: url(img/文字背景グラデーション.png);
     background-size: cover;
     background-repeat: no-repeat;
     content: "";
@@ -556,7 +570,7 @@ header .header-box .header-right {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .problem-content-title-text {
@@ -565,6 +579,7 @@ header .header-box .header-right {
     font-size: 16px;
 
 }
+
 .problem-content-title-text span {
     color: #FCCC42;
     font-size: 24px;
@@ -623,12 +638,12 @@ header .header-box .header-right {
 
 .flip-front p::before {
     content: "";
-  border: 10px solid transparent;
-  border-top: 10px solid #D9D9D9;
-  margin-left: -10px;
-  top: 100%;
-  left: 50%;
-  position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid #D9D9D9;
+    margin-left: -10px;
+    top: 100%;
+    left: 50%;
+    position: absolute;
 
 }
 
@@ -657,17 +672,17 @@ header .header-box .header-right {
     font-size: 12px;
     font-weight: bold;
     text-align: left;
-    position:relative;
+    position: relative;
 }
 
 .flip-back p::before {
     content: "";
-  border: 10px solid transparent;
-  border-top: 10px solid #FFE7C6;
-  margin-left: -10px;
-  top: 100%;
-  left: 50%;
-  position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid #FFE7C6;
+    margin-left: -10px;
+    top: 100%;
+    left: 50%;
+    position: absolute;
 
 }
 
@@ -801,7 +816,7 @@ header .header-box .header-right {
         top: 40%;
     }
 
-    
+
 }
 
 
@@ -1095,6 +1110,7 @@ header .header-box .header-right {
 
 .strength input:checked+label.point-card.opened .card-item {
     opacity: 1 !important;
+    padding: 10px;
 }
 
 .strength .point-card .card-item h4 {
@@ -1530,12 +1546,14 @@ header .header-box .header-right {
     padding-left: 40px;
 }
 
-.oursuport-left-top,.oursuport-right-top {
+.oursuport-left-top,
+.oursuport-right-top {
     height: 40%;
     color: #FFFFFF;
 }
 
-.oursuport-left-bottom,.oursuport-right-bottom {
+.oursuport-left-bottom,
+.oursuport-right-bottom {
     height: 60%;
     color: #FFFFFF;
 }
@@ -1604,7 +1622,8 @@ header .header-box .header-right {
         align-items: center;
     }
 
-    .student-voice-item,.teacher-voice-item {
+    .student-voice-item,
+    .teacher-voice-item {
         width: 50%;
     }
 
@@ -1614,8 +1633,8 @@ header .header-box .header-right {
     }
 
     .oursuport-left-bottom img {
-    height: 150px;
-}
+        height: 150px;
+    }
 
 
 
@@ -1672,7 +1691,7 @@ header .header-box .header-right {
 }
 
 .card-body {
-    border-radius:56px;
+    border-radius: 56px;
     height: 350px;
     display: flex;
     background-color: #366383;
@@ -2086,11 +2105,13 @@ header .header-box .header-right {
     }
 
     .results-link .results-wrapper {
-        border-radius: 20px;;
+        border-radius: 20px;
+        ;
     }
 
     .faq-link .faq-page-wrapper {
-        border-radius: 20px;;
+        border-radius: 20px;
+        ;
     }
 
     .division-price-pc {
@@ -2108,7 +2129,7 @@ header .header-box .header-right {
     .installment-payment-left-box .division-price-sp {
         display: block;
     }
-    
+
     .installment-payment-center-box .first-price-sp {
         display: block;
     }
@@ -2639,7 +2660,7 @@ header .header-box .header-right {
     z-index: 100;
     top: 50%;
     left: 2px;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
 }
 
 .next-arrow {
@@ -2647,7 +2668,7 @@ header .header-box .header-right {
     z-index: 100;
     top: 50%;
     right: 2px;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
 }
 
 /* 講師の声セクション */
@@ -3021,7 +3042,9 @@ header .header-box .header-right {
     margin-bottom: 16px;
 }
 
-.division-price-sp,.first-price-sp,.second-price-sp {
+.division-price-sp,
+.first-price-sp,
+.second-price-sp {
     display: none;
 }
 
@@ -3553,7 +3576,7 @@ main .faq-mainvisual h2 {
     color: #FFFFFF;
     font-size: 5rem;
     font-weight: 700;
-    background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
+    background: linear-gradient(to right, #362ae0 0%, #3b79cc 50%, #42d3ed 100%);
     display: inline;
     padding: 5px;
     margin-top: 50px;
