@@ -862,6 +862,13 @@ header .header-box .header-right {
     }
 }
 
+@media (max-width:400px) {
+        .change-wrapper .change-back-text {
+        font-size: 48px;
+    }
+
+}
+
 @media (max-width:370px) {
     .change-wrapper .change-back-text {
         font-size: 40px;
