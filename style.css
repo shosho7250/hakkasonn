@@ -1603,11 +1603,6 @@ header .header-box .header-right {
 /* TOPページ後半 市川担当 */
 
 /* TOPページの受講の流れセクション */
-.oursuport {
-    /* margin-bottom: 200px; */
-}
-
-
 .oursuport-container {
     margin: 0 auto;
     max-width: 1100px;
@@ -1684,6 +1679,10 @@ header .header-box .header-right {
 .oursuport-left-top h3 {
     font-size: 32px;
     padding-bottom: 8px;
+    background: linear-gradient(to right, #362ae0 0%, #3b79cc 50%, #42d3ed 100%);
+    display: inline;
+    padding: 5px;
+    
 }
 
 .oursuport-left-bottom img {
@@ -1754,10 +1753,6 @@ header .header-box .header-right {
     .oursuport-left-bottom img {
         height: 150px;
     }
-
-
-
-
 }
 
 .container {
@@ -1817,18 +1812,15 @@ header .header-box .header-right {
     border-radius: 20px;
     padding: 24px 48px;
     text-align: left;
-    /* margin-top: 50px; */
 }
 
 @media screen and (max-width: 960px) {
     .oursuport {
-        /* margin-bottom: 300px; */
+        margin-bottom: 200px;
     }
-
 
     .card-body {
         max-width: 600px;
-        /* justify-content: center; */
         flex-direction: column;
         height: auto;
         align-items: center;
@@ -1861,7 +1853,7 @@ header .header-box .header-right {
 
     .card {
         margin: 0 auto;
-        width: 600px;
+        width: 550px;
         padding-top: calc(var(--index) * 50px);
     }
 
@@ -2119,10 +2111,45 @@ header .header-box .header-right {
 }
 
 @media screen and (max-width: 700px) {
-    .oursuport {
-        margin-bottom: 200px;
+
+    .front .front-student-voice-item {
+        width: 250px;
+        display: block;
+        padding: 8px;
     }
 
+    .front-student-voice-item .front-student-voice-box {
+        margin: 0px;
+    }
+
+    .front-student-voice-item .front-student-voice-box h4 {
+        font-size: 2rem;
+    }
+
+    .student-card .back .student-voice-item {
+        width: 250px;
+    }
+
+    .student-voice-box-top .voice-box-left .student-voice-box h5 {
+        font-size: 2rem;
+    }
+
+    .voice-text p {
+        font-size: 14px;
+    }
+
+    .voice-text .voice-text-bottom {
+        font-size: 2rem;
+    }
+
+    .back .student-voice-box h4 {
+        font-size: 2rem;
+    }
+
+
+    .oursuport-right-bottom h4 {
+        font-size: 22px;
+    }
 
     .card-body {
         max-width: 400px;
@@ -2143,10 +2170,6 @@ header .header-box .header-right {
         font-size: 64px;
     }
 
-    .student-card {
-        /* margin-bottom: 160px; */
-    }
-
     .student-voice-item .student-voice-box {
         margin: 0px;
     }
@@ -2158,7 +2181,15 @@ header .header-box .header-right {
     }
 
     .teacher-voice-container .teacher-voice-item {
-        width: 300px;
+        width: 250px;
+    }
+
+    .teacher-voice-item .teacher-voice-box h4 {
+        font-size:2rem;
+    }
+
+    .price-wrapper {
+        width: auto;
     }
 
     .price-wrapper .price-title h3 {
@@ -2167,7 +2198,6 @@ header .header-box .header-right {
 
     .price-wrapper .price-title h2 {
         font-size: 80px;
-        ;
     }
 
     .results-wrapper .top-results-title h2 {
@@ -2187,7 +2217,7 @@ header .header-box .header-right {
     }
 
     .results .results-link .results-wrapper {
-        padding-block: 40px;
+        padding-block: 24px;
     }
 
     .faq-page .faq-page-wrapper {
@@ -2215,7 +2245,13 @@ header .header-box .header-right {
         width: 400px;
     }
 
+    .price-img img {
+        width: 150px;
+    }
 
+    main .results,main .faq-page {
+        margin-top: 50px;
+    }
 
 }
 
@@ -2223,10 +2259,25 @@ header .header-box .header-right {
     .card {
         width: 350px;
     }
+
+    .student-card {
+        margin-bottom: 100px;
+    }
+
+    .oursuport {
+        margin-bottom: 200px;
+    }
+
+    .profile,.voice-text p {
+        font-size: 12px;
+    }
 }
 
 
 @media screen and (max-width: 400px) {
+    .oursuport {
+        margin-bottom: -60px;
+    }
 
     .results .results-link .results-wrapper {
         padding: 24px;
@@ -2327,8 +2378,13 @@ header .header-box .header-right {
     }
 
     .price-img img {
-        width: 150px;
+        width: 100px;
     }
+
+    .price .price-wrapper {
+        padding-block: 32px;
+    }
+
 
     .service-left .service-title-content {
         margin-block: 16px;
@@ -2392,7 +2448,7 @@ header .header-box .header-right {
     }
 
     .student-card {
-        margin-bottom: 250px;
+        margin-bottom: 150px;
     }
 
     .teacher-voice-container .teacher-voice-item {
@@ -2450,8 +2506,12 @@ header .header-box .header-right {
 
     .cards .card {
         margin: 0 auto;
-        padding-top: calc(var(--index) * 30px);
+        padding-top: calc(var(--index) * 40px);
         width: 270px;
+    }
+
+    .teacher-voice-contents-hide .teacher-voice-item {
+        width: 250px;
     }
 
 }
@@ -2531,7 +2591,7 @@ header .header-box .header-right {
 .student-voice {
     background-color: #497DA1;
     padding-top: 70px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 .student-voice-container {
@@ -2772,15 +2832,7 @@ header .header-box .header-right {
     }
 
     .arrow_wrap .arrow::after {
-        content: '';
-        position: absolute;
-        top: 100%;
-        left: calc(50vw - 50%);
-        width: 0;
-        height: 0;
         border-top: 100px solid #4FBAD2;
-        border-left: 50vw solid transparent;
-        border-right: 50vw solid transparent;
     }
 
 }
@@ -2818,7 +2870,6 @@ header .header-box .header-right {
 
 .teacher-voice {
     background-color: #497DA1;
-    padding-top: 70px;
     padding-bottom: 100px;
 }
 
@@ -2973,14 +3024,13 @@ header .header-box .header-right {
 .teacher-voice-contents {
     margin-top: -100px;
     display: flex;
-    padding-inline: 32px;
+    padding-inline: 7%;
 }
 
 
 /* 大きい下三角形 */
 .arrow_wrap {
     padding-bottom: 200px;
-    /* 高さに合わせて調節してください。*/
     overflow: hidden;
 }
 
@@ -2996,7 +3046,6 @@ header .header-box .header-right {
     width: 0;
     height: 0;
     border-top: 100px solid #497DA1;
-    /* 好みで高さ色を変えてください */
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
 }
@@ -3060,7 +3109,6 @@ header .header-box .header-right {
     background-color: #497DA1;
     padding-block: 8px;
     border-radius: 5px;
-    /* height: 10%; */
 }
 
 .service-left {
@@ -3088,14 +3136,12 @@ header .header-box .header-right {
     font-size: 24px;
     color: #FFFFFF;
     font-weight: 700;
-    /* height: 10%; */
 }
 
 .service-title-content-text p {
     margin: 8px;
     font-size: 14px;
     text-align: left;
-    ;
 }
 
 .service-right {
@@ -3221,7 +3267,7 @@ header .header-box .header-right {
     max-width: 1100px;
     padding-inline: 32px;
     border-radius: 40px;
-    padding-block: 56px;
+    padding-block: 32px;
 }
 
 .top-results-title {
@@ -3276,7 +3322,7 @@ header .header-box .header-right {
     max-width: 1100px;
     margin: 0 auto;
     border-radius: 40px;
-    padding-block: 56px;
+    padding-block: 32px;
 }
 
 .faq-page-title {
