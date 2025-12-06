@@ -13,7 +13,7 @@ $(function () {
   // slick
   $(".before-after").slick({
     autoplay: true, // 自動再生
-    autoplaySpeed: 6000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
+    autoplaySpeed: 3000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
     infinite: true, // 無限スライド
     autoplay: true, // 自動再生
     centerMode: true,// 前後スライドを部分表示
@@ -23,16 +23,9 @@ $(function () {
 
   });
 
-  // $(".before-after-hide").slick({
-  //   autoplay: true, // 自動再生
-  //   slidesToShow: 1, // 表示するスライド枚数
-  //   slidesToScroll: 1,// スライドする数
-
-  // });
-
   $(".teacher-voice-contents").slick({
     autoplay: true, // 自動再生
-    autoplaySpeed: 6000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
+    autoplaySpeed: 3000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
     infinite: true, // 無限スライド
     autoplay: true, // 自動再生
     centerMode: true,// 前後スライドを部分表示
