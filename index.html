@@ -34,7 +34,8 @@
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
                     <div class="counseling">
-                        <a class="header-counseling-btn" href="https://line.me/R/ti/p/@420zidsx?oat_content=url">無料カウンセリングへ</a>
+                        <a class="header-counseling-btn"
+                            href="https://line.me/R/ti/p/@420zidsx?oat_content=url">無料カウンセリングへ</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +54,8 @@
                             <li class="menu-list"><a href="faq.html">FAQ</a></li>
                             <li class="menu-list">
                                 <div class="counseling">
-                                    <a class="counseling-btn" href="https://line.me/R/ti/p/@420zidsx?oat_content=url">無料カウンセリングへ</a>
+                                    <a class="counseling-btn"
+                                        href="https://line.me/R/ti/p/@420zidsx?oat_content=url">無料カウンセリングへ</a>
                                 </div>
                             </li>
                         </ul>
@@ -147,8 +149,8 @@
             </div>
         </section>
 
-        
-         <section class="change">
+
+        <section class="change">
             <div class="change-wrapper">
                 <div class="change-back-text">
                     <h2>CHANGE</h2>
@@ -167,11 +169,10 @@
                     <p class="slide-left">最初の一歩も、ゴールまでの道も。共に走る<span>ナビゲーター</span>。</p>
                     <p class="slide-right"><span>ひとりで走らなくていい。</span></p>
                     <p class="slide-right">あなたの隣にPro Naviがいる。</p>
-                    <p class="font-s slide-left"
-                    ><span>ゴールへ向かって、一緒に走る。</span></p>
+                    <p class="font-s slide-left"><span>ゴールへ向かって、一緒に走る。</span></p>
                 </div>
             </div>
-        </section> 
+        </section>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
                 const targets = document.querySelectorAll(".slide-right, .slide-left, .slide-up");
@@ -190,7 +191,7 @@
             });
         </script>
 
-        
+
         <div class="free-counseling">
             <div class="free-counseling-wrapper">
                 <p> 一人では見つけられ<br>なかった「理想のゴール」へ、<br>
@@ -221,7 +222,10 @@
                     <!-- point01 -->
                     <input type="radio" name="slide" id="p1" checked>
                     <label for="p1" class="point-card opened">
-                        <div class="card-title">POINT 01</div>
+                        <div class="card-title-wrapper">
+                            <div class="card-title">POINT 01 </div>
+                            <img src="img/strength_01.png" alt="" class="card-icon">
+                        </div>
                         <div class="card-item">
                             <h4>あなた専属の講師が伴走</h4>
                             <h3><span>現役エンジニアの</span><br>
@@ -234,7 +238,10 @@
                     <!-- point02 -->
                     <input type="radio" name="slide" id="p2">
                     <label for="p2" class="point-card">
-                        <div class="card-title">POINT 02</div>
+                        <div class="card-title-wrapper">
+                            <div class="card-title">POINT 02</div>
+                            <img src="img/strength_02.png" alt="" class="card-icon">
+                        </div>
                         <div class="card-item">
                             <h4>学習設計で迷わない</h4>
                             <h3><span>初心者にも優しい</span><br>
@@ -247,7 +254,10 @@
                     <!-- point03 -->
                     <input type="radio" name="slide" id="p3">
                     <label for="p3" class="point-card">
-                        <div class="card-title">POINT 03</div>
+                        <div class="card-title-wrapper">
+                            <div class="card-title">POINT 03</div>
+                            <img src="img/strength_03.png" alt="" class="card-icon">
+                        </div>
                         <div class="card-item">
                             <h4>実務案件まで徹底伴走</h4>
                             <h3><span>営業・提案まで</span><br>
@@ -261,7 +271,10 @@
                     <!-- point04 -->
                     <input type="radio" name="slide" id="p4">
                     <label for="p4" class="point-card">
-                        <div class="card-title">POINT 04</div>
+                        <div class="card-title-wrapper">
+                            <div class="card-title">POINT 04</div>
+                            <img src="img/strength_04.png" alt="" class="card-icon">
+                        </div>
                         <div class="card-item">
                             <h4>孤独にならない学習環境</h4>
                             <h3><span>仲間と成長できる</span><br>
@@ -275,7 +288,10 @@
                     <!-- point05 -->
                     <input type="radio" name="slide" id="p5">
                     <label for="p5" class="point-card">
-                        <div class="card-title">POINT 05</div>
+                        <div class="card-title-wrapper">
+                            <div class="card-title">POINT 05</div>
+                            <img src="img/strength_05.png" alt="" class="card-icon">
+                        </div>
                         <div class="card-item">
                             <h4>場所を選ばす学べる自由さ</h4>
                             <h3><span>オンライン完結で</span><br>
@@ -309,27 +325,6 @@
                 });
             });
         </script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const inputs = document.querySelectorAll(".strength input");
-                const cards = document.querySelectorAll(".point-card");
-                cards[0].classList.add("opened");
-                inputs.forEach(function (input, index) {
-                    input.addEventListener("change", function () {
-                        cards.forEach(function (card) {
-                            card.classList.remove("opened");
-                        });
-                        if (index === 0) {
-                            cards[0].classList.add("opened");
-                            return;
-                        }
-                        setTimeout(function () {
-                            cards[index].classList.add("opened");
-                        }, 500);
-                    });
-                });
-            });
-        </script>
 
         <!-- TOPページ上半分 -->
         <!-- 受講の流れ -->
@@ -337,7 +332,6 @@
 
             <div class="container">
                 <div class="cards">
-
                     <div class="card card0">
                         <div class="card-body">
                             <div class="oursuport-container-title">
@@ -480,41 +474,6 @@
             </div>
         </div>
         <img class="counseling-background" src="./img/帯用arrows.png" alt="">
-
-
-        <!-- 練習用 -->
-        <!-- <section class="test-section">
-
-            <div class="test-container">
-                <ul class="test-slick">
-                    <li><img src="img/トップベージ/student1.png" alt=""></li>
-                    <li><img src="img/トップベージ/student2.png" alt=""></li>
-                    <li><img src="img/トップベージ/student3.png" alt=""></li>
-                    <li><img src="img/トップベージ/student4.png" alt=""></li>
-                </ul>
-
-            </div>
-
-        </section>
-
-        <section class="test-section1">
-
-            <div class="test-container">
-                <ul class="test-slick1">
-                    <li><img src="img/トップベージ/student1.png" alt=""></li>
-                    <li><img src="img/トップベージ/student2.png" alt=""></li>
-                    <li><img src="img/トップベージ/student3.png" alt=""></li>
-                    <li><img src="img/トップベージ/student4.png" alt=""></li>
-                </ul>
-
-            </div>
-
-        </section>
-
- -->
-
-        <!-- 練習用 -->
-
         <!-- 受講生の声 -->
         <section class="student-voice">
             <div class="student-voice-container">
@@ -918,14 +877,6 @@
             </div>
 
         </section>
-
-
-
-
-
-
-
-
         <!-- 講師の声 -->
         <section class="teacher-voice">
             <div class="teacher-voice-container">
@@ -1255,7 +1206,7 @@
                         </div>
                     </div>
                     <p class="caution1">
-                        ※分割回数は【3、6、10、12、24】回からお選びいただけます。お支払いはき銀行口座からの引き落としとなります。ローン会社様のご指定は出来かねますのでご了承ください。</p>
+                        ※分割回数は【3、6、10、12、24】回からお選びいただけます。お支払いは銀行口座からの引き落としとなります。ローン会社様のご指定は出来かねますのでご了承ください。</p>
                     <p class="caution2">※表示価格はすべて税込価格です。</p>
                 </div>
             </div>
@@ -1309,7 +1260,8 @@
                 <div class="footer-right">
                     <p class="footer-right-text">最初の一歩も、ゴールまでの道も。共に走るナビゲーター。</p>
                     <div class="counseling">
-                        <a class="counseling-btn footer-btn" href="https://line.me/R/ti/p/@420zidsx?oat_content=url">無料カウンセリングへ</a>
+                        <a class="counseling-btn footer-btn"
+                            href="https://line.me/R/ti/p/@420zidsx?oat_content=url">無料カウンセリングへ</a>
                         <img src="./img/LOGO/プロナビlogo.png" alt="LOGO">
                     </div>
                 </div>
