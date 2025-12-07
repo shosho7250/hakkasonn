@@ -287,7 +287,10 @@
                     <!-- point01 -->
                     <input type="radio" name="slide" id="p1" checked>
                     <label for="p1" class="point-card opened">
-                        <div class="card-title">POINT 01</div>
+                        <div class="card-title-wrapper">
+                            <div class="card-title">POINT 01 </div>
+                            <img src="img/strength_01.png" alt="" class="card-icon">
+                        </div>
                         <div class="card-item">
                             <h4>あなた専属の講師が伴走</h4>
                             <h3><span>現役エンジニアの</span><br>
@@ -300,7 +303,10 @@
                     <!-- point02 -->
                     <input type="radio" name="slide" id="p2">
                     <label for="p2" class="point-card">
-                        <div class="card-title">POINT 02</div>
+                        <div class="card-title-wrapper">
+                            <div class="card-title">POINT 02</div>
+                            <img src="img/strength_02.png" alt="" class="card-icon">
+                        </div>
                         <div class="card-item">
                             <h4>学習設計で迷わない</h4>
                             <h3><span>初心者にも優しい</span><br>
@@ -313,7 +319,10 @@
                     <!-- point03 -->
                     <input type="radio" name="slide" id="p3">
                     <label for="p3" class="point-card">
-                        <div class="card-title">POINT 03</div>
+                        <div class="card-title-wrapper">
+                            <div class="card-title">POINT 03</div>
+                            <img src="img/strength_03.png" alt="" class="card-icon">
+                        </div>
                         <div class="card-item">
                             <h4>実務案件まで徹底伴走</h4>
                             <h3><span>営業・提案まで</span><br>
@@ -327,7 +336,10 @@
                     <!-- point04 -->
                     <input type="radio" name="slide" id="p4">
                     <label for="p4" class="point-card">
-                        <div class="card-title">POINT 04</div>
+                        <div class="card-title-wrapper">
+                            <div class="card-title">POINT 04</div>
+                            <img src="img/strength_04.png" alt="" class="card-icon">
+                        </div>
                         <div class="card-item">
                             <h4>孤独にならない学習環境</h4>
                             <h3><span>仲間と成長できる</span><br>
@@ -341,7 +353,10 @@
                     <!-- point05 -->
                     <input type="radio" name="slide" id="p5">
                     <label for="p5" class="point-card">
-                        <div class="card-title">POINT 05</div>
+                        <div class="card-title-wrapper">
+                            <div class="card-title">POINT 05</div>
+                            <img src="img/strength_05.png" alt="" class="card-icon">
+                        </div>
                         <div class="card-item">
                             <h4>場所を選ばす学べる自由さ</h4>
                             <h3><span>オンライン完結で</span><br>
@@ -375,27 +390,6 @@
                 });
             });
         </script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const inputs = document.querySelectorAll(".strength input");
-                const cards = document.querySelectorAll(".point-card");
-                cards[0].classList.add("opened");
-                inputs.forEach(function (input, index) {
-                    input.addEventListener("change", function () {
-                        cards.forEach(function (card) {
-                            card.classList.remove("opened");
-                        });
-                        if (index === 0) {
-                            cards[0].classList.add("opened");
-                            return;
-                        }
-                        setTimeout(function () {
-                            cards[index].classList.add("opened");
-                        }, 500);
-                    });
-                });
-            });
-        </script>
 
         <!-- TOPページ上半分 -->
         <!-- 受講の流れ -->
@@ -403,7 +397,6 @@
 
             <div class="container">
                 <div class="cards">
-
                     <div class="card card0">
                         <div class="card-body">
                             <div class="oursuport-container-title">
@@ -1286,7 +1279,7 @@
                         </div>
                     </div>
                     <p class="caution1">
-                        ※分割回数は【3、6、10、12、24】回からお選びいただけます。お支払いはき銀行口座からの引き落としとなります。ローン会社様のご指定は出来かねますのでご了承ください。</p>
+                        ※分割回数は【3、6、10、12、24】回からお選びいただけます。お支払いは銀行口座からの引き落としとなります。ローン会社様のご指定は出来かねますのでご了承ください。</p>
                     <p class="caution2">※表示価格はすべて税込価格です。</p>
                 </div>
             </div>
