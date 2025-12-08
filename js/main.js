@@ -40,19 +40,11 @@ $(function () {
 
 
 
-  window.onload = function() {
-    const fade = document.getElementsByClassName('pattern7');
-fade[0].classList.add('show');
-  }
-  
+window.onload = function () {
+  const fade = document.getElementsByClassName('kv-animation');
+  fade[0].classList.add('show');
+}
 
-
-
-$(function () {
-  $('.js-btn').on('click', function () { // js-btnクラスをクリックすると、
-    $('.menu , .btn , .btn-line').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
-  })
-});
 
 document.addEventListener("DOMContentLoaded", () => {
   const targets = document.querySelectorAll('.fade-left');
@@ -66,4 +58,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   targets.forEach(el => observer.observe(el));
+});
+
+$(function () {
+  // ハンバーガーアイコンをクリックしたとき
+  $('.js-btn').on('click', function () {
+    $('.menu , .btn , .btn-line').toggleClass('open');
+  });
+
+  // メニューのリンクをクリックしたとき（スマホ時はメニューを閉じる）
+  $('.menu a').on('click', function () {
+    // スマホ幅のときだけ閉じたいなら条件をつける
+    if (window.innerWidth <= 961) {  // ブレークポイントは好きに調整してOK
+      $('.menu , .btn , .btn-line').removeClass('open');
+    }
+  });
 });
